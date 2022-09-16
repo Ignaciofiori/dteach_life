@@ -25,7 +25,10 @@
 ###### Ingeniera de Sistemas
 ###### La experiencia profesional ha estado desarrollado en el campo de la tecnología con programas del gobierno.  No tiene experiencia en desarrollo Web.
 ## Rómulo
-###### Argentina
+###### Capital Federal, Argentina
+###### Ing. Industrial e Ing. en Calidad.
+###### Actualmente dirige su importadora y realiza aseosrías y servicios a empresas.
+###### No cuenta con experiencia en el área del desarrollo web. 
 ## *Todos con deseos de crecer en este campo y desarrollar con éxito nuestro proyecto*
 # 5 sitios de referencia indicando brevemente por qué fueron elegidos.
 ## Sitio No.1: https://www.superprof.com/: Tiene el concepto básico del ecommerce que queremos realizar
