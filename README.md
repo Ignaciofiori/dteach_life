@@ -31,4 +31,5 @@
 ###### No cuenta con experiencia en el área del desarrollo web. 
 ### *Todos con deseos de crecer en este campo y desarrollar con éxito nuestro proyecto*
 ## 5 sitios de referencia indicando brevemente por qué fueron elegidos.
-### Sitio No.1: https://www.superprof.com/: Tiene el concepto básico del ecommerce que queremos realizar
+### Sitio No.1: https://www.superprof.com/: Tiene el concepto básico del ecommerce que queremos realizar.
+### Sitio No.2: https://www.tusclases.com.ar/: Interesante como muestra los profesores y filtros para tener en cuenta.
