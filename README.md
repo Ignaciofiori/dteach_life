@@ -1,6 +1,6 @@
 ## grupo_4_dteachlife
 ## ¿Qué productos o servicios brindará nuestro sitio?
-### Se desarrollará un ecommerce en donde entrenadores de diferentes disciplinas se postulen y puedan conectar con personas interesadas en practicar dicha disciplina.
+### Se desarrollará un ecommerce en donde entrenadores de diferentes disciplinas se postulen y puedan conectar con personas interesadas en practicar dicha disciplina, de manera presencial o virtual.
 ## ¿Quién será nuestra audiencia objetivo?
 ### Personas mayores de 18 años que tengan inquietudes por aprender una disciplina o desarrollar una habilidad, mediante la enseñanza ofrecida por un profesional en la materia. 
 ## ¿Cómo ajustaremos nuestra oferta a ese público?
@@ -33,3 +33,6 @@
 ## 5 sitios de referencia indicando brevemente por qué fueron elegidos.
 ### Sitio No.1: https://www.superprof.com/: Tiene el concepto básico del ecommerce que queremos realizar.
 ### Sitio No.2: https://www.tusclases.com.ar/: Interesante como muestra los profesores y filtros para tener en cuenta.
+### Sitio No.3: https://www.airbnb.com/: 
+### Sitio No.4: https://www.udemy.com/:
+### Sitio No.5: https://www.bigbox.com.ar/:
