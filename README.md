@@ -4,7 +4,7 @@
 ## ¿Quién será nuestra audiencia objetivo?
 ### Personas mayores de 18 años que tengan inquietudes por aprender una disciplina o desarrollar una habilidad, mediante la enseñanza ofrecida por un profesional en la materia. 
 ## ¿Cómo ajustaremos nuestra oferta a ese público?
-### Se revisarán los sitios de interés para saber que se está ofreciendo y así identificar las necesidades de nuestra audiencia objetivo
+### Durante el trabajo en equipo se analizarán los sitios de interés para saber que se está ofreciendo y así identificar las necesidades de nuestra audiencia objetivo, al igual que la unificación de las diferentes ideas de los integrantes del grupo.
 ##	Una breve descripción de los integrantes del equipo
 ### *Gustavo Paredes*
 ###### Bogotá - Colombia
@@ -36,3 +36,5 @@
 ### Sitio No.3: https://www.airbnb.com/: 
 ### Sitio No.4: https://www.udemy.com/:
 ### Sitio No.5: https://www.bigbox.com.ar/:
+## Enlace a los Wireframes: https://app.moqups.com/BaDxD2ADsqUntccGBLkmIcOAFeiM2n2z/edit/page/a7700e53b
+## Enlace a Jira: https://amalvestiti.atlassian.net/jira/software/projects/DTEC/boards/3/roadmap?selectedIssue=DTEC-7
