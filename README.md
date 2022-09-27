@@ -36,5 +36,5 @@
 ### Sitio No.3: https://www.airbnb.com/: 
 ### Sitio No.4: https://www.udemy.com/: Es un referente para el diseño de nuestro sitio y la opción de carrito de compras.
 ### Sitio No.5: https://www.bigbox.com.ar/:
-## Enlace a los Wireframes: https://app.moqups.com/BaDxD2ADsqUntccGBLkmIcOAFeiM2n2z/edit/page/a7700e53b
+## Enlace a los Wireframes: https://wireframe.cc/pro/pp/d9f81498d585393
 ## Enlace a Jira: https://amalvestiti.atlassian.net/jira/software/projects/DTEC/boards/3/roadmap?selectedIssue=DTEC-7
