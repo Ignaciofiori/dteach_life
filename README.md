@@ -29,9 +29,10 @@
 ### *Todos con deseos de crecer en este campo y desarrollar con éxito nuestro proyecto*
 ## Fuentes de referencia:
 ### *[Superprof](https://www.superprof.com/):* Tiene el concepto básico del ecommerce que queremos realizar.
-### Sitio No.2: https://www.tusclases.com.ar/: Interesante como muestra los profesores y filtros para tener en cuenta.
-### Sitio No.3: https://www.airbnb.com/: 
-### Sitio No.4: https://www.udemy.com/: Es un referente para el diseño de nuestro sitio y la opción de carrito de compras.
-### Sitio No.5: https://www.bigbox.com.ar/:
-## Enlace a los Wireframes: https://wireframe.cc/pro/pp/d9f81498d585393
-## Enlace a Jira: https://amalvestiti.atlassian.net/jira/software/projects/DTEC/boards/3/roadmap?selectedIssue=DTEC-7
+### *[Tus Clases](https://www.tusclases.com.ar/):* Interesante como muestra los profesores y filtros para tener en cuenta.
+### *[AirBnB](https://www.airbnb.com/):* Nos aporta en el diseño del comercio electrónico.
+### *[Udemy](https://www.udemy.com/):* Es un referente para el diseño de nuestro sitio y la opción de carrito de compras.
+### *[Bigbox](https://www.bigbox.com.ar/):*
+## [Tablero de Actividades](https://amalvestiti.atlassian.net/jira/software/projects/DTEC/boards/3/roadmap?selectedIssue=DTEC-7))
+## [Nustros Wireframes](https://wireframe.cc/pro/pp/d9f81498d585393): 
+
