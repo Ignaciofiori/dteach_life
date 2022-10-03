@@ -28,10 +28,10 @@
 ###### No cuenta con experiencia en el área del desarrollo web. 
 ### *Todos con deseos de crecer en este campo y desarrollar con éxito nuestro proyecto*
 ## Fuentes de referencia:
-### 1. [https://www.superprof.com/](url): Tiene el concepto básico del ecommerce que queremos realizar.
-### [https://www.tusclases.com.ar/](url): Interesante como muestra los profesores y filtros para tener en cuenta.
-### [https://www.airbnb.com/:](url) 
-### [https://www.udemy.com/:](url) Es un referente para el diseño de nuestro sitio y la opción de carrito de compras.
-### [https://www.bigbox.com.ar/:](url)
-## Enlace a los Wireframes: [https://wireframe.cc/pro/pp/d9f81498d585393](url)
-## Enlace a Jira: [https://amalvestiti.atlassian.net/jira/software/projects/DTEC/boards/3/roadmap?selectedIssue=DTEC-7](url)
+### Sitio No.1: https://www.superprof.com/: Tiene el concepto básico del ecommerce que queremos realizar.
+### Sitio No.2: https://www.tusclases.com.ar/: Interesante como muestra los profesores y filtros para tener en cuenta.
+### Sitio No.3: https://www.airbnb.com/: 
+### Sitio No.4: https://www.udemy.com/: Es un referente para el diseño de nuestro sitio y la opción de carrito de compras.
+### Sitio No.5: https://www.bigbox.com.ar/:
+## Enlace a los Wireframes: https://wireframe.cc/pro/pp/d9f81498d585393
+## Enlace a Jira: https://amalvestiti.atlassian.net/jira/software/projects/DTEC/boards/3/roadmap?selectedIssue=DTEC-7
