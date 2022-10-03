@@ -1,4 +1,4 @@
-##![This is an image](https://pin.it/5pPmB3C.svg)Grupo_4_DTeachLife
+##![This is an image](https://pin.it/5pPmB3C](https://cdn-icons-png.flaticon.com/512/704/704914.png?w=740&t=st=1664823346~exp=1664823946~hmac=a73fef4a9030f51d42681b1bd33b6d9d186130b76424c6c9d02a131385152332)Grupo_4_DTeachLife
 ## Servicios de DTeachLife:
 ### Este ecommerce permitirá que entrenadores de diferentes disciplinas se postulen y puedan conectar con personas interesadas en practicar dicha disciplina, de manera presencial o virtual a personas mayores de 18 años que tengan inquietudes por aprender una disciplina o desarrollar una habilidad, mediante la enseñanza ofrecida por un profesional en la materia. 
 ### Durante el trabajo en equipo se analizarán los sitios de interés para saber que se está ofreciendo y así identificar las necesidades de nuestra audiencia objetivo, al igual que la unificación de las diferentes ideas de los integrantes del grupo.
