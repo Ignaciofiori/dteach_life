@@ -28,7 +28,7 @@
 ###### No cuenta con experiencia en el área del desarrollo web. 
 ### *Todos con deseos de crecer en este campo y desarrollar con éxito nuestro proyecto*
 ## Fuentes de referencia:
-### Sitio No.1: ([http://www.google.com]): Tiene el concepto básico del ecommerce que queremos realizar.
+### Sitio No.1: (http://www.google.com): Tiene el concepto básico del ecommerce que queremos realizar.
 ### Sitio No.2: https://www.tusclases.com.ar/: Interesante como muestra los profesores y filtros para tener en cuenta.
 ### Sitio No.3: https://www.airbnb.com/: 
 ### Sitio No.4: https://www.udemy.com/: Es un referente para el diseño de nuestro sitio y la opción de carrito de compras.
