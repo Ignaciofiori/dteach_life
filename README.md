@@ -28,7 +28,7 @@
 ###### No cuenta con experiencia en el área del desarrollo web. 
 ### *Todos con deseos de crecer en este campo y desarrollar con éxito nuestro proyecto*
 ## Fuentes de referencia:
-([url](https://www.superprof.com/))
+([Superprof](https://www.superprof.com/))
 ###Tiene el concepto básico del ecommerce que queremos realizar.
 ### Sitio No.2: https://www.tusclases.com.ar/: Interesante como muestra los profesores y filtros para tener en cuenta.
 ### Sitio No.3: https://www.airbnb.com/: 
