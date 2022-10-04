@@ -1,6 +1,8 @@
 ## Grupo_4_DTeachLife![704914M](https://user-images.githubusercontent.com/101680991/193825809-1d07c223-3f3b-4b20-9dd8-42f021d744df.png)
 ## Servicios de DTeachLife:
-### Este ecommerce permitirá que entrenadores de diferentes disciplinas se postulen y puedan conectar con personas interesadas en practicar dicha disciplina, de manera presencial o virtual a personas mayores de 18 años que tengan inquietudes por aprender una disciplina o desarrollar una habilidad, mediante la enseñanza ofrecida por un profesional en la materia. 
+### Este ecommerce permitirá que entrenadores de diferentes disciplinas se postulen y puedan conectar con personas interesadas en practicar dicha disciplina, de manera presencial o virtual a personas mayores de 18 años que tengan inquietudes por aprender una disciplina o desarrollar una habilidad, mediante la enseñanza ofrecida por un profesional en la materia. ![6627894](https://user-images.githubusercontent.com/101680991/193898912-b065686b-bd63-4788-ab4b-67bd554576ea.png)![6628200](https://user-images.githubusercontent.com/101680991/193899104-af36fd67-dc69-43b2-9ec6-c668c313162b.png)
+
+
 ### Durante el trabajo en equipo se analizarán los sitios de interés para saber que se está ofreciendo y así identificar las necesidades de nuestra audiencia objetivo, al igual que la unificación de las diferentes ideas de los integrantes del grupo.
 ##	Integrantes del equipo
 ### *Gustavo Paredes*
