@@ -33,5 +33,5 @@
 ### *[AirBnB](https://www.airbnb.com/):* Nos aporta en el diseño del comercio electrónico.
 ### *[Udemy](https://www.udemy.com/):* Es un referente para el diseño de nuestro sitio y la opción de carrito de compras.
 ### *[Bigbox](https://www.bigbox.com.ar/):*
-## [Tablero de Actividades](https://amalvestiti.atlassian.net/jira/software/projects/DTEC/boards/3/roadmap?selectedIssue=DTEC-7)
-## [Nuestros Wireframes](https://wireframe.cc/pro/pp/d9f81498d585393)
+### [Tablero de Actividades](https://amalvestiti.atlassian.net/jira/software/projects/DTEC/boards/3/roadmap?selectedIssue=DTEC-7)
+### [Nuestros Wireframes](https://wireframe.cc/pro/pp/d9f81498d585393)
