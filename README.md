@@ -1,4 +1,4 @@
-```![704914M](https://user-images.githubusercontent.com/101680991/193827313-32344e0c-4c1a-40c2-adad-9702b95dad2e.png)
+![704914M](https://user-images.githubusercontent.com/101680991/193827313-32344e0c-4c1a-40c2-adad-9702b95dad2e.png)
 ## Grupo_4_DTeachLife![704914M](https://user-images.githubusercontent.com/101680991/193825809-1d07c223-3f3b-4b20-9dd8-42f021d744df.png)```
 ## Servicios de DTeachLife:
 ### Este ecommerce permitirá que entrenadores de diferentes disciplinas se postulen y puedan conectar con personas interesadas en practicar dicha disciplina, de manera presencial o virtual a personas mayores de 18 años que tengan inquietudes por aprender una disciplina o desarrollar una habilidad, mediante la enseñanza ofrecida por un profesional en la materia. 
