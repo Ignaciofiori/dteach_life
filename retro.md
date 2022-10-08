@@ -1,10 +1,8 @@
-## Grupo_4_DTeachLife![704914M](https://user-images.githubusercontent.com/101680991/193825809-1d07c223-3f3b-4b20-9dd8-42f021d744df.png)
+# Grupo_4_DTeachLife![704914M](https://user-images.githubusercontent.com/101680991/193825809-1d07c223-3f3b-4b20-9dd8-42f021d744df.png)
+## 1. Que no funcionó en el anterior SPRINT (Dejar de hacer - Menos de):
+### 1.1. La asignación de tareas desde el inicio del sprint
 
 
+## 2. Cosas por implementar en este SPRINT (Comenzar a Hacer):
 
-Su equipo es ágil y uno de los secretos de la agilidad es el de fallar rápido para ser
-exitosos más pronto. Piensen qué hicieron bien en el sprint anterior, qué hicieron mal,
-qué deberían empezar a hacer, qué deberían dejar de hacer. Les recomendamos la
-dinámica de estrella de mar que mencionamos anteriormente.
-Entregable: Crear un archivo retro.md en el repositorio y anotar las principales
-conclusiones de la retro del primer sprint.
+## 3. Que estaría bien implementar en el segundo SPRINT (Seguir haciendo - más de):
