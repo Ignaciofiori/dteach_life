@@ -6,4 +6,4 @@
 ### 2.1. Se deben asignar tareas para que los integrandes del grupo se involucren plenamente en el desarrollo del proyecto.
 ### 2.2. Establecer un cronograma de reuniones para analizar el avance y aportar colaborativamente en aquellas cosas que estén rezagadas y afecten la totalidad del proyecto.
 ## 3. Que estaría bien implementar en el segundo SPRINT (Seguir haciendo - más de):
-### Mantener la sincronía en las reuniones y fortalecer el trabajo en equipo.  Se avanzó cuando se realizó la reunión del equipo y se hicieron los wireframes de manera colaborativa.  Se realizan más fácil y ágil las tareas del equipo.
+### 3.1. Mantener la sincronía en las reuniones y fortalecer el trabajo en equipo.  Se avanzó cuando se realizó la reunión del equipo y se hicieron los wireframes de manera colaborativa.  Se realizan más fácil y ágil las tareas del equipo.
