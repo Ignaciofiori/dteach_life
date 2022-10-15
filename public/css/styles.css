@@ -25,11 +25,17 @@ header{
   background-color: #f4eb95;
   height: 10vh;
   padding: 20px;
+  position: fixed;
+  width: 100vw;
 }
 
 .logo {
   text-align: start;
   width: 75%;
+}
+
+.logo img {
+  height: 8vh;
 }
 
 .burger-menu {
@@ -47,7 +53,145 @@ header{
 
 /* Main */
 main {
-  height: 90vh;
+  padding: 10px;
+}
+
+main section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inicio {
+  display: flex;
+  padding-top: 10vh;
+  height: 100vh;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.search-bar {
+  display: flex;
+  height: 50vh;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.search-bar h2 {
+  width: 100%;
+  text-align: center;
+}
+
+.search-bar form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.search-bar form input{
+  position: absolute;
+  width: 100%;
+  height: 5vh;
+  border: none;
+  border-radius: 40px;
+}
+
+.search-bar form button{
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  right: 10px;
+}
+
+.search-bar h4 {
+  width: 100%;
+  text-align: center;
+}
+
+.personal {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 40vh;
+  width: 100%;
+}
+
+.personal div {
+  background-color: #c9da6f;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+}
+
+.personal .left {
+  height: 30vh;
+  width: 25vw;
+}
+
+.personal .center {
+  height: 40vh;
+  width: 25vw;
+}
+
+.personal .right {
+  height: 35vh;
+  width: 25vw;
+}
+
+.pasos {
+  display: flex;
+  flex-wrap: wrap;
+  height: 80vh;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pasos div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.pasos h3 {
+  width: 100%;
+}
+
+.pasos p {
+    padding-top: 20px;
+    width: 75%;
+}
+
+.pasos a {
+  border: 1px solid #120d0e;
+  padding: 20px;
+  width: 50%;
+  border-radius: 40px;
+  text-align: center;
+}
+
+.deportes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin-top: 10px;
+  border-radius: 40px;
+  background-color: #120d0e;
+}
+
+.deportes h2 {
+  color: #ebebeb;
+}
+
+.deportes img {
+  width: 80vw;
 }
 
 /* Footer */
