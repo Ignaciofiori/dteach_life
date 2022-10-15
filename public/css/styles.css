@@ -2,9 +2,10 @@
 Paleta de colores:
   Negro: #120d0e
   Azul: #12384b
-  Verde: #63c65f
-  color4: #c9da6f
+  Verde oscuro: #63c65f
+  Verde claro: #c9da6f
   Amarillo: #f4eb95
+  Gris claro: #ebebeb
 */
 * {
   margin: 0px;
@@ -14,5 +15,59 @@ Paleta de colores:
 
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: #ebebeb;
+}
+
+/* Header */
+header{
+  display: flex;
+  align-items: center;
+  background-color: #f4eb95;
+  height: 10vh;
+  padding: 20px;
+}
+
+.logo {
+  text-align: start;
+  width: 75%;
+}
+
+.burger-menu {
+  text-align: end;
+  width: 25%;
+}
+
+.burger-menu i {
   background-color: #120d0e;
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 12px;
+  color: #ebebeb;
+}
+
+/* Main */
+main {
+  height: 90vh;
+}
+
+/* Footer */
+footer {
+  background-color: #f4eb95;
+  padding: 10px;
+}
+
+footer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.redes {
+  flex-direction: row;
+  margin: auto;
+}
+
+.redes a {
+  padding: 5px;
 }
