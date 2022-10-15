@@ -54,6 +54,7 @@ header{
 /* Main */
 main {
   padding: 10px;
+  padding-top: 10vh;
 }
 
 main section {
@@ -65,8 +66,7 @@ main section {
 
 .inicio {
   display: flex;
-  padding-top: 10vh;
-  height: 100vh;
+  height: 90vh;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
