@@ -1,0 +1,67 @@
+  /* 
+Paleta de colores:
+Negro: #120d0e
+Azul: #12384b
+Verde oscuro: #63c65f
+Verde claro: #c9da6f
+Amarillo: #f4eb95
+Gris claro: #ebebeb
+*/
+
+:root{
+  
+  --bordes-color:#c9da6f;
+  --texto-color: #63c65f;
+  --boton-text-color:#f4eb95;
+  color:var(--texto-color)
+}
+
+
+
+section{
+    display: flex;
+    justify-content: center;
+}
+.contenedorRegistro{
+  width: 50vw;
+justify-content: center;
+text-align: center;
+  flex-wrap: wrap;
+
+  border: .5em solid var(--bordes-color) ;
+  box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
+  
+}
+
+
+.nombreYApellido{
+    display: flex;
+    width:100% ;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1em  ;
+    padding-bottom:1em;
+}
+.nombre input{
+    width: 70%;
+}
+.apellido input {
+    width: 70%;
+}
+.mail input{
+    width: 45%
+}
+.formDecoracion{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.contraseña input{
+    width: 45%
+}
+.boton button{
+    background-color: var(--bordes-color);
+    color:var(--boton-text-color) ;
+    border-radius: 20%;
+    border-color: var(--bordes-color);
+ 
+}
