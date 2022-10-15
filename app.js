@@ -1,37 +1,30 @@
-const express = require('express');
-const { dirname } = require('path');
-const path = require("path")
-const app = express()
+const express = require("express");
+const path = require("path");
+const app = express();
 
-app.listen(3030, ()=> console.log(path.join(__dirname, './views/index.html')));
+const port = process.env.PORT || 3030;
+app.listen(port, () => {
+  console.log(`Servidor ON. http://localhost:${port}/`);
+});
 
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, './views/index.html'))
+const publicPath = path.resolve(__dirname, "./public");
+app.use(express.static(publicPath));
 
-})
-app.get('/productDetail.html', (req, res) => {
-    res.sendFile(path.join(__dirname,'./views/productDetail.html'))
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "./views/index.html"));
+});
+app.get("/productDetail.html", (req, res) => {
+  res.sendFile(path.join(__dirname, "./views/productDetail.html"));
+});
 
-})
+app.get("/productCart.html", (req, res) => {
+  res.sendFile(path.join(__dirname, "./views/productCart.html"));
+});
 
-app.get('/productCart.html', (req, res) => {
-    res.sendFile(path.join(__dirname, './views/productCart.html'))
+app.get("/register.html", (req, res) => {
+  res.sendFile(path.join(__dirname, "./views/register.html"));
+});
 
-
-})
-
-app.get('/register.html', (req, res) => {
-    res.sendFile(path.join(__dirname, './views/register.html'))
-
-})
-
-app.get('/login.html', (req, res) => {
-    res.sendFile(path.join(--dirname, './views/login.html'))
-
-})
-
-app.use(express.static('public'))
-
-
-
-
+app.get("/login.html", (req, res) => {
+  res.sendFile(path.join(--dirname, "./views/login.html"));
+});
