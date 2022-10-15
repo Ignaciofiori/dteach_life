@@ -28,6 +28,7 @@ header{
   padding: 20px;
   position: fixed;
   width: 100vw;
+  z-index: 1;
 }
 
 .logo {
@@ -92,7 +93,7 @@ main section {
   display: flex;
   align-items: center;
   width: 100%;
-  z-index: -1;
+  
 }
 
 .search-bar form input{
@@ -131,16 +132,28 @@ main section {
 }
 
 .personal .left {
+  background-image: url("/images/personal-man.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   height: 30vh;
   width: 25vw;
 }
 
 .personal .center {
+  background-image: url("/images/personal-women.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   height: 40vh;
   width: 25vw;
 }
 
 .personal .right {
+  background-image: url("/images/personal-man2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   height: 35vh;
   width: 25vw;
 }
