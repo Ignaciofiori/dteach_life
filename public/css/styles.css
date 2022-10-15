@@ -91,6 +91,7 @@ main section {
   display: flex;
   align-items: center;
   width: 100%;
+  z-index: -1;
 }
 
 .search-bar form input{
