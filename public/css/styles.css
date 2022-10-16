@@ -7,7 +7,17 @@ Paleta de colores:
   Amarillo: #f4eb95
   Gris claro: #ebebeb
 */
-  @import url(../css/fomulario.css);
+@import url(/css/fomulario.css);
+@import url(/css/product.css);
+@import url(/css/productDetail.css);
+
+:root{
+  --bordes-color:#c9da6f;
+  --texto-color: #12384b;
+  --boton-text-color:#f4eb95;
+  color:var(--texto-color)
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -73,7 +83,7 @@ header nav ul li a {
 /* Main */
 main {
   padding: 10px;
-  padding-top: 10vh;
+  padding-top: 11vh;
 }
 
 main section {
@@ -119,6 +129,7 @@ main section {
   height: 5vh;
   border: none;
   border-radius: 40px;
+  padding-left: 10px;
 }
 
 .search-bar form button{

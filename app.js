@@ -13,8 +13,13 @@ app.use(express.static(publicPath));
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "./views/home.html"));
 });
+
 app.get("/product", (req, res) => {
   res.sendFile(path.join(__dirname, "./views/product.html"));
+});
+
+app.get("/productDetail", (req, res) => {
+  res.sendFile(path.join(__dirname, "./views/productDetail.html"));
 });
 
 app.get("/cart", (req, res) => {

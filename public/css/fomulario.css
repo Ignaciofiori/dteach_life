@@ -1,27 +1,3 @@
-  /* 
-Paleta de colores:
-Negro: #120d0e
-Azul: #12384b
-Verde oscuro: #63c65f
-Verde claro: #c9da6f
-Amarillo: #f4eb95
-Gris claro: #ebebeb
-*/
-
-:root{
-  
-  --bordes-color:#c9da6f;
-  --texto-color: #63c65f;
-  --boton-text-color:#f4eb95;
-  color:var(--texto-color)
-}
-
-
-
-section{
-    display: flex;
-    justify-content: center;
-}
 .contenedorRegistro{
   width: 50vw;
 justify-content: center;
@@ -32,7 +8,6 @@ text-align: center;
   box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
   
 }
-
 
 .nombreYApellido{
     display: flex;
