@@ -13,7 +13,7 @@ Gris claro: #ebebeb
   --bordes-color:#c9da6f;
   --texto-color: #63c65f;
   --boton-text-color:#f4eb95;
-  color:var(--texto-color)
+
 }
 
 
@@ -21,7 +21,8 @@ Gris claro: #ebebeb
 section{
     display: flex;
     justify-content: center;
-}
+  
+  }
 .contenedorRegistro{
   width: 90vw;
 justify-content: center;
@@ -73,4 +74,15 @@ h3 {
 }
 .contenedorRegistro a {
   font-size: 0.8em;
+}
+/*Articulo*/
+article form div{
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
+}
+
+article form div h2{
+  font-size: 1em;
 }
