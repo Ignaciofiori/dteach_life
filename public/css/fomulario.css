@@ -86,3 +86,7 @@ article form div{
 article form div h2{
   font-size: 1em;
 }
+
+.contenedorRegistro .etiquetaTitulo{
+  display: none;
+}
