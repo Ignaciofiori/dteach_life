@@ -21,7 +21,6 @@ Gris claro: #ebebeb
 section{
     display: flex;
     justify-content: center;
-    
 }
 .contenedorRegistro{
   width: 90vw;
@@ -34,7 +33,7 @@ text-align: center;
   
 }
 
-/* contenedor nombre y apellido*/
+
 .nombreYApellido{
   border: var(--bordes-color) .2em dotted ;
 }
