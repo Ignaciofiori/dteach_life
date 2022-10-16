@@ -21,9 +21,10 @@ Gris claro: #ebebeb
 section{
     display: flex;
     justify-content: center;
+    
 }
 .contenedorRegistro{
-  width: 50vw;
+  width: 90vw;
 justify-content: center;
 text-align: center;
   flex-wrap: wrap;
@@ -33,14 +34,17 @@ text-align: center;
   
 }
 
-
+/* contenedor nombre y apellido*/
 .nombreYApellido{
-    display: flex;
-    width:100% ;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 1em  ;
-    padding-bottom:1em;
+  border: var(--bordes-color) .2em dotted ;
+}
+/*-----------------------------*/
+
+input{
+  box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
+  border-radius: 10px;
+  font-size: 0.2 em;
+  text-align: center;
 }
 .nombre input{
     width: 70%;
@@ -49,19 +53,25 @@ text-align: center;
     width: 70%;
 }
 .mail input{
-    width: 45%
+    width: 70%
 }
 .formDecoracion{
     padding-top: 1em;
     padding-bottom: 1em;
 }
 .contraseña input{
-    width: 45%
+    width: 70%
 }
 .boton button{
     background-color: var(--bordes-color);
     color:var(--boton-text-color) ;
     border-radius: 20%;
     border-color: var(--bordes-color);
- 
+}
+
+h3 {
+  font-size: 1em;
+}
+.contenedorRegistro a {
+  font-size: 0.8em;
 }
