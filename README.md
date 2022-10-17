@@ -1,4 +1,4 @@
-![Logotipo](https://github.com/alvaarom/grupo_4_dteachlife/blob/main/public/images/logo.png =200x200)
+![Logotipo](https://github.com/alvaarom/grupo_4_dteachlife/blob/main/public/images/logo.png){:height="200px" width="200px"}.
 ___
 ### Visita nuestro eCommerce ahora!
 [Click aca](https://dteachlife.onrender.com)
