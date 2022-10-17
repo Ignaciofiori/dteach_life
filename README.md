@@ -18,39 +18,39 @@ ___
 ## Integrantes del equipo :busts_in_silhouette:
 
 #### Gustavo Paredes :boy:
-:colombia: Bogotá - Colombia
-:books: Estudiante de Ingeniera de Software
-:raised_hands: Experiencia en diseño Web y Programación
+  - :colombia: Bogotá - Colombia
+  - :books: Estudiante de Ingeniera de Software
+  - :raised_hands: Experiencia en diseño Web y Programación
 
 #### Juan J. Durán :boy:
-:argentina: Bs As, Argentina
-:books: Actualmente está como capitán fluvial en la industría marítima
+  - :argentina: Bs As, Argentina
+  - :books: Actualmente está como capitán fluvial en la industría marítima
 
 #### Alvaro Malvestiti :boy:
-:argentina: Rosario, Santa Fe, Argentina.
-:books: Desarrollador.
-:raised_hands: Apasionado por la tecnologia.
+  - :argentina: Rosario, Santa Fe, Argentina.
+  - :books: Desarrollador.
+  - :raised_hands: Apasionado por la tecnologia.
 
 #### Ignacio Fiori :boy:
-:argentina: Buenos Aires, Argentina
-:books: Actualmente trabaja en el área de gastronomía
-:raised_hands: Disfruta de las actividades al aire libre
+  - :argentina: Buenos Aires, Argentina
+  - :books: Actualmente trabaja en el área de gastronomía
+  - :raised_hands: Disfruta de las actividades al aire libre
 
 #### Anny Rodríguez girl:
-:colombia: Floridablanca, Santander, Colombia
-:books: Ingeniera de Sistemas
-:raised_hands: La experiencia profesional ha estado desarrollado en el campo de la tecnología con programas del gobierno. No tiene experiencia en desarrollo Web.
+  - :colombia: Floridablanca, Santander, Colombia
+  - :books: Ingeniera de Sistemas
+  - :raised_hands: La experiencia profesional ha estado desarrollado en el campo de la tecnología con programas del gobierno. No tiene experiencia en desarrollo Web.
 
 #### Rómulo :boy:
-:argentina: Capital Federal, Argentina
-:books: Ing. Industrial e Ing. en Calidad.
-:raised_hands: Actualmente dirige su importadora y realiza asesorías y servicios a empresas.
+  - :argentina: Capital Federal, Argentina
+  - :books: Ing. Industrial e Ing. en Calidad.
+  - :raised_hands: Actualmente dirige su importadora y realiza asesorías y servicios a empresas.
 
 Todos con deseos de crecer en este campo y desarrollar con éxito nuestro proyecto
 ___
 ## Con estos sitios nos inspiramos
-  - [Superprof](https://www.superprof.com/):_ Tiene el concepto básico del ecommerce que queremos realizar.
-  - [Tus Clases](https://www.tusclases.com.ar/):_ Interesante como muestra los profesores y filtros para tener en cuenta.
-  - [AirBnB](https://www.airbnb.com/):_ Nos aporta en el diseño del comercio electrónico.
-  - [Udemy](https://www.udemy.com/):_ Es un referente para el diseño de nuestro sitio y la opción de carrito de compras.
-  - [Bigbox](https://www.bigbox.com.ar/):_
+  - [Superprof](https://www.superprof.com/): Tiene el concepto básico del ecommerce que queremos realizar.
+  - [Tus Clases](https://www.tusclases.com.ar/): Interesante como muestra los profesores y filtros para tener en cuenta.
+  - [AirBnB](https://www.airbnb.com/): Nos aporta en el diseño del comercio electrónico.
+  - [Udemy](https://www.udemy.com/): Es un referente para el diseño de nuestro sitio y la opción de carrito de compras.
+  - [Bigbox](https://www.bigbox.com.ar/)
