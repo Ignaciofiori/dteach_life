@@ -1,4 +1,4 @@
-## Grupo_4_DTeachLife![704914M](https://user-images.githubusercontent.com/101680991/193825809-1d07c223-3f3b-4b20-9dd8-42f021d744df.png)
+# DTeachLife ![Logotipo](https://github.com/alvaarom/grupo_4_dteachlife/blob/main/public/images/logo.png)
 
 ## Servicios de DTeachLife![3917538](https://user-images.githubusercontent.com/101680991/193915299-8336aca2-d1c3-4e7b-be69-79dd1d7ecc72.png):
 
