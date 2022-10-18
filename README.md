@@ -36,7 +36,7 @@ ___
   - :books: Actualmente trabaja en el área de gastronomía
   - :raised_hands: Disfruta de las actividades al aire libre
 
-#### Anny Rodríguez girl:
+#### Anny Rodríguez :girl:
   - :colombia: Floridablanca, Santander, Colombia
   - :books: Ingeniera de Sistemas
   - :raised_hands: La experiencia profesional ha estado desarrollado en el campo de la tecnología con programas del gobierno. No tiene experiencia en desarrollo Web.
