@@ -1,5 +1,5 @@
 ![Logotipo](https://github.com/alvaarom/grupo_4_dteachlife/blob/main/public/images/logo.png)
-# [SPRINT No.1](https://github.com/alvaarom/grupo_4_dteachlife/blob/main/public/images/3914065.png)
+# SPRINT No.1: :(https://github.com/alvaarom/grupo_4_dteachlife/blob/main/public/images/3914065.png):
 ## 1. Que no funcionó en el anterior SPRINT (Dejar de hacer - Menos de):
 ### 1.1. La asignación de tareas desde el inicio del sprint
 ### 1.2. Coincidir en las reuniones programadas
