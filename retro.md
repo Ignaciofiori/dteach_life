@@ -1,5 +1,5 @@
 ![Logotipo](https://github.com/alvaarom/grupo_4_dteachlife/blob/main/public/images/logo.png)
-# SPRINT No.1: :(https://github.com/alvaarom/grupo_4_dteachlife/blob/main/public/images/3914065.png):
+# SPRINT No.1: :hourglass_flowing_sand:
 ## 1. Que no funcionó en el anterior SPRINT (Dejar de hacer - Menos de):
 ### 1.1. La asignación de tareas desde el inicio del sprint
 ### 1.2. Coincidir en las reuniones programadas
@@ -9,9 +9,11 @@
 ## 3. Que estaría bien implementar en el segundo SPRINT (Seguir haciendo - más de):
 ### 3.1. Mantener la sincronía en las reuniones y fortalecer el trabajo en equipo.  Se avanzó cuando se realizó la reunión del equipo y se hicieron los wireframes de manera colaborativa.  Se realizan más fácil y ágil las tareas del equipo.
 ___
-# SPRINT No.2:
-
-#### Gustavo Paredes :boy:
-  - :colombia: Bogotá - Colombia
-  - :books: Estudiante de Ingeniera de Software
-  - :raised_hands: Experiencia en diseño Web y Programación
+# SPRINT No.2: :leftwards_arrow_with_hook:
+## 1. Que no funcionó en el anterior SPRINT (Dejar de hacer - Menos de):
+### 1.1. Coincidir para trabajar al mismo tiempo.
+## 2. Cosas por implementar en este SPRINT (Comenzar a Hacer):
+### 2.1. Analizar y asignar tareas a cada integrante del equipo.
+## 3. Que estaría bien implementar en el segundo SPRINT (Seguir haciendo - más de):
+### 3.1. Fortalecer el trabajo en equipo.  Seguir comprometidos con sacar el proyecto adelante indistitamente de quien tiene una tarea establecida.
+### 3.2. Las reuniones de equipo.
