@@ -1,4 +1,5 @@
 ![Logotipo](https://github.com/alvaarom/grupo_4_dteachlife/blob/main/public/images/logo.png)
+___
 # SPRINT No.1: :hourglass_flowing_sand:
 ## 1. Que no funcionó en el anterior SPRINT (Dejar de hacer - Menos de):
 ### 1.1. La asignación de tareas desde el inicio del sprint
@@ -17,3 +18,4 @@ ___
 ## 3. Que estaría bien implementar en el segundo SPRINT (Seguir haciendo - más de):
 ### 3.1. Fortalecer el trabajo en equipo.  Seguir comprometidos con sacar el proyecto adelante indistitamente de quien tiene una tarea establecida.
 ### 3.2. Las reuniones de equipo.
+___
