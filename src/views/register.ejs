@@ -1,0 +1,46 @@
+<%- include("./partials/head.ejs") %>
+<%- include("./partials/header.ejs") %>
+    <main>
+        <section>
+            <div class="contenedorRegistro">
+                    <h1>Registrarte</h1>
+                <form class="register-form" action="/" method="GET">
+                <div class="nombreYApellido formDecoracion">
+                        <div class="nombre">
+                        <label class="etiquetaTitulo" for="name">Nombre:</label>
+                        <br>
+                        <input type="text" class="input-register" name="name" id="name" placeholder="Nombre">
+                        </div>
+                        <div class="apellido">
+                        <label class="etiquetaTitulo" for="name">Apellido:</label>
+                        <br>
+                        <input type="text" class="input-register" name="name" id="name" placeholder="Apellido">
+                        </div>
+                    </div>
+                <div class="mail formDecoracion">
+                    <label class="etiquetaTitulo" for="email">Correo</label>
+                    <br>
+                    <input type="email" class="input-register" name="email" id="email" placeholder="xxxx@tumail.com">
+                </div>
+
+                <div class="contraseña formDecoracion">
+                    <label class="etiquetaTitulo" for="password">Contraseña</label>
+                    <br>
+                    <input type="password" class="contraseña" name="password" id="password" placeholder="escribi tu clave">
+                </div>
+                <div class="boton formDecoracion">
+                    <button class="submit" type="submit">Enviar</button>
+                    <button class="reset" type="reset">Borrar</button>
+                </div>
+
+
+            </div>
+
+                </form>
+
+
+            </div>
+        </section>
+
+    </main>
+<%- include("./partials/footer.ejs") %>

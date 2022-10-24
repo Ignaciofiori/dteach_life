@@ -1,0 +1,46 @@
+<%- include("./partials/head.ejs") %>
+<%- include("./partials/header.ejs") %>
+    <main>
+        <section class="inicio-product">
+            <div class="search-bar-product">
+                <form action="/product" method="get">
+                    <input type="search" name="search" id="search" placeholder="Busqueda realizada">
+                    <button type="submit"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <h4>Profes de futbol:</h4>
+            </div>
+        </section>
+        <section class="product">
+            <a href="/productDetail">
+                <article>
+                    <div class="image">
+                        <h2>Nombre</h2>
+                        <p>Ubicacion (Modalidad)</p>
+                    </div>
+                    <p>Descripcion del profesor</p>
+                    <p>$$$ /clase</p>
+                </article>
+            </a>
+            <a href="/productDetail">
+                <article>
+                    <div class="image">
+                        <h2>Nombre</h2>
+                        <p>Ubicacion (Modalidad)</p>
+                    </div>
+                    <p>Descripcion del profesor</p>
+                    <p>$$$ /clase</p>
+                </article>
+            </a>
+            <a href="/productDetail">
+                <article>
+                    <div class="image">
+                        <h2>Nombre</h2>
+                        <p>Ubicacion (Modalidad)</p>
+                    </div>
+                    <p>Descripcion del profesor</p>
+                    <p>$$$ /clase</p>
+                </article>
+            </a>
+        </section>
+    </main>
+<%- include("./partials/footer.ejs") %>

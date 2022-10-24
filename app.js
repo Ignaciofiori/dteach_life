@@ -8,30 +8,31 @@ app.listen(port, () => {
 });
 
 app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "./src/views"));
 
 const publicPath = path.resolve(__dirname, "./public");
 app.use(express.static(publicPath));
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "./views/home.html"));
+  res.render("home");
 });
 
 app.get("/product", (req, res) => {
-  res.sendFile(path.join(__dirname, "./views/product.html"));
+  res.render("product");
 });
 
 app.get("/productDetail", (req, res) => {
-  res.sendFile(path.join(__dirname, "./views/productDetail.html"));
+  res.render("productDetail");
 });
 
 app.get("/cart", (req, res) => {
-  res.sendFile(path.join(__dirname, "./views/cart.html"));
+  res.render("cart");
 });
 
 app.get("/register", (req, res) => {
-  res.sendFile(path.join(__dirname, "./views/register.html"));
+  res.render("register");
 });
 
 app.get("/login", (req, res) => {
-  res.sendFile(path.join(__dirname, "./views/login.html"));
+  res.render("login");
 });

@@ -1,0 +1,46 @@
+<%- include("./partials/head.ejs") %>
+<%- include("./partials/header.ejs") %>
+    <main>
+        <section class="inicio">
+            <div class="search-bar">
+                <h2>Encontra a tu profe ideal</h2>
+                <form action="/product" method="get">
+                    <input type="search" name="search" id="search" placeholder="Buscar...">
+                    <button type="submit"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <h4>Elegi entre todos nuestros profesores con modalidad en linea o presencial.</h4>
+            </div>
+            <div class="personal">
+                <div class="left"></div>
+                <div class="center"></div>
+                <div class="right"></div>
+            </div>
+        </section>
+        <section>
+            <div class="pasos">
+                <h2>Entrenar nunca fue tan facil</h2>
+                <div>
+                    <h3>1. Busca</h2>
+                    <p>Buscá con toda libertad entre varios perfiles y contactá al profesor que más se acerque a tus necesidades.</p>
+                </div>
+                <div>
+                    <h3>2. Elegi</h2>
+                    <p>Rápidamente, prodas seleccionar la cantidad de clases que quieres tomar con tu profesor.</p>
+                </div>
+                <div>
+                    <h3>3. Entrena</h2>
+                    <p>Ya no tenes mas excusas, estas preparado para ponerte a entrenar.</p>
+                </div>
+                <a href="#">Saber mas...</a>
+            </div>
+        </section>
+        <section>
+            <div class="deportes">
+                <h2>Miles de deportes por conocer</h2>
+                <img src="/images/deportes.jpg" alt="deportes">
+                <img src="/images/deportes.jpg" alt="deportes">
+                <img src="/images/deportes.jpg" alt="deportes">
+            </div>
+        </section>
+    </main>
+<%- include("./partials/footer.ejs") %>
