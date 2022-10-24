@@ -1,21 +1,17 @@
-/* 
-Paleta de colores:
-  Negro: #120d0e
-  Azul: #12384b
-  Verde oscuro: #63c65f
-  Verde claro: #c9da6f
-  Amarillo: #f4eb95
-  Gris claro: #ebebeb
-*/
 @import url(/css/fomulario.css);
 @import url(/css/product.css);
 @import url(/css/productDetail.css);
 
 :root{
-  --bordes-color:#c9da6f;
-  --texto-color: #12384b;
-  --boton-text-color:#f4eb95;
-  color:var(--texto-color)
+  --dark: #120d0e;
+  --medium: #666;
+  --light: #ebebeb;
+  --font-dark: #12384b;
+  --font-light: #ebebeb;
+  --primary-color:#63c65f;
+  --secondary-color: #f4eb95;
+  color:var(--font-light);
+  background-color:var(--dark);
 }
 
 * {
@@ -26,14 +22,22 @@ Paleta de colores:
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #ebebeb;
+  background-color: var(--medium);
+}
+
+a {
+  color: var(--light)
+}
+
+a:hover{
+  color: var(--primary-color);
 }
 
 /* Header */
 header{
   display: flex;
   align-items: center;
-  background-color: #f4eb95;
+  background-color: var(--dark);
   height: 10vh;
   padding: 20px;
   position: fixed;
@@ -48,8 +52,10 @@ header{
 }
 
 .logo img {
-  height: 8vh;
-
+  height: 8vh; 
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--light);
 }
 
 header nav {
@@ -73,7 +79,6 @@ header nav ul li a {
 }
 
 .burger-menu i {
-  background-color: #120d0e;
   font-size: 16px;
   border-radius: 10px;
   padding: 12px;
@@ -82,7 +87,6 @@ header nav ul li a {
 
 /* Main */
 main {
-  padding: 10px;
   padding-top: 11vh;
 }
 
@@ -154,7 +158,6 @@ main section {
 }
 
 .personal div {
-  background-color: #c9da6f;
   border-top-right-radius: 40px;
   border-top-left-radius: 40px;
 }
@@ -189,9 +192,16 @@ main section {
 .pasos {
   display: flex;
   flex-wrap: wrap;
-  height: 80vh;
+  height: 100vh;
   justify-content: space-around;
   align-items: center;
+  background-color: var(--light);
+}
+
+.pasos h2 {
+  width: 100%;
+  text-align: center;
+  color: var(--font-dark);
 }
 
 .pasos div {
@@ -199,48 +209,60 @@ main section {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-}
-
-.pasos h3 {
   width: 100%;
 }
 
-.pasos p {
-    padding-top: 20px;
-    width: 75%;
+.pasos div h3 {
+  color: var(--font-dark);
 }
 
-.pasos a {
-  border: 1px solid #120d0e;
+.pasos div p {
+    padding-top: 20px;
+    width: 75%;
+    color: var(--font-dark);
+}
+
+.pasos div a {
+  border: 1px solid var(--font-dark);
+  color: var(--font-dark);
   padding: 20px;
   width: 50%;
   border-radius: 40px;
   text-align: center;
 }
 
+.pasos div a:hover {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
 .deportes {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
+  align-items: flex-start;
   height: 100vh;
-  margin-top: 10px;
-  border-radius: 40px;
-  background-color: #120d0e;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/deportes.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover; 
 }
 
 .deportes h2 {
-  color: #ebebeb;
-}
-
-.deportes img {
-  width: 80vw;
+  color: var(--font-light);
+  padding: 40px;
+  text-align: center;
 }
 
 /* Footer */
 footer {
-  background-color: #f4eb95;
+  background-color: var(--dark);
   padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
 }
 
 footer div {
@@ -248,13 +270,49 @@ footer div {
   flex-direction: column;
   align-items: center;
   margin-bottom: 10px;
+  width: 100%;
 }
 
 .redes {
   flex-direction: row;
   margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .redes a {
   padding: 5px;
+}
+
+@media screen and (min-width:480px) {
+  
+}
+
+@media screen and (min-width:800px) {
+  .search-bar {
+    width: 50%;
+  }
+  .personal {
+    width: 50%;
+    height: 90vh;
+  }
+  .personal .left{
+    height: 60vh;
+    width: 14vw;
+  }
+  .personal .center{
+    height: 80vh;
+    width: 14vw;
+  }
+  .personal .right{
+    height: 70vh;
+    width: 14vw;
+  }
+  .pasos div {
+    width: 50%;
+  }
+  footer div {
+    width: 33%;
+  }
 }
