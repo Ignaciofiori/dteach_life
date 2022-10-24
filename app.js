@@ -7,6 +7,8 @@ app.listen(port, () => {
   console.log(`Servidor ON. http://localhost:${port}/`);
 });
 
+app.set("view engine", "ejs");
+
 const publicPath = path.resolve(__dirname, "./public");
 app.use(express.static(publicPath));
 
