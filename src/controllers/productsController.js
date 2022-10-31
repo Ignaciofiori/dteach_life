@@ -29,6 +29,11 @@ const controller = {
   cart: (req, res) => {
     res.render("cart");
   },
-};
+  edit:(req,res)=>{
+    res.render('productsEdit')
+   }
+  
 
+};
+ 
 module.exports = controller;
