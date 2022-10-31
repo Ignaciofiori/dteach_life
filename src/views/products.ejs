@@ -11,36 +11,17 @@
             </div>
         </section>
         <section class="product">
+           <% for (let i in profesores){ %> 
             <a href="/products/detail">
                 <article>
                     <div class="image">
-                        <h2>Nombre</h2>
-                        <p>Ubicacion (Modalidad)</p>
+                        <h2><%- profesores[i].name%> </h2>
+                        <p><%- profesores[i].ubicacion%></p>
                     </div>
-                    <p>Descripcion del profesor</p>
-                    <p>$$$ /clase</p>
+                    <p><%- profesores[i].descripcion%></p>
+                    <p><%- profesores[i].precio%>/clase</p>
                 </article>
-            </a>
-            <a href="/products/detail">
-                <article>
-                    <div class="image">
-                        <h2>Nombre</h2>
-                        <p>Ubicacion (Modalidad)</p>
-                    </div>
-                    <p>Descripcion del profesor</p>
-                    <p>$$$ /clase</p>
-                </article>
-            </a>
-            <a href="/products/detail">
-                <article>
-                    <div class="image">
-                        <h2>Nombre</h2>
-                        <p>Ubicacion (Modalidad)</p>
-                    </div>
-                    <p>Descripcion del profesor</p>
-                    <p>$$$ /clase</p>
-                </article>
-            </a>
+            <% } %> 
         </section>
     </main>
 <%- include("./partials/footer.ejs") %>
