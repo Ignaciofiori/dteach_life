@@ -1,13 +1,13 @@
 const controller = {
   index: (req, res) => {
-    res.render('home')
+    res.render('./home/index');
   },
   login: (req, res) => {
-    res.render('login')
+    res.render('./auth/login');
   },
   register: (req, res) => {
-    res.render('register')
-  }
-}
+    res.render('./auth/register');
+  },
+};
 
-module.exports = controller
+module.exports = controller;

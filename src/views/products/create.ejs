@@ -1,0 +1,56 @@
+<%- include("../partials/head.ejs") %>
+<%- include("../partials/header.ejs") %>
+    <main>
+        <section class="inicio-product">
+            <div class="search-bar-product">
+                <h4>Editar</h4>
+            </div>
+        </section>
+        <section class="product">
+           
+         <form action="/edit" method="post">
+            <div class="editProducto"> 
+            <label for="clase">Actividad</label>
+            <input type="text" name="clase">
+            <br>
+            <label for="precio">Precio</label>
+            <input type="number" name="clase" placeholder="$" >
+            <br>
+            <label for="clase">Cantida de hs</label>
+            <input type="number" name="clase" placeholder="Qty" >
+            <br>
+            <label for="clase">intensidad</label>
+            <div class="intensidad">
+
+            <input type="radio" id="1" name="intensidad" value="1">
+            
+            <label for="1">principiante</label>
+        </div>
+        <div class="intensidad">
+      
+            <input type="radio" id="2" name="intensidad" value="2">
+            <label for="2">amater</label>
+
+        </div>
+        <div class="intensidad">
+      
+            <input type="radio" id="3" name="intensidad" value="3">
+        
+            <label for="3">profesional</label>
+        </div>
+
+        <label for="img">imagen</label>
+        
+        <input type="file"  name="imagenProducto" alt="Submit" width="48" height="48">
+        <br>
+        <button class="submit" type="submit">Cargar</button>
+                
+    </div>
+           
+    
+         </form>   
+        
+
+        </section>
+    </main>
+<%- include("../partials/footer.ejs") %>

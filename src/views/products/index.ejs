@@ -1,5 +1,5 @@
-<%- include("./partials/head.ejs") %>
-<%- include("./partials/header.ejs") %>
+<%- include("../partials/head.ejs") %>
+<%- include("../partials/header.ejs") %>
     <main>
         <section class="inicio-product">
             <div class="search-bar-product">
@@ -11,17 +11,17 @@
             </div>
         </section>
         <section class="product">
-           <% for (let i in profesores){ %> 
-            <a href="/products/detail">
+           <% for (let i in products){ %> 
+            <a href="/products/detail/<%= i %>"  >
                 <article>
                     <div class="image">
-                        <h2><%=  profesores[i].name %> </h2>
-                        <p><%= profesores[i].ubicacion %></p>
+                        <h2><%=  products[i].name %> </h2>
+                        <p><%= products[i].ubicacion %></p>
                     </div>
-                    <p><%= profesores[i].descripcion %></p>
-                    <p><%= profesores[i].precio %>/clase</p>
+                    <p><%= products[i].descripcion %></p>
+                    <p><%= products[i].precio %>/clase</p>
                 </article>
             <% } %> 
         </section>
     </main>
-<%- include("./partials/footer.ejs") %>
+<%- include("../partials/footer.ejs") %>

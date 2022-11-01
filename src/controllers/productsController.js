@@ -1,40 +1,23 @@
-const profesores = [
-  {
-    id: '1',
-    name: 'Ricardo Villalobos',
-    ubicacion: 'Beccar, San Isidro',
-    descripcion: 'Sociable y dinamico entrenamiento de futbol',
-    precio: '500$'
-  },
-  {
-    id: '2',
-    name: 'Juan Abate',
-    ubicacion: 'Flores, CABA',
-    descripcion: 'Entrenamiento de preparacion fisica de futbol',
-    precio: '700$'
-  },
-  {
-    id: '3',
-    name: 'Alejandro Broggi',
-    ubicacion: 'Olivos, Vicente lopez',
-    descripcion: 'Entrenamiento recreativo de futbol',
-    precio: '500$'
-  }
-]
+const products = require('../database/products');
 
 const controller = {
   index: (req, res) => {
-    res.render('products', { profesores })
+    res.render('products/index', { products });
+  },
+  create: (req, res) => {
+    res.render('products/create');
   },
   detail: (req, res) => {
-    res.render('productDetail')
-  },
-  cart: (req, res) => {
-    res.render('cart')
+    const id = req.params.id;
+    res.render('products/detail', { id, products });
   },
   edit: (req, res) => {
-    res.render('productsEdit')
-  }
-}
+    const id = req.params.id;
+    res.render('products/edit', { id });
+  },
+  cart: (req, res) => {
+    res.render('products/cart');
+  },
+};
 
-module.exports = controller
+module.exports = controller;
