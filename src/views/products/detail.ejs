@@ -3,31 +3,31 @@
     <main>
         <section class="detail">
             <div class="header-datail">
-                <div class="image">
-                    <h2>Nombre</h2>
-                    <p>Ubicacion (Modalidad)</p>
+                <div class="image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/<%= producto.imagen %>');">
+                    <h2><%= producto.nombre %></h2>
+                    <p><%= producto.ubicacion %></p>
                 </div>
                 <div class="descripcion">
                     <h3>Descripcion del profe</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, voluptas? Eos sit alias libero modi explicabo esse enim dicta adipisci cum quod, repellendus beatae officia veniam laborum id error quibusdam.</p>
+                    <p><%= producto.descripcion %></p>
                 </div>
             </div>
             <div class="body-detail">
                 <div class="grid">
                     <h4>Deporte</h4>
-                    <p>Futbol</p>
+                    <p><%= producto.deporte %></p>
                 </div>
                 <div class="grid">
                     <h4>Nivel</h4>
-                    <p>Facil</p>
+                    <p><%= producto.dificultad %></p>
                 </div>
                 <div class="grid">
                     <h4>Precio</h4>
-                    <p>$$$ /clase</p>
+                    <p>$ <%= producto.precio %>/clase</p>
                 </div>
                 <div class="descripcion-clase">
                     <h3>Descripcion de la clase</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia cum repudiandae nam delectus, mollitia impedit facilis dolore porro ad a quaerat voluptatem earum dolor similique cupiditate maiores quia dignissimos adipisci!</p>
+                    <p><%= producto.descripcionClase %></p>
                 </div>
                 
             </div>

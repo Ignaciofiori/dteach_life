@@ -1,20 +1,26 @@
-const products = require('../database/products');
+const path = require('path');
+const fs = require('fs');
+
+const productsFilePath = path.join(__dirname, '../database/products.json');
+const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 const controller = {
   index: (req, res) => {
     res.render('products/index', { products });
   },
-  create: (req, res) => {
+  createForm: (req, res) => {
     res.render('products/create');
   },
+  create: (req, res) => {},
   detail: (req, res) => {
-    const id = req.params.id;
-    res.render('products/detail', { id, products });
+    const producto = products.find((item) => item.id == req.params.id);
+    res.render('products/detail', { producto: producto });
   },
-  edit: (req, res) => {
-    const id = req.params.id;
-    res.render('products/edit', { id });
+  editForm: (req, res) => {
+    const producto = products.find((item) => item.id == req.params.id);
+    res.render('products/edit', { producto: producto });
   },
+  edit: (req, res) => {},
   cart: (req, res) => {
     res.render('products/cart');
   },

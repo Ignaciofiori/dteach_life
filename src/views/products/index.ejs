@@ -11,17 +11,17 @@
             </div>
         </section>
         <section class="product">
-           <% for (let i in products){ %> 
-            <a href="/products/detail/<%= i %>"  >
+           <% products.forEach ((producto) => { %> 
+            <a href="/products/detail/<%= producto.id %>" >
                 <article>
-                    <div class="image">
-                        <h2><%=  products[i].name %> </h2>
-                        <p><%= products[i].ubicacion %></p>
+                    <div class="image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/<%= producto.imagen %>');">
+                        <h2><%= producto.name %></h2>
+                        <p><%= producto.ubicacion %></p>
                     </div>
-                    <p><%= products[i].descripcion %></p>
-                    <p><%= products[i].precio %>/clase</p>
+                    <p><%= producto.descripcion %></p>
+                    <p><%= producto.precio %>/clase</p>
                 </article>
-            <% } %> 
+            <% }) %> 
         </section>
     </main>
 <%- include("../partials/footer.ejs") %>

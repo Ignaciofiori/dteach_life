@@ -1,0 +1,12 @@
+[
+  {
+    "id": "1",
+    "nombre": "Ricardo Villalobos",
+    "ubicacion": "Beccar, San Isidro",
+    "descripcion": "Sociable y dinamico entrenamiento de futbol",
+    "imagen": "personal-man.jpg",
+    "email": "",
+    "contraseña": "",
+    "tipo": "profer/cliente"
+  }
+]

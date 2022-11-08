@@ -15,7 +15,7 @@
   height: 20vh;
   border-radius: 10px;
   padding: 10px;
-  color: #ebebeb;
+  color: var(--font-light);
 }
 
 .descripcion {
@@ -25,8 +25,7 @@
   justify-content: center;
   align-items: center;
   padding: 10px;
-  border: 1px solid #63c65f;
-  background-color: #c9da6f;
+  background-color: var(--font-dark);
   border-radius: 20px;
 }
 
@@ -36,6 +35,7 @@
 
 .descripcion p {
   text-align: center;
+  color: var(--font-light);
 }
 
 .body-detail {
