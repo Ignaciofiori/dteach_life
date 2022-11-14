@@ -11,7 +11,23 @@ const controller = {
   createForm: (req, res) => {
     res.render('products/create');
   },
-  create: (req, res) => {},
+  create: (req, res) => {
+let clase = {
+  id: "",
+  nombre: req.body.nombre,
+  ubicacion: req.body.ubicacion,
+  descripcionProfe: req.body.descripcionProfe,
+  precio: req.body.precio,
+  imagen: "",
+  deporte: req.body.actividad,
+  dificultad: req.body.intensidad,
+  descripcionClase: req.body.descripcionClase
+}
+  
+ products.push(clase);
+  let productsJSON= JSON.stringify(products);
+  fs.writeFileSync(productsFilePath,productsJSON)
+  },
   detail: (req, res) => {
     const producto = products.find((item) => item.id == req.params.id);
     res.render('products/detail', { producto: producto });
