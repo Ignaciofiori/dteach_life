@@ -4,18 +4,26 @@
         <section>
             <div class="contenedorRegistro">
                     <h1>Registrarte</h1>
-                <form class="register-form" action="/" method="GET">
+                <form class="register-form" action="/register" method="POST">
                 <div class="nombreYApellido formDecoracion">
                         <div class="nombre">
                         <label class="etiquetaTitulo" for="name">Nombre:</label>
                         <br>
-                        <input type="text" class="input-register" name="name" id="name" placeholder="Nombre">
+                        <input type="text" class="input-register" name="nombre" id="name" placeholder="Nombre">
                         </div>
                         <div class="apellido">
                         <label class="etiquetaTitulo" for="name">Apellido:</label>
                         <br>
-                        <input type="text" class="input-register" name="name" id="name" placeholder="Apellido">
+                        <input type="text" class="input-register" name="apellido" id="apellido" placeholder="Apellido">
                         </div>
+                        <div class="nombre">
+                            <label class="etiquetaTitulo" for="name">Ubicacion:</label>
+                            <br>
+                            <input type="text" class="input-register" name="ubicacion" id="ubicacion" placeholder="Ubicacion">
+                            </div>
+                            <label for="img"> Imagen del Usuario</label>
+                            <input type="file"  name="imagenUsuario" alt="Submit" width="48" height="48">
+                            <br>
                     </div>
                 <div class="mail formDecoracion">
                     <label class="etiquetaTitulo" for="email">Correo</label>
@@ -26,7 +34,7 @@
                 <div class="contraseña formDecoracion">
                     <label class="etiquetaTitulo" for="password">Contraseña</label>
                     <br>
-                    <input type="password" class="contraseña" name="password" id="password" placeholder="escribi tu clave">
+                    <input type="password" class="contraseña" name="contraseña" id="contraseña" placeholder="escribi tu clave">
                 </div>
                 <div class="boton formDecoracion">
                     <button class="submit" type="submit">Enviar</button>

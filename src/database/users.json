@@ -1,12 +1,1 @@
-[
-  {
-    "id": "1",
-    "nombre": "Ricardo Villalobos",
-    "ubicacion": "Beccar, San Isidro",
-    "descripcion": "Sociable y dinamico entrenamiento de futbol",
-    "imagen": "personal-man.jpg",
-    "email": "",
-    "contraseña": "",
-    "tipo": "profer/cliente"
-  }
-]
+[{"id":"1","nombre":"Ricardo Villalobos","ubicacion":"Beccar, San Isidro","imagen":"personal-man.jpg","email":"","contraseña":""},{"id":"1","nombre":"Ignacio Fiori","ubicacion":"Coghland","imagen":"","email":"nacho.fiori@hotmail.com.ar","contraseña":"awitadekoko"},{"id":"1","nombre":"Luffy D. Monkey","ubicacion":"Villa Foosha","imagen":"","email":"mugiwaranoluffy@gmail.com","contraseña":"onepiece123"}]

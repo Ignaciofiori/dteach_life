@@ -5,5 +5,6 @@ const mainController = require('../controllers/mainController')
 router.get('/', mainController.index)
 router.get('/login', mainController.login)
 router.get('/register', mainController.register)
+router.post("/register",mainController.createUser)
 
 module.exports = router
