@@ -4,37 +4,49 @@
         <section class="inicio-product">
             <div class="search-bar-product">
                 <h4>Editar</h4>
-            </div>
+            </div>  
         </section>
         <section class="product">
            
-         <form action="/edit" method="post">
+         <form action="/products/create" method="POST">
             <div class="editProducto"> 
+            <label for="clase">Nombre y Apellido</label>
+            <input type="text" name="nombre">
+            <br>
+            <label for="clase">Ubicacion</label>
+            <input type="text" name="ubicacion">
+            <br>
             <label for="clase">Actividad</label>
-            <input type="text" name="clase">
+            <input type="text" name="actividad">
+            <br>
+            <label for="clase">Contanos Sobre Vos</label>
+            <input type="text" name="descripcionProfe">
             <br>
             <label for="precio">Precio</label>
-            <input type="number" name="clase" placeholder="$" >
+            <input type="number" name="precio" placeholder="$" >
             <br>
             <label for="clase">Cantida de hs</label>
-            <input type="number" name="clase" placeholder="Qty" >
+            <input type="number" name="horas" placeholder="¿Cuantas Horas requiere tu clase?" >
+            <br>
+            <label for="clase">Descripcion de clase</label>
+            <input type="text" name="descripcionClase" placeholder="Describe tu clase" >
             <br>
             <label for="clase">intensidad</label>
             <div class="intensidad">
 
-            <input type="radio" id="1" name="intensidad" value="1">
+            <input type="radio" id="1" name="intensidad" value="principiante">
             
             <label for="1">principiante</label>
         </div>
         <div class="intensidad">
       
-            <input type="radio" id="2" name="intensidad" value="2">
-            <label for="2">amater</label>
+            <input type="radio" id="2" name="intensidad" value="amateur">
+            <label for="2">amateur</label>
 
         </div>
         <div class="intensidad">
       
-            <input type="radio" id="3" name="intensidad" value="3">
+            <input type="radio" id="3" name="intensidad" value="profesional">
         
             <label for="3">profesional</label>
         </div>

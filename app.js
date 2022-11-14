@@ -23,6 +23,9 @@ app.set('views', path.join(__dirname, './src/views'));
 const publicPath = path.resolve(__dirname, './public');
 app.use(express.static(publicPath));
 
+//Necesario para convertir en objeto literal los req.body
+app.use((express.urlencoded({extended:false})));
+app.use(express.json())
 // Configuramos rutas de navegacion
 app.use('/', mainRoutes);
 app.use('/products', productsRoutes);
