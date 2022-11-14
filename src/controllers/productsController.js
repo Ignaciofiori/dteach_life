@@ -23,10 +23,10 @@ let clase = {
   dificultad: req.body.intensidad,
   descripcionClase: req.body.descripcionClase
 }
-  
- products.push(clase);
+  products.push(clase);
   let productsJSON= JSON.stringify(products);
-  fs.writeFileSync(productsFilePath,productsJSON)
+  fs.writeFileSync(productsFilePath,productsJSON);
+  res.redirect("/")
   },
   detail: (req, res) => {
     const producto = products.find((item) => item.id == req.params.id);
