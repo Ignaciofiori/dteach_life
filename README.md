@@ -17,15 +17,6 @@ Durante el trabajo en equipo se analizarán los sitios de interés para saber qu
 ___
 ## Integrantes del equipo :busts_in_silhouette:
 
-#### Gustavo Paredes :boy:
-  - :colombia: Bogotá - Colombia
-  - :books: Estudiante de Ingeniera de Software
-  - :raised_hands: Experiencia en diseño Web y Programación
-
-#### Juan J. Durán :boy:
-  - :argentina: Bs As, Argentina
-  - :books: Actualmente está como capitán fluvial en la industría marítima
-
 #### Alvaro Malvestiti :boy:
   - :argentina: Rosario, Santa Fe, Argentina.
   - :books: Desarrollador.
