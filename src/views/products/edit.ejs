@@ -7,36 +7,48 @@
         </div>
     </section>
     <section class="product">
-        <form action="/products/:id/edit/?_method=PUT" method="POST">
+        <form action="/products/:id/edit/?_method=PUT" method="POST" enctype="multipart/form-data">
             <div class="editProducto">
-                <h4>Datos de profesor</h4>
+                <h3>Datos del profe</h3>
                 <label for="nombre">Nombre y Apellido</label>
-                <input type="text" name="nombre" id="nombre" value="<%=producto.nombre %>">
+                <input type="text" name="nombre" value=<%= producto.nombre %> >
+
                 <label for="ubicacion">Ubicacion</label>
-                <input type="text" name="ubicacion" id="ubicacion" value="<%=producto.ubicacion %>">
+                <input type="text" name="ubicacion" value=<%= producto.ubicacion %>>
+
                 <label for="descripcionProfe">Descripcion</label>
-                <input type="text" name="descripcionProfe" id="descripcion" value="<%= producto.descripcionProfe %>">
-                <label for="imagen">Imagen</label>
-                <input type="file" name="imagen" id="imagen">
-                <h4>Datos de la clase</h4>
-                <label for="deporte">Deporte:</label>
-                <input type="text" name="actividad" id="actividad" value="<%=producto.deporte %>">
-                <label for="Intensidad">
-                    <p>Intensidad:</p>
-                    <label for="principiante">Principiante</label>
-                    <input type="radio" name="intensidad" id="1" value="" required>
-                    <label for="amateur">Amateur</label>
-                    <input type="radio" name="intensidad" id="2" required>
-                    <label for="profesional">Profesional</label>
-                    <input type="radio" name="intensidad" id="3" required>
-                </label>
-                <label for="descripcionClase">Descripcion de la clase</label>
-                <input type="text" name="descripcionClase" id="descripcionClase" value="<%=producto.descripcionClase %>">
+                <input type="text" name="descripcionProfe" value=<%= producto.descripcionProfe %>>
+
+                <label for="img">Foto</label>
+                <input type="file" name="imagenProducto" id="imagenProducto" accept=".jpg, .jpeg, .png">
+                
+                <h3>Datos de la clase</h3>
+                <label for="actividad">Actividad</label>
+                <input type="text" name="actividad" value=<%= producto.deporte %>>
+
                 <label for="precio">Precio</label>
-                <input type="number" name="precio" id="precio" value="<%= producto.precio %>">
-               
-                <button class="submit" type="submit">Cargar</button>
+                <input type="number" name="precio" placeholder="$$$" value=<%= producto.precio %> >
+
+                <label for="horas">Cantida de hs</label>
+                <input type="number" name="horas" placeholder="¿Cuantas Horas requiere tu clase?" >
+
+                <label for="descripcionClase">Descripcion de clase</label>
+                <input type="text" name="descripcionClase" placeholder="Describe tu clase" value=<%= producto.descripcionClase %> >
+
+                <label for="clase">Intensidad</label>
+                <div class="intensidad">
+                    <input type="radio" id="1" name="intensidad" value="principiante">
+                    <label for="1">Principiante</label>
+                <div class="intensidad">
+                    <input type="radio" id="2" name="intensidad" value="amateur">
+                    <label for="2">Medio</label>
+                </div>
+                <div class="intensidad">
+                    <input type="radio" id="3" name="intensidad" value="profesional">
+                    <label for="3">Profesional</label>
+                </div>
             </div>
+            <button class="boton" type="submit">Cargar</button>
         </form>
     </section>
 </main>
