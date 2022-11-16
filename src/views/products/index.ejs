@@ -12,9 +12,9 @@
         </section>
         <section class="product">
            <% products.forEach ((producto) => { %> 
-            <a href="/products/detail/<%= producto.id %>" >
+            <a href="/products/<%= producto.id %>/detail/" >
                 <article>
-                    <div class="image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/<%= producto.imagen %>');">
+                    <div class="image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/uploads/<%= producto.imagen %>');">
                         <h2><%= producto.name %></h2>
                         <p><%= producto.ubicacion %></p>
                     </div>
@@ -22,6 +22,7 @@
                     <p><%= producto.precio %>/clase</p>
                 </article>
             <% }) %> 
+            </a>
         </section>
     </main>
 <%- include("../partials/footer.ejs") %>

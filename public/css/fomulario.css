@@ -93,19 +93,9 @@ article form div h2{
 .editProducto{
   display: flex;
   flex-direction: column;
-  width: 80%;
-
 }
 
-.editProducto input{
-  width: 90%;
-}
 .intensidad{
   display: flex;
   flex-direction: row;
-  padding: 1em;
-  width: 100%;
-}
-.intensidad input{
-justify-content: right;
 }

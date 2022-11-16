@@ -1,68 +1,55 @@
 <%- include("../partials/head.ejs") %>
 <%- include("../partials/header.ejs") %>
-    <main>
-        <section class="inicio-product">
-            <div class="search-bar-product">
-                <h4>Editar</h4>
-            </div>  
-        </section>
-        <section class="product">
-           
-         <form action="/products/create" method="POST">
-            <div class="editProducto"> 
-            <label for="clase">Nombre y Apellido</label>
-            <input type="text" name="nombre">
-            <br>
-            <label for="clase">Ubicacion</label>
-            <input type="text" name="ubicacion">
-            <br>
-            <label for="clase">Actividad</label>
-            <input type="text" name="actividad">
-            <br>
-            <label for="clase">Contanos Sobre Vos</label>
-            <input type="text" name="descripcionProfe">
-            <br>
-            <label for="precio">Precio</label>
-            <input type="number" name="precio" placeholder="$" >
-            <br>
-            <label for="clase">Cantida de hs</label>
-            <input type="number" name="horas" placeholder="¿Cuantas Horas requiere tu clase?" >
-            <br>
-            <label for="clase">Descripcion de clase</label>
-            <input type="text" name="descripcionClase" placeholder="Describe tu clase" >
-            <br>
-            <label for="clase">intensidad</label>
-            <div class="intensidad">
+<main>
+    <section class="inicio-product">
+        <div class="search-bar-product">
+            <h2>Formulario de nueva clase</h4>
+        </div>  
+    </section>
+    <section class="product">
+        <form action="/products/create" method="POST" enctype="multipart/form-data">
+            <div class="editProducto">
+                <h3>Datos del profe</h3>
+                <label for="nombre">Nombre y Apellido</label>
+                <input type="text" name="nombre">
 
-            <input type="radio" id="1" name="intensidad" value="principiante">
-            
-            <label for="1">principiante</label>
-        </div>
-        <div class="intensidad">
-      
-            <input type="radio" id="2" name="intensidad" value="amateur">
-            <label for="2">amateur</label>
+                <label for="ubicacion">Ubicacion</label>
+                <input type="text" name="ubicacion">
 
-        </div>
-        <div class="intensidad">
-      
-            <input type="radio" id="3" name="intensidad" value="profesional">
-        
-            <label for="3">profesional</label>
-        </div>
+                <label for="descripcionProfe">Descripcion</label>
+                <input type="text" name="descripcionProfe">
 
-        <label for="img">imagen</label>
-        
-        <input type="file"  name="imagenProducto" alt="Submit" width="48" height="48">
-        <br>
-        <button class="submit" type="submit">Cargar</button>
+                <label for="img">Foto</label>
+                <input type="file" name="imagenProducto" id="imagenProducto" accept=".jpg, .jpeg, .png">
                 
-    </div>
-           
-    
-         </form>   
-        
+                <h3>Datos de la clase</h3>
+                <label for="actividad">Actividad</label>
+                <input type="text" name="actividad">
 
-        </section>
-    </main>
+                <label for="precio">Precio</label>
+                <input type="number" name="precio" placeholder="$$$" >
+
+                <label for="horas">Cantida de hs</label>
+                <input type="number" name="horas" placeholder="¿Cuantas Horas requiere tu clase?" >
+
+                <label for="descripcionClase">Descripcion de clase</label>
+                <input type="text" name="descripcionClase" placeholder="Describe tu clase" >
+
+                <label for="clase">Intensidad</label>
+                <div class="intensidad">
+                    <input type="radio" id="1" name="intensidad" value="principiante">
+                    <label for="1">Principiante</label>
+                <div class="intensidad">
+                    <input type="radio" id="2" name="intensidad" value="amateur">
+                    <label for="2">Medio</label>
+                </div>
+                <div class="intensidad">
+                    <input type="radio" id="3" name="intensidad" value="profesional">
+                    <label for="3">Profesional</label>
+                </div>
+            </div>
+            <button class="boton" type="submit">Cargar</button>
+        </form>   
+    </section>
+</main>
 <%- include("../partials/footer.ejs") %>
