@@ -18,7 +18,7 @@ const controller = {
   },
   createUser:(req,res)=> {
     let user ={
-      id: "1",
+      id: users.length + 1,
       nombre: req.body.nombre + " " + req.body.apellido,
       ubicacion: req.body.ubicacion,
       imagen: "",

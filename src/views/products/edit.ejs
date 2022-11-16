@@ -3,41 +3,37 @@
 <main>
     <section class="inicio-product">
         <div class="search-bar-product">
-            <h2>Cargar clase</h2>
+            <h2>Editar clase</h2>
         </div>
     </section>
     <section class="product">
-        <form action="/create" method="post">
+        <form action="/products/edit/:id?_method=PUT" method="POST">
             <div class="editProducto">
                 <h4>Datos de profesor</h4>
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre">
+                <label for="nombre">Nombre y Apellido</label>
+                <input type="text" name="nombre" id="nombre" value="<%=producto.nombre %>">
                 <label for="ubicacion">Ubicacion</label>
-                <input type="text" name="ubicacion" id="ubicacion">
-                <label for="descripcion">Descripcion</label>
-                <input type="text" name="descripcion" id="descripcion">
+                <input type="text" name="ubicacion" id="ubicacion" value="<%=producto.ubicacion %>">
+                <label for="descripcionProfe">Descripcion</label>
+                <input type="text" name="descripcionProfe" id="descripcion" value="<%= producto.descripcionProfe %>">
                 <label for="imagen">Imagen</label>
                 <input type="file" name="imagen" id="imagen">
                 <h4>Datos de la clase</h4>
-                <label for="deporte">Deporte</label>
-                <select name="deporte" id="deporte">
-                    <option value="futbol">Futbol</option>
-                    <option value="tenis">Tenis</option>
-                    <option value="voley">Voley</option>
-                </select>
-                <label for="dificultad">
-                    <p>Dificultad</p>
-                    <label for="facil">Facil</label>
-                    <input type="radio" name="dificultad" id="facil">
-                    <label for="medio">Medio</label>
-                    <input type="radio" name="dificultad" id="medio">
-                    <label for="dificil">Dificil</label>
-                    <input type="radio" name="dificultad" id="dificil">
+                <label for="deporte">Deporte:</label>
+                <input type="text" name="actividad" id="actividad" value="<%=producto.deporte %>">
+                <label for="Intensidad">
+                    <p>Intensidad:</p>
+                    <label for="principiante">Principiante</label>
+                    <input type="radio" name="intensidad" id="1" value="" required>
+                    <label for="amateur">Amateur</label>
+                    <input type="radio" name="intensidad" id="2" required>
+                    <label for="profesional">Profesional</label>
+                    <input type="radio" name="intensidad" id="3" required>
                 </label>
                 <label for="descripcionClase">Descripcion de la clase</label>
-                <input type="text" name="descripcionClase" id="descripcionClase">
+                <input type="text" name="descripcionClase" id="descripcionClase" value="<%=producto.descripcionClase %>">
                 <label for="precio">Precio</label>
-                <input type="number" name="precio" id="precio">
+                <input type="number" name="precio" id="precio" value="<%= producto.precio %>">
                
                 <button class="submit" type="submit">Cargar</button>
             </div>
