@@ -59,8 +59,15 @@ const controller = {
     fs.writeFileSync(productsFilePath, productsJSON);
     res.redirect('/products');
   },
+  delete: (req, res) => {
+    const id = req.params.id;
+    let update = products.filter((item) => item.id != id);
+    let productsJSON = JSON.stringify(update);
+    fs.writeFileSync(productsFilePath, productsJSON);
+    res.redirect('/products');
+  },
   cart: (req, res) => {
-    res.render('products/cart');
+    res.render('cart/cart');
   },
 };
 
