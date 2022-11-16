@@ -10,7 +10,7 @@ ___
 ### 3.1. Actualizar el tablero con el SPRINT No.4.
 ### 3.2. Programar la reunió semanal y enviar notificación a los correos electrónicos.
 ### 3.3. Se generaron ideas sobre esta fase del Sprint No.4 y las posibles soluciones de implementación en el proyecto.
-# Reunión No.1: Miércoles 16 de Noviembre (asincrónica) :hourglass_flowing_sand:
+# Reunión No.2: Miércoles 16 de Noviembre (asincrónica) :mag_right:
 ## 1. Qué se hizo ayer:
 ### 1.1. Se detalló la actividad pendiente del sprint 3 con relación a la creación y edición de productos.
 ### 1.2. Se actualizó el tablero.
