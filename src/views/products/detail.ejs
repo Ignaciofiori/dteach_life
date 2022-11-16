@@ -33,7 +33,11 @@
             <div class="footer-detail">
                 <a href="/products/cart">Tomar clase</a>
                 <a href="/products/<%= producto.id %>/edit">Editar</a>
+                
             </div>
+            <form action="/products/<%= producto.id %>/delete?_method=DELETE" method="post">
+                <button type="submit">Borrar</button>
+            </form>
         </section>
     </main>
 <%- include("../partials/footer.ejs") %>

@@ -33,5 +33,6 @@ router.put(
   upload.single('imagenProducto'),
   productsController.edit
 );
+router.delete('/:id/delete', productsController.delete);
 
 module.exports = router;
