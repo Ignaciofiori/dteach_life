@@ -2,6 +2,12 @@ const usersController={
     index:(req,res)=>{
 res.render("users/index")
     },
+    login: (req, res) => {
+        res.render('users/login');
+      },
+      register: (req, res) => {
+        res.render('users/register');
+      },
     createUser:(req,res)=> {
         let user ={
           id: users.length + 1,

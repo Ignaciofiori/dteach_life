@@ -67,7 +67,7 @@ const controller = {
     res.redirect('/products');
   },
   cart: (req, res) => {
-    res.render('cart/cart');
+    res.render('products/cart');
   },
 };
 
