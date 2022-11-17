@@ -19,7 +19,7 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage });
 
 router.get('/', productsController.index);
-router.get('/:id/detail', productsController.detail);
+router.get('/detail/:id', productsController.detail);
 router.get('/cart', productsController.cart);
 router.get('/create', productsController.createForm);
 router.post(
@@ -27,12 +27,12 @@ router.post(
   upload.single('imagenProducto'),
   productsController.create
 );
-router.get('/:id/edit', productsController.editForm);
+router.get('/edit/:id', productsController.editForm);
 router.put(
-  '/:id/edit',
+  '/edit/:id',
   upload.single('imagenProducto'),
   productsController.edit
 );
-router.delete('/:id/delete', productsController.delete);
+router.delete('/delete/:id', productsController.delete);
 
 module.exports = router;
