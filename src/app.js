@@ -9,7 +9,6 @@ const methodOverride = require('method-override'); // Pasar poder usar los méto
 // ************ express() - (don't touch) ************
 const app = express();
 
-app.listen(3030,()=> console.log("Servidor Levantado Correctamente en el Puerto 3030"))
 // ************ Middlewares - (don't touch) ************
 app.use(express.static(path.join(__dirname, '../public'))); // Necesario para los archivos estáticos en el folder /public
 app.use(express.urlencoded({ extended: false }));
@@ -25,9 +24,11 @@ app.set('views', path.join(__dirname, './views'));
 // ************ Route System require and use() ************
 const mainRoutes = require('./routes/main');
 const productsRoutes = require('./routes/products');
+const usersRoutes = require("./routes/users")
 
 app.use('/', mainRoutes);
 app.use('/products', productsRoutes);
+app.use("/users",usersRoutes)
 
 // ************ catch 404 and forward to error handler ************
 app.use((req, res, next) => next(createError(404)));
