@@ -9,6 +9,7 @@ const methodOverride = require('method-override'); // Pasar poder usar los méto
 // ************ express() - (don't touch) ************
 const app = express();
 
+app.listen(3030,()=> console.log("Servidor Levantado Correctamente en el Puerto 3030"))
 // ************ Middlewares - (don't touch) ************
 app.use(express.static(path.join(__dirname, '../public'))); // Necesario para los archivos estáticos en el folder /public
 app.use(express.urlencoded({ extended: false }));
