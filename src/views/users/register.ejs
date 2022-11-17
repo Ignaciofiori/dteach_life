@@ -4,17 +4,17 @@
         <section>
             <div class="contenedorRegistro">
                     <h1>Registrarte</h1>
-                <form class="register-form" action="/register" method="POST">
+                <form class="register-form" action="/users/register" method="POST">
                 <div class="nombreYApellido formDecoracion">
                         <div class="nombre">
                         <label class="etiquetaTitulo" for="name">Nombre:</label>
                         <br>
-                        <input type="text" class="input-register" name="nombre" id="name" placeholder="Nombre">
+                        <input type="text" class="input-register" name="nombre" id="name" placeholder="Nombre" required>
                         </div>
                         <div class="apellido">
                         <label class="etiquetaTitulo" for="name">Apellido:</label>
                         <br>
-                        <input type="text" class="input-register" name="apellido" id="apellido" placeholder="Apellido">
+                        <input type="text" class="input-register" name="apellido" id="apellido" placeholder="Apellido" required>
                         </div>
                         <div class="nombre">
                             <label class="etiquetaTitulo" for="name">Ubicacion:</label>
@@ -28,13 +28,13 @@
                 <div class="mail formDecoracion">
                     <label class="etiquetaTitulo" for="email">Correo</label>
                     <br>
-                    <input type="email" class="input-register" name="email" id="email" placeholder="xxxx@tumail.com">
+                    <input type="email" class="input-register" name="email" id="email" placeholder="xxxx@tumail.com" required>
                 </div>
 
                 <div class="contraseña formDecoracion">
                     <label class="etiquetaTitulo" for="password">Contraseña</label>
                     <br>
-                    <input type="password" class="contraseña" name="contraseña" id="contraseña" placeholder="escribi tu clave">
+                    <input type="password" class="contraseña" name="contraseña" id="contraseña" placeholder="escribi tu clave" required>
                 </div>
                 <div class="boton formDecoracion">
                     <button class="submit" type="submit">Enviar</button>
