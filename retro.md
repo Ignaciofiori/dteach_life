@@ -40,6 +40,6 @@ ___
 ## 3. Que estaría bien implementar en el quinto SPRINT (Seguir haciendo - más de):
 ### 3.1. Seguir comprometidos con el avance del proyecto como hasta el momento se ha venido realizando, esforzados por el bien común, aprovechando las fortalezas de cada uno.	:mechanical_arm:
 ### 3.2. Seguir manteniendo el código actualizado e informar los avances realizados a través de discord y el tablero en JIRA. :speaking_head:
-### 3.3. Fortalecer el trabajo en equipo.
+### 3.3. Fortalecer el trabajo en equipo.:facepunch::fist_oncoming::punch:
 ### 3.4. Las reuniones de equipo.
 ___
