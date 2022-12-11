@@ -3,7 +3,7 @@ const router = express.Router();;
 const productsController = require('../controllers/productsController');
 
 //MIDDLEWARES 
-const upload= require("../middlewares/multerMiddleware")
+const upload= require("../middlewares/productMulterMiddleware")
 
 router.get('/', productsController.index);
 router.get('/detail/:id', productsController.detail);
