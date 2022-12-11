@@ -1,27 +1,11 @@
 const express = require("express");
 const usersController = require("../controllers/usersController");
 const router = express.Router();
-const multer = require('multer');
-const path = require('path');
 const {body}= require('express-validator');
-
-
-
-const storage = multer.diskStorage({
-    destination: function (req, file, cb) {
-      cb(null, path.join(__dirname, '../../public/images/users'));
-    },
-    filename: function (req, file, cb) {
-      let nombreArchivo =  Date.now() +'imguser' +path.extname(file.originalname);
-        cb(
-        null,      
-        nombreArchivo
-        );
-    },
-  });
   
-  const uploadFile = multer({ storage: storage });
-  
+//MIDDLEWARES 
+const uploadFile = require("../middlewares/multerMiddleware")
+
 
   const validaciones = [
     body('nombre').notEmpty().withMessage('falta el Nombre'),
