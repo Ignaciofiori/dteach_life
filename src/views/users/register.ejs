@@ -4,17 +4,22 @@
         <section>
             <div class="contenedorRegistro">
                     <h1>Registrarte</h1>
+                    <% if(locals.errors){
+                    errors.forEach(error => { %>
+                        <p><%=error.msg %> </p>
+                    <%})%>;
+                    <% } %> 
                 <form class="register-form" action="/users/register" method="POST" enctype="multipart/form-data">
                 <div class="nombreYApellido formDecoracion">
                         <div class="nombre">
                         <label class="etiquetaTitulo" for="name">Nombre:</label>
                         <br>
-                        <input type="text" class="input-register" name="nombre" id="name" placeholder="Nombre" required>
+                        <input type="text" class="input-register" name="nombre" id="name" placeholder="Nombre" >
                         </div>
                         <div class="apellido">
                         <label class="etiquetaTitulo" for="name">Apellido:</label>
                         <br>
-                        <input type="text" class="input-register" name="apellido" id="apellido" placeholder="Apellido" required>
+                        <input type="text" class="input-register" name="apellido" id="apellido" placeholder="Apellido" >
                         </div>  
                         <div class="nombre">
                             <label class="etiquetaTitulo" for="name">Ubicacion:</label>
@@ -28,13 +33,13 @@
                 <div class="mail formDecoracion">
                     <label class="etiquetaTitulo" for="email">Correo</label>
                     <br>
-                    <input type="email" class="input-register" name="email" id="email" placeholder="xxxx@tumail.com" required>
+                    <input type="email" class="input-register" name="email" id="email" placeholder="xxxx@tumail.com" >
                 </div>
 
                 <div class="contraseña formDecoracion">
                     <label class="etiquetaTitulo" for="password">Contraseña</label>
                     <br>
-                    <input type="password" class="contraseña" name="password" id="contraseña" placeholder="escribi tu clave" required>
+                    <input type="password" class="contraseña" name="password" id="contraseña" placeholder="escribi tu clave" >
                 </div>
                 <div class="boton formDecoracion">
                     <button class="submit" type="submit">Enviar</button>

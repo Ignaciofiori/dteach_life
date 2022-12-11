@@ -8,7 +8,6 @@ const uploadFile = require("../middlewares/userMulterMiddleware")
 const validaciones = require("../middlewares/validacionesMiddleware")
 
 
-
 router.get("/",usersController.index);
 router.get('/login', usersController.login)
 router.get('/register', usersController.register)
