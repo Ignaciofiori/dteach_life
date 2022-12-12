@@ -21,7 +21,7 @@ const uploadFile = require("../middlewares/userMulterMiddleware")
     body('imagenUsuario').custom((value,{req}) =>{
     let file = req.file;
     
-    let acceptedExtensions = ['.jpg','.png','.gif'];
+    let acceptedExtensions = ['.jpg','.png','.gif',".jpeg"];
     if(!file){
       
       throw new Error('tiene que subir una imagen');
@@ -30,7 +30,7 @@ const uploadFile = require("../middlewares/userMulterMiddleware")
       let fileExtension = path.extname(file.originalname)
       console.log(fileExtension)
       if(!acceptedExtensions.includes(fileExtension)){
-      throw new Error ('Las extensiones nos compatibles loco')
+      throw new Error ('Las extensiones no compatibles loco')
     }}
       return true;
     })]

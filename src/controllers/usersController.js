@@ -27,7 +27,8 @@ res.render("users/index")
         console.log(resultadoValidado.errors)
 
         return  res.render('users/register',
-        {errors: resultadoValidado.mapped()})
+        {errors: resultadoValidado.mapped(),
+        oldData:req.body})
         
        } else{
 
@@ -43,9 +44,7 @@ res.render("users/index")
        let usersJSON =JSON.stringify(users);
        fs.writeFileSync(usersFilePath,usersJSON);
 
-       return  res.render('users/login');
-
-
+        res.redirect('/users/login');
         
        }
 
