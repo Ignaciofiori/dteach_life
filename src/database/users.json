@@ -1,11 +1,12 @@
 [
  {
   "id": 1,
-  "nombre": "Ricardo Villalobos",
-  "ubicacion": "Beccar, San Isidro",
-  "imagen": "personal-man.jpg",
-  "email": "",
-  "contraseña": ""
+  "nombre": "Ricardo",
+  "apellido": "Villalobos",
+  "ubicacion": "Flores, CABA",
+  "email": "rickyrickon@gmail.com",
+  "password": "$2a$10$R5babVwY5a3vbfhFpWI17enybd3vgyhJousl4Ti8aaFSyt5zhf3A.",
+  "imagen": "1670868746007imguser.jpeg"
  },
  {
   "id": 2,
@@ -13,7 +14,7 @@
   "apellido": "Fiori",
   "ubicacion": "Coghland",
   "email": "nacho.fiori@hotmail.com.ar",
-  "password": "$2a$10$jsvU45DUrrRoADNtDtUJ.u2st9tTTaTmaIo2nPwWhjfJO77qWhs7a",
-  "imagen": "1670867245678imguser.jpeg"
+  "password": "$2a$10$04P56PTChGXYMimTA7DBGecIqmVbUMMjdtc2RzizDuTGMt.1shHpW",
+  "imagen": "1670868770732imguser.jpeg"
  }
 ]

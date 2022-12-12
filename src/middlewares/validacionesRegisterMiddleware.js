@@ -9,7 +9,7 @@ const validaciones = [
     .notEmpty().withMessage('falta el email').bail()
     .isEmail().withMessage('tiene que ser un mail'),
 
-  body('password').notEmpty().withMessage('falta el password'),
+  body('password').notEmpty().withMessage('falta la contraseña'),
   body('imagenUsuario').custom((value,{req}) =>{
   let file = req.file;
   
