@@ -5,10 +5,16 @@
         <section>
             <div class="contenedorRegistro">
                     <h1>Conectate</h1>
+                    <form class="register-form" action="/users/login" method="POST">
                 <div class="mail formDecoracion">
                     <label class="etiquetaTitulo" for="email">Correo</label>
                     <br>
                     <input type="email" class="input-register" name="email" id="email" placeholder="xxxx@tumail.com">
+                    <% if (locals.errors && errors.email) { %>
+                     <div class="texto-error">
+                        <%=errors.email.msg %>
+                     </div>
+                    <% } %>
                 </div>
 
                 <div class="contraseña formDecoracion">
@@ -20,7 +26,7 @@
                     <button class="submit" type="submit">Enviar</button>
                 
                 </div>
-                
+            </form>
                 <h3>¿No tenes cuenta?</h3>
                 <a href="/users/register"> Registrate</a>
 
@@ -30,8 +36,7 @@
 
             </div>
 
-                </form>
-
+               
                   
 
 

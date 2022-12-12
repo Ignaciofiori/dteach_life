@@ -16,5 +16,14 @@
   "email": "nacho.fiori@hotmail.com.ar",
   "password": "$2a$10$04P56PTChGXYMimTA7DBGecIqmVbUMMjdtc2RzizDuTGMt.1shHpW",
   "imagen": "1670868770732imguser.jpeg"
+ },
+ {
+  "id": 3,
+  "nombre": "nacho",
+  "apellido": "Fiori",
+  "ubicacion": "Coghland",
+  "email": "nacho.fiori@hotmail.com",
+  "password": "$2a$10$m4y3DgrhhH76d4jg9cdx8ees5nS0mmiMGBZbwrmgddN3ce3wZQVsW",
+  "imagen": "1670887856483imguser.jpeg"
  }
 ]

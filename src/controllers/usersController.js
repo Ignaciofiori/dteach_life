@@ -1,4 +1,3 @@
-//Falta terminar el validador: falta que envie el msj y el criptador de contraseña.-
 const User = require("../models/User")
 const fs = require("fs")
 const path =require("path")
@@ -11,14 +10,40 @@ const usersController={
     index:(req,res)=>{
 res.render("users/index")
     },
-    login: (req, res) => {
+login: (req, res) => {
         res.render('users/login');
       },
-      register: (req, res) => {
+profile: (req,res)=>{
+  res.render('users/profile')
+   },
+loginProcess:(req,res)=>{
+        let userALoguear = User.findByField("email",req.body.email)
+        if(userALoguear){
+      let contraseñaCorrecta = bcryptjs.compareSync(req.body.password,userALoguear.password)
+          if(contraseñaCorrecta){
+            res.redirect("/users/profile")
+          }
+        return res.render("users/login",{
+            errors:{
+             email:{
+              msg:"Las Credenciales son Invalidas"
+             }
+            }
+          })
+        }
+        return res.render("users/login",{
+          errors:{
+           email:{
+            msg:"No se encuentra este email en nuestra base de datos"
+           }
+          }
+        })
+      },
+register: (req, res) => {
 
         res.render('users/register');
       },
-    createUser:(req,res)=> {
+createUser:(req,res)=> {
        const resultadoValidado =  validationResult(req)
        
        if(resultadoValidado.errors.length>0){
