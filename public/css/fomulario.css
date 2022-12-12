@@ -13,7 +13,7 @@ Gris claro: #ebebeb
   --bordes-color:#c9da6f;
   --texto-color: #63c65f;
   --boton-text-color:#f4eb95;
-
+  --texto-error:#fc0000;
 }
 
 
@@ -98,4 +98,9 @@ article form div h2{
 .intensidad{
   display: flex;
   flex-direction: row;
+}
+.texto-error{
+  color:var(--texto-error);
+  font-weight: bold;
+
 }
