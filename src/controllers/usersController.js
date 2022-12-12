@@ -18,8 +18,6 @@ res.render("users/index")
         res.render('users/register');
       },
     createUser:(req,res)=> {
-
-      
        const resultadoValidado =  validationResult(req)
        
        if(resultadoValidado.errors.length>0){
