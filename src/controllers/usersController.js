@@ -12,15 +12,21 @@ res.render("users/index")
     },
 login: (req, res) => {
         res.render('users/login');
+        console.log(req.session)
       },
 profile: (req,res)=>{
-  res.render('users/profile')
+  res.render('users/profile',{
+    user: req.session.userLogged
+  })
+  
    },
 loginProcess:(req,res)=>{
         let userALoguear = User.findByField("email",req.body.email)
         if(userALoguear){
       let contraseñaCorrecta = bcryptjs.compareSync(req.body.password,userALoguear.password)
           if(contraseñaCorrecta){
+            delete userALoguear.password
+            req.session.userLogged = userALoguear
             res.redirect("/users/profile")
           }
         return res.render("users/login",{

@@ -1,6 +1,7 @@
 <%- include("../partials/head.ejs") %>
 <%- include("../partials/header.ejs") %>
 <main>
-    <h1>PERFIL USUARIO</h1>
+    <h1>PERFIL USUARIO : <%=user.nombre %></h1>
+    <img src="/images/users/<%= user.imagen %>">
 </main>
 <%- include("../partials/footer.ejs") %>
