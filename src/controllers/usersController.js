@@ -1,5 +1,5 @@
 //Falta terminar el validador: falta que envie el msj y el criptador de contraseña.-
-
+const User = require("../models/User")
 const fs = require("fs")
 const path =require("path")
 const usersFilePath = path.join(__dirname, '../database/users.json')
@@ -21,31 +21,17 @@ res.render("users/index")
        const resultadoValidado =  validationResult(req)
        
        if(resultadoValidado.errors.length>0){
-
-        console.log(resultadoValidado.mapped())
-   
         res.render('users/register',
        {errors: resultadoValidado.mapped(),
         oldData:req.body})
         
        } else{
-
-        let user ={
-          id: users.length + 1,
-          nombre: req.body.nombre + " " + req.body.apellido,
-          ubicacion: req.body.ubicacion,
-          imagen: req.file.filename,
-          email: req.body.email,
-          contraseña: req.body.password
+        User.create(req.body)
         }
-       users.push(user);
-       let usersJSON =JSON.stringify(users);
-       fs.writeFileSync(usersFilePath,usersJSON);
-
         res.redirect('/users/login');
         
        }
 
     }
-    }
+    
 module.exports= usersController

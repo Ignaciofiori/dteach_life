@@ -1,1 +1,18 @@
-[{"id":1,"nombre":"Ricardo Villalobos","ubicacion":"Beccar, San Isidro","imagen":"personal-man.jpg","email":"","contraseña":""},{"id":2,"nombre":"Ignacio Fiori","ubicacion":"Coghland","imagen":"","email":"nacho.fiori@hotmail.com.ar","contraseña":"awitadekoko123"}]
+[
+ {
+  "id": 1,
+  "nombre": "Ricardo Villalobos",
+  "ubicacion": "Beccar, San Isidro",
+  "imagen": "personal-man.jpg",
+  "email": "",
+  "contraseña": ""
+ },
+ {
+  "id": 2,
+  "nombre": "Ignacio Fiori",
+  "ubicacion": "Coghland",
+  "imagen": "",
+  "email": "nacho.fiori@hotmail.com.ar",
+  "contraseña": "awitadekoko123"
+ }
+]
