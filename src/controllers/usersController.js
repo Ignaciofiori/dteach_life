@@ -5,6 +5,7 @@ const path =require("path")
 const usersFilePath = path.join(__dirname, '../database/users.json')
 const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'))
  const {validationResult}= require('express-validator')
+ const bcryptjs = require("bcryptjs")
 
 const usersController={
     index:(req,res)=>{
@@ -28,6 +29,7 @@ res.render("users/index")
        } else{
         let userToCreate={
           ...req.body,
+          password: bcryptjs.hashSync(req.body.password,10),
           imagen:req.file.filename
         }
         User.create(userToCreate)
