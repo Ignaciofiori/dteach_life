@@ -9,6 +9,11 @@ return usuarios
     findAll:function(){
 return this.getData()
 },
+    findByField:function(field,text){
+let usuarios = this.findAll()
+let usuarioEncontrado = usuarios.find(usuario=>usuario[field]==text);
+return usuarioEncontrado
+},
     findByPk:function(id){
 let usuarios = this.findAll()
 let usuarioEncontrado= usuarios.find(usuario=> usuario.id == id)

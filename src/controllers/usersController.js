@@ -26,12 +26,25 @@ res.render("users/index")
        {errors: resultadoValidado.mapped(),
         oldData:req.body})
         
-       } else{
+       } else {
+        
+        let userInDb = User.findByField("email",req.body.email)
+       
+        if(userInDb){
+          return res.render('users/register',
+       {errors: {
+        email:{msg:"este email ya esta registrado"}},
+        oldData:req.body})
+        }
+        
+        
         let userToCreate={
           ...req.body,
           password: bcryptjs.hashSync(req.body.password,10),
           imagen:req.file.filename
         }
+
+  
         User.create(userToCreate)
         }
         res.redirect('/users/login');
