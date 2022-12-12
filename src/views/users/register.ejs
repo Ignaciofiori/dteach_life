@@ -11,7 +11,7 @@
                         <div class="nombre">
                         <label class="etiquetaTitulo" for="name"><b>Nombre:</b></label>
                         <br>
-                        <input type="text" class="input-register" name="nombre" id="name"  value="<%=locals.oldData ? oldData.nombre : null  %> ">
+                        <input type="text" class="input-register" name="nombre" id="name"   value= <%= locals.oldData? oldData.nombre : null %>>
                     </div>
                         <% if (locals.errors && errors.nombre ) { %>
                         <div class="texto-error">
@@ -23,12 +23,12 @@
                     <div class="apellido">
                         <label class="etiquetaTitulo" for="name"><b>Apellido:</b></label>
                         <br>
-                        <input type="text" class="input-register" name="apellido" id="apellido" value=" <%=locals.oldData ? oldData.apellido : null  %> " >
+                        <input type="text" class="input-register" name="apellido" id="apellido" value= <%= locals.oldData? oldData.apellido : null %>>
                     </div>  
 
                     <% if (locals.errors && errors.apellido ) { %>
                         <div class="texto-error">
-                            <%= errors.apellido.msg %> 
+                            <%= errors.apellido.msg%> 
                         </div>
                     <% } %>
 
@@ -36,10 +36,14 @@
                         <div class="nombre">
                             <label class="etiquetaTitulo" for="name"><b>Ubicacion:</b>:</label>
                             <br>
-                            <input type="text" class="input-register" name="ubicacion" id="ubicacion" value="<%=locals.oldData ? oldData.ubicacion : null  %> ">
+                            <input type="text" class="input-register" name="ubicacion" id="ubicacion" value= <%= locals.oldData? oldData.ubicacion : null %>>
                             </div>
 
-                       
+                            <% if (locals.errors && errors.ubicacion ) { %>
+                                <div class="texto-error">
+                                    <%= errors.ubicacion.msg %> 
+                                </div>
+                            <% } %>
         
         
                         
@@ -59,7 +63,7 @@
                 </div>
                 <% if (locals.errors && errors.email ) { %>
                     <div class="texto-error">
-                        <%= errors.email.msg %> 
+                        <%= errors.email.msg%> 
                     </div>
                 <% } %>
 

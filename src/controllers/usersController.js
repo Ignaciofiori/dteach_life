@@ -24,10 +24,10 @@ res.render("users/index")
        
        if(resultadoValidado.errors.length>0){
 
-        console.log(resultadoValidado.errors)
-
-        return  res.render('users/register',
-        {errors: resultadoValidado.mapped(),
+        console.log(resultadoValidado.mapped())
+   
+        res.render('users/register',
+       {errors: resultadoValidado.mapped(),
         oldData:req.body})
         
        } else{
