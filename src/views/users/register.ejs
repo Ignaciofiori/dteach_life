@@ -4,11 +4,7 @@
         <section>
             <div class="contenedorRegistro">
                     <h1>Registrarte</h1>
-                    <% if(locals.errors){
-                    errors.forEach(error => { %>
-                        <p><%=error.msg %> </p>
-                    <%})%>;
-                    <% } %> 
+
                 <form class="register-form" action="/users/register" method="POST" enctype="multipart/form-data">
                     
                     <div class="nombreYApellido formDecoracion">

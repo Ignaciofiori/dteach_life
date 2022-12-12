@@ -2,10 +2,11 @@ const express = require("express");
 const usersController = require("../controllers/usersController");
 const router = express.Router();
 const {body}= require('express-validator');
+const path = require('path')
   
 //MIDDLEWARES 
 const uploadFile = require("../middlewares/userMulterMiddleware")
-const validaciones = require("../middlewares/validacionesMiddleware")
+
 
 
   const validaciones = [
@@ -19,13 +20,17 @@ const validaciones = require("../middlewares/validacionesMiddleware")
     body('password').notEmpty().withMessage('falta el password'),
     body('imagenUsuario').custom((value,{req}) =>{
     let file = req.file;
+    
     let acceptedExtensions = ['.jpg','.png','.gif'];
     if(!file){
+      
       throw new Error('tiene que subir una imagen');
     }else{
+      
       let fileExtension = path.extname(file.originalname)
+      console.log(fileExtension)
       if(!acceptedExtensions.includes(fileExtension)){
-      throw new Error ('Las extensiones nos compatibles')
+      throw new Error ('Las extensiones nos compatibles loco')
     }}
       return true;
     })]
@@ -35,6 +40,6 @@ const validaciones = require("../middlewares/validacionesMiddleware")
 router.get("/",usersController.index);
 router.get('/login', usersController.login)
 router.get('/register', usersController.register)
-router.post("/register",uploadFile.single('imagenUsuario'),validaciones,usersController.createUser)
+router.post("/register",uploadFile.single('imagenUsuario'),validaciones ,usersController.createUser)
 
 module.exports = router

@@ -1,0 +1,169 @@
+4801
+El proyecto fue aprobado a inicios del 2020, pero nunca inicio formalmente dado que no se logró la liberación del presupuesto una vez aprobado el BC. La pandemia y cambios en la organización fueron algunos factores que afectaron a esta decisión. 
+En esta SDC se requiere dejar el proyecto suspendido por parte del negocio, esto, producto de algunos cambios en las prioridades de la gerencia de Fidelidad negocio.
+En los próximos meses se revisará su continuidad, o cancelación definitiva.
+4801
+El objetivo inicial del proyecto es desarrollar un canal adicional de comunicación para los clientes del programa 
+de Fidelidad, con la cual podamos interactuar de una manera directa y personalizada mediante ofertas 
+atractivas para el cliente, según su comportamiento de compra, acumulación, canje y fidelización con las 
+diferentes unidades de negocio de Cencosud. 
+Cencosud Fidelidad en su apuesta por la innovación, digitalización y el Customer Centricity, busca tener siempre al cliente al centro de los decisión estrategicas del negocio, por lo cual, se presentó este proyecto para evolucionar las ofertas promocionales que recibe el cliente y así transformar la experiencia de compra mediante la gamificacion  cambiando las dinamicas actualmente de compra y fidelización para impactar al 
+cliente. 
+Bajo esta necesidad, se analizaron los dispositivos desde los cuales acceden nuestro clientes al sitio de Puntos 
+Cencosud, este análisis dio como resultado que más del 60% de los clientes del programa acceden desde sus smartphone, lo cual nos permitiría tener una gran penetración en este segmento de clientes, además nos 
+incentiva a apostar al desarrollo de micro-servicios con los cuales podremos entregar a las APP y/o ecommerce 
+del grupo Cencosud funcionalidades esenciales del programa de Puntos Cencosud cómo la personalización de ofertas y promociones, ademá de las funcionalidades ya conocidos como inscripción, saldo de puntos, vencimientos, Canje, Acumulación, entre otras, para disponibilizar a los demás negocios de Cencosud o a 
+Partner externos con los cuales Fidelidad realice alianzas bajo el programa de Puntos Cencosud. 
+Dado lo anterior, se requiere realizar una Solicitud de Cambio al proyecto, para reactivar esta iniciativa, la cual  
+quedó pausada durante la pandemia debido a los cambios organizacionales y sociales producto de la situación mundial que viviamos. Esta pausa nos permitió entender mejor el comportamiento de nuestros clientes, y por lo cual se decidió avanzar y reactivar este proyecto para seguir mejorando y evolucionando la generación de 
+ofertas y promociones personalizadas, a esta iniciativa se suma un nuevo actor como es Cencommerce, quien 
+será un partner para acelerar la presencia de Puntos Cencosud en los ecommerce y apps. 
+Sumado a todo lo anterior, tenemos el objetivo de aumentar la presencia de Fidelidad en los ecommerce y es 
+por esto que el proyecto ahora incorpora la exposición de funcionalidades de Puntos Cencosud para que 
+puedan ser consumidas en los distintas Apps/Ecommerce de Cencosud.
+Se adjunta como imágen anexa el nuevo análisis para el TIR/VAN, considerando el nuevo periodo de ejecución del proyecto. Adicional se adjunta el detalle del análisis de Contribución APP presentado por Alex Goldberger 
+Gerente Comercial y Marketing de Fidelidad. En esta SdC es posible visualizar el  TIR/VAN original, pero hay que considerar el anexo. 
+Además en esta nueva SdC se presentan los ajustes a los Value Metric por el nuevo periodo de ejecución e implementación del proyecto, considerando la contribución desde el año 0.
+4801
+Este proyecto se liberó en el año 2019 y su principal objetivo era desarrollar un canal adicional de comunicación para los clientes del programa de Fidelidad, con el cual se buscaba tener una comunicación 
+directa con el cliente de tal forma interactuar de una manera personalizada entregando las mejoras ofertas en 
+tiempo real a través de una app, mejorando la experiencia en cada visita en tienda o en las compras online. 
+Cencosud Fidelidad en su apuesta por la innovación, digitalización, y en la búsqueda permanente de entregar una experiencia inolvidable al cliente, presentó este proyecto para evolucionar las ofertas promocionales que recibe el cliente y así transformar la experiencia de compra mediante la gamificación, haciendo mas lúdico y 
+atractivo captar ofertas y promociones en los negocios cencosud.  
+Este proyecto quedó suspendido durante el año 2020 hasta el Q3 del año 2021, y mediante una SDC se activó en septiembre 2021 para concretar la apuesta de fidelidad para evolucionar las ofertas promocionales, para 
+mejorar la experiencia de los clientes del programa, desarrollando un producto escalable, tecnológico, lúdico e innovador, descartando de esta forma construir una APP propia de Fidelidad, y así sumarse a las UDN mediante el desarrollo de micro-servicios, para exponer no solo la sección de ofertas sino también las funcionalidades de puntos Cencosud tales como inscripción, canje, acumulación y otros. 
+Esta fase de activación del proyecto consideraba un cambio al look&feel del conocido "Promo-Puntos", por lo 
+cual, se construyo una plataforma completamente nueva, cambiando todos los algoritmos, procesos, carga, 
+exposición de información y el frontend para visualizar las promociones/desafíos/ofertas, así además llevar esta nueva plataforma al sitio oficial de www.puntoscencosud.cl, en esta fase de activación se incluyó el desarrollo y refactorización de los micro-servicios de Fidelidad, para incorporar inscripción en Jumbo Prime y Tarjeta Cencosud, además de otros desarrollos cómo Service Request para los ticket creados por los clientes de Fidelidad en otras plataformas de Cencosud, se refactorizó además los micro-servicios de canje y acumulación. La puesta en producción de ofertas personalizadas se concretó en abril 2022, y ahora se encuentra en periodo de estabilización y evolución de la sección de ofertas personalizadas. 
+Esta nueva SDC se libera para continuar evolucionando el producto "Ofertas Personalizadas", ya que su puesta 
+en producción en abril 2022 consideró sólo la sección de promociones para acumulación extra de puntos basado en la activación de ofertas y la posterior compra del cliente, pero con esta segunda fase se incorporará la funcionalidad de descuentos personalizados en supermercados, haciendo aún más atractivo este nuevo producto. Inicialmente el descuento se hará válido presentando un cupón de descuento, el cual es activable y descargable del sitio de puntos cencosud, y luego se realizará un desarrollo para activar en línea los 
+descuentos del cliente, sin necesidad de presentar cupones. 
+Esta solicitud de cambio implica cambio en la fecha fin implementación (FFI) y movimiento entre cuentas 
+contables, este movimiento entre cuentas se debe a que los recursos destinados a HW no se utilizaron, ya que se construyo todo Cloud, desde los ambientes bajos al ambiente productivo, por lo cual, destinaremos los 
+recursos de HW a Alquileres y a Consultoría, para la evolución de los procesos desarrollados en AWS.
+4809
+La solicitud se enfoca en ampliar la fecha de fin del proyecto, esto con el objetivo de finalizar la etapa de 
+análisis técnico e iniciar los desarrollos comprometidos en el BC.
+Los retrasos de debieron a: 
+- Demora en la elección de la plataforma a integrar por parte del negocio. - Demora en la definición de la arquitectura de integración (Arq. Regional, Arq. Regional BNF, Arq. In House).
+Avances:
+- Definición de la plataforma de integración.
+- Estimación de esfuerzo para la Arq. Regional BNF.
+4809
+La solicitud enfoca ampliar la fecha de fin de implementación del proyecto, esto con el objetivo de finalizar la etapa de análisis técnico e iniciar los desarrollos comprometidos en el BC.
+Los retrasos se debieron a: 
+1. Periodo de inactividad por emergencia sanitaria (Pandemia covid-19) y re priorización de actividades de la 
+compañía.
+2. La elección del proveedor se reactivó y se encuentra en proceso por el negocio, procurement y sistemas.
+3. Cambio en el equipo interno de sistemas.
+4809 
+El proyecto en cuestión tiene desarrollado hasta el momento un 67% cubriendo las actividades de integración 
+de las plataformas VTEX y Janis con el nuevo middleware de tracking de Cencosud.
+Este middleware será el que se relacione con el proveedor externo Beetrack, quien proveerá el sistema de 
+tracking de pedidos desde la tienda hasta el cliente final.
+La licitación de este proveedor culminó la ultima semana de Junio por lo que se requiere realizar las 
+actividades restantes de integración entre nuestro middleware  de tracking con el  proveedor externo.
+Por esta razón requerimos extender la solicitud de cambio por cambio de FFI , para llegar a implementar lo 
+mencionado anteriormente y cumplir con el alcance del proyecto.
+4814
+Situación Actual:
+Actualmente Parking Cencosud Chile cuenta con 6 Sucursales en operación (Alto Las Condes, Portal la Dehesa, Costanera Center, Valparaíso, Osorno, Talcahuano) y 3 esperando permisos municipales para iniciar su operación (Temuco, Valdivia y La Serena)
+En cada Sucursal que tiene Parking, existe una Plataforma Tecnológica (soportada por servidores, equipos de comunicación, cajeros, cámaras y barreras) que gestiona toda la operación asociada al uso del servicio de Parking mediante el software de Skidata denominado Parking Logic. Esta plataforma está instalada en todas las sucursales con la versión 8 de dicho producto. Esta versión del software ya se encuentra fuera de soporte tanto por el lado del proveedor de parking Skidata como también de los proveedores de SW y HW de la solución 
+(Microsoft y HP principalmente). 
+Es por este motivo y por la necesidad de contar con soporte que garanticen la continuidad operativa de la 
+plataforma además de permitir nuevos desarrollos que mejoren la satisfacción de nuestros clientes que es necesaria la actualización de la plataforma Parking Logic a su última versión 12.
+Cambio:
+La definición inicial del proyecto contemplaba la actualización de la plataforma Parking Logic a la versión 12 en un número limitado de sucursales, las cuales, posterior al freeze por pandemia del proyecto, se volvió a evaluar y se consideró que esta actualización contemplara todas las sucursales operativas de parking, afectando tanto en costos como en los tiempos de implementación de este proyecto. 
+Para realizar esta actualización en todas las sucursales operativas de parking se requiere de una inversión adicional de $ 193.800 USD terminando la instalación en todas las sucursales en mayo 2021.
+4815
+El área de Procurement requiere mejorar su reportabilidad, ser autononomos en la publicación de sus reportes, 
+mejor experiencia de usuario y que permita autogestionarce de mejor manera,  para cumplir este objetivo 
+debemos migrar a una nueva versión del BI llamado Qliksense. Post fiscalización del BC el negocio llevo a cabo una nueva negociación de las licencias de Qliksense, obteniendo como resultado mejoras en los gastos post implementación y aumento de licencias, para vuestra información este cambio afecta solo en inversión, las fechas comprometidas permanecen vigentes.
+Dentro del mismo proyecto contempla conectar nuevas fuentes y llevar al BW, actividad que esta en etapa 
+desarrollo, las fuentes que se están implementado corresponden a Infor, Rp9, Genesix, Bp5.
+4815
+La solicitud corresponde a la continuidad del proyecto que se vio afectada por causas externas al proyecto. Se detalla los motivos y justificaciones y se adjunta Gantt actualizada
+-	En Marzo 2020 producto de las nuevas medidas respecto a gastos e inversiones, sostuvimos una reunión con paulina Simian gerente de Procurement, y explicamos la situación y postura de la compañía en relación a los proyectos, tomamos la decisión de suspender hasta volver a la normalidad y nueva normalidad.
+-	Octubre 2020-Noviembre 2020 comenzamos a gestionar el inicio de la fase 2 que había quedado detenida en marzo 2020.
+-	Noviembre 2020 no logramos dar continuidad al proyecto, Cencosud sufrió un ataque de malware que infecto muchas máquinas y servidores, la expansión infecto nuestro servidor del proyecto ambos ambientes 
+bajo y productivo, lamentablemente perdimos todo no estaban habilitados los respaldos.
+- Noviembre 2020 a febrero 2021  Iniciamos desde cero la implementación de los servidores, dentro del desarrollo de los paneles recuperamos un 10% el resto tuvimos que construirlo desde cero, dentro del proceso
+realizamos cuadraturas pasos a productivo tiempo nos llevó casi 4  meses.
+-	En marzo 2021 tuvimos que re-negociar la consultoría, las condiciones del proveedor habían cambiado 
+-	Marzo 2021 tuvimos claridad de fechas de término del proyecto y se lanza la SDC y cerrar definitivo el proyecto.
+Por estas consecuencias solicito que nos den esta solicitud de cambio para poder cerrar y finalizar el proyecto como corresponde
+4817
+Extensión de finalización del proyecto por motivos de demora por parte de la aceptación del negocio en la 
+compra del equipamiento de POS y los tiempos de entrega por parte del proveedor.
+4817
+El proyecto requiere una extensión de finalización del proyecto por motivo de demora en la entrega del equipamiento por parte del proveedor por temas de "pandemia" y que por consecuencia modificó las fechas del rollout en la implementación del recambio tecnológico en las tiendas.
+Actualmente el presupuesto se distribuye: 86% Real / 4% Comprometido / 10% Disponible
+Se ha implementado un 36% del presupuesto real.
+Considerando que falta la culminación del cambio y adecuaciones en los checkouts de cajas se requiere una extensión de fecha hasta el 30 de Junio del 2021.
+
+4819
+Procurement solicito licitación para la adjudicación del proveedor la cual llevo un poco más de 3 meses 
+mientras se consiguieron los proveedores, se realizaron las reuniones de requerimiento. Se tuvo que realizar 2 
+rondas de negociación 1 para determinar el tema técnico y la segunda para el económico adicional algunos de 
+los proveedores desistieron de participar en la mitad del proceso y se requerían mínimo 3 proveedores en la 
+licitación por lo que debimos salir a buscar un nuevo proveedor. El 30 de Octubre recibimos el aval para iniciar 
+el proyecto.
+
+4819
+En cuanto al proyecto se ha tenido un avance del 75% en desarrollo,debido a varias premisas como: 
+Se ha tenido un atraso en la culminación del proyecto de Tarjeta Regalo Omnicanal el cual estaba para finales de Mayo, las razones de dicho retraso se presentaron debido a la Pandemia, Día sin IVA y Despido de recurso 
+funcional de Ecommerce.
+- Pandemia, los recursos se han focalizado en todo el tema de Venta no presencial (Ecommerce) desde inicios
+Marzo y aún en curso
+- Día sin IVA (19/06, 03/07, 19/07), Prioridad para el negocio, recursos involucrados 100% en este tema, desde mitad de Mayo y aún en curso
+- Despido de recurso Ecommerce funcional ocasionando bloqueos por definiciones del Front de Vtex. Debemos esperar que el nuevo referente tenga la disponibilidad y la transferencia de conocimiento para su
+apoyo en las definiciones pendientes, las cuales en este momento son bloqueantes en algunos módulos del 
+desarrollo
+Si bien hemos podido adelantar temas de desarrollo,  existen definiciones funcionales del FRONT de 
+Ecommerce - Vtex y sin esto no podemos dar luz verde para pruebas y salidas a producción.
+Este tema ya se escaló con la gerencia pero por temas de prioridades de negocio, estamos reorganizando fechas para retomar los pendientes, con esto la nueva fecha final del proyecto sería 31 de octubre de 2020.
+4819
+El Objetivo del proyecto es: Diversificar el canal de distribución del producto tarjeta regalo.
+Permitir la venta de tarjetas regalo como un producto on-line en la Pagina web de las tiendas Jumbo y Metro 
+así como en las tiendas físicas, creando así funcionalidades de Omnicanalidad para ofrecer cada día un mejor 
+servicio al cliente.
+La solicitud de cambio no afecta el objetivo del proyecto,  se busca cumplir con todos los requerimientos del 
+mismo
+4820
+Dado diferentes factores, incluyendo la coyuntura que se tiene con el COVID-19 se tienen varias causas para solicitar el control de cambios: 1. Actualmente el contrato aun no se ha cerrado dado que se tuvieron puntos 
+en los que no hubo un acuerdo, por lo que aun esta en revisión por Cencosud y NCR.
+2. El usuario se encuentra en revisión del FITS .(Documento Funcional / Implementacion / Especificacion de pruebas)  esta revisión se esta realizando desde Marzo 2020. Se estima que se termine con esta revisión en Mayo - Junio.Luego de este proceso se procede a realizar los desarrollos en los que se tienen una duración 
+estimada de 4 meses desde Junio hasta Octubre.
+3. En Octubre la compañía ya entra en freeze y no se podría realizar ningún proceso de adecuación en la 
+tienda .
+4820
+Objetivo principal: Realizar piloto para SCO en la tienda Jumbo Santa Ana de Supermercados Colombia, que 
+permita ofrecer a nuestros clientes nuevas experiencias al realizar la gestión autónoma de sus pagos con efectivo y tarjeta crédito y débito de manera segura.
+Se presenta la solicitud de cambio debido al impacto en las fechas de desarrollo e implementación de los 
+desarrollos del proyecto SelfCheckOut adicional se realizara redistribucion de cuentas, debido a:
+1. Requerimiento del proveedor Credibanco en el proyecto de Datafonos de  analizar una nueva forma de
+implementación. 
+2. Cambios en el  cronograma del proyecto datafonos de instalaciones que estan programadas del 1 al 5 de
+Marzo 2021, y posterior a esto se deben realizar pruebas, por este cambio no se puede salir a producción ya que no se contaría con el datafono de firma digital como lo requiere el proyecto de  Self Check Out. 
+3. Se tuvo como prioridad urgente Spid 35.
+4. Redistribución de cuentas, el valor de Software/Licencias (1100 usd) deberá pasar a Consultoría, dado que Cencosud no comprara licencias, estas ya vienen incluidas en la consultoría que ofrece el proveedor NCR.
+4822
+Este tipo de proyectos integrales de eficiencia apuntan a identificar, diseñar y desarrollar métodos de automatización y digitalización de procesos recurrentes del CSC. En este sentido, se postula un alcance inicial macro (se identifican algunas iniciativas más grandes), pero luego en la dinámica del proyecto estas iniciativas se bajan a detalle, se pueden ampliar e incluso re-priorizar o directamente cambiar por nuevas. En función a esto, vamos utilizando los recursos del proyecto selectivamente por iniciativa, por lo que la utilización de la inversión se puede desviar en el tiempo (postergar mas tiempo hasta que se identifica y elige la mejor 
+iniciativa a ejecutar), sin generar costo extra.
+   Si bien hemos avanzado con despliegues progresivos en los distintos frentes del proyecto (tenemos mas un 70% de iniciativas en productivo hasta Dic 2020), se requiere  tiempo adicional al estimado originalmente para cumplimentar con todos los entregables identificados finalmente como parte del proyecto. 
+No tiene impactos en costos.
+4822
+Se requiere generar una extensión en la fecha de cierre del proyecto para concluir con iniciativas incorporadas al alcance, siendo que no generan mayor inversión. Adicionalmente, reclasificación de peps, sin requerir cambios en la inversión.
+Este tipo de proyectos integrales de eficiencia buscan identificar, diseñar y desarrollar métodos de digitalización, automatización o robotización de los procesos transaccionales del CSC. Como hemos declarado, 
+cuando se genera este tipo de proyectos se identifican una serie de iniciativas core, para luego entrar en detalle de las posibilidades y acciones que puedan generar mayor eficiencia, tanto en  calidad en el desarrollo 
+del proceso, como en la reducción/eliminación de HH's, acompañando el espíritu del CSC.
+Si bien hemos avanzado con despliegues progresivos en los distintos frentes  (tenemos mas de un 90% de iniciativas en productivo hasta Abr 2021), se requiere tiempo adicional al estimado originalmente para 
+cumplimentar con otros entregables identificados y que finalmente formarán  parte del proyecto sin mayor inversión que la solicitada oportunamente.
+En esta solicitud se incluyen ademas nuevas automatizaciones que se reemplazan por Robotizaciones, por lo que se requiere reclasificar conceptos de SW por CO.
+4823
+La gerencia de Procurement está impulsando las mejoras para el sistema SAP Ariba proponiendo implementar 
+la herramienta Supplier Lifecycle and Performance (SLP).
+Se requiere un cambio de alcance en la implementación donde se modificarán las integraciones actuales de 
+Ariba Sourcing y Ariba Contract de CI8 (Cloud Integration phase 8) a CIG (Cloud Integration Gateway). Integraciones actuales a migrar:
+RFQ > Sourcing
+Contract > ERP
