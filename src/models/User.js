@@ -31,6 +31,12 @@ return ultimoUsuario.id +1
         }
         usuarios.push(usuarioNuevo);
         fs.writeFileSync(path.join(__dirname,"../database/users.json"),JSON.stringify(usuarios,null," "));
+        return usuarioNuevo 
+    },
+    delete:function(id){
+        let usuarios = this.findAll()
+        let usuariosFinales = usuarios.filter(usuario=>usuario.id !==id)
+        fs.writeFileSync(path.join(__dirname,"../database/users.json"),JSON.stringify(usuariosFinales,null," "));
         return true
     }
 }

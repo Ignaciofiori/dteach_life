@@ -9,10 +9,11 @@
  },
  {
   "id": 2,
-  "nombre": "Ignacio Fiori",
+  "nombre": "Ignacio",
+  "apellido": "Fiori",
   "ubicacion": "Coghland",
-  "imagen": "",
   "email": "nacho.fiori@hotmail.com.ar",
-  "contraseña": "awitadekoko123"
+  "password": "1234567",
+  "imagen": "1670866763998imguser.jpeg"
  }
 ]

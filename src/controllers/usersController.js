@@ -26,7 +26,11 @@ res.render("users/index")
         oldData:req.body})
         
        } else{
-        User.create(req.body)
+        let userToCreate={
+          ...req.body,
+          imagen:req.file.filename
+        }
+        User.create(userToCreate)
         }
         res.redirect('/users/login');
         
