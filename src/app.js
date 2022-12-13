@@ -6,7 +6,7 @@ const session = require('express-session');
 const logger = require('morgan');
 const path = require('path');
 const methodOverride = require('method-override'); // Pasar poder usar los métodos PUT y DELETE
-
+const userLoggedMiddleware =require("./middlewares/userLoggedMiddeware")
 // ************ express() - (don't touch) ************
 const app = express();
 
@@ -18,6 +18,7 @@ app.use(session({
   resave:false,
   saveUninitialized:false,  
 }))
+app.use(userLoggedMiddleware)
 app.use(logger('dev'));
 app.use(express.json());
 app.use(cookieParser());
