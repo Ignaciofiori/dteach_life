@@ -80,8 +80,12 @@ createUser:(req,res)=> {
         }
         res.redirect('/users/login');
         
-       }
+       },
+logout:(req,res)=>{
+req.session.destroy()
+res.redirect("/")
+}
 
     }
-    
+     
 module.exports= usersController

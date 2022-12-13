@@ -15,4 +15,5 @@ router.get('/register', guestMiddleware, usersController.register)
 router.post("/register",uploadFile.single('imagenUsuario'),validaciones ,usersController.createUser)
 router.post("/login",usersController.loginProcess)
 router.get("/profile",authMiddleware,usersController.profile)
+router.get("/logout",usersController.logout)
 module.exports = router
