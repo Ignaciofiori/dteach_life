@@ -1,29 +1,32 @@
 [
  {
   "id": 1,
-  "nombre": "Ricardo",
-  "apellido": "Villalobos",
-  "ubicacion": "Flores, CABA",
-  "email": "rickyrickon@gmail.com",
-  "password": "$2a$10$R5babVwY5a3vbfhFpWI17enybd3vgyhJousl4Ti8aaFSyt5zhf3A.",
-  "imagen": "1670868746007imguser.jpeg"
+  "nombre": "Alvaro",
+  "apellido": "Malvestiti",
+  "ubicacion": "Rosario, Santa Fe, Argentina",
+  "descripcion": "algo sobre mi",
+  "imagen": "imagen-1669669154027.jpg",
+  "email": "alvaromalvestiti@gmail.com",
+  "password": "1234"
  },
  {
   "id": 2,
-  "nombre": "Ignacio",
-  "apellido": "Fiori",
-  "ubicacion": "Coghland",
-  "email": "nacho.fiori@hotmail.com.ar",
-  "password": "$2a$10$04P56PTChGXYMimTA7DBGecIqmVbUMMjdtc2RzizDuTGMt.1shHpW",
-  "imagen": "1670868770732imguser.jpeg"
+  "nombre": "asd",
+  "apellido": "asd",
+  "ubicacion": "asd",
+  "descripcion": "",
+  "imagen": null,
+  "email": "asd@asd.com",
+  "password": "asdasd"
  },
  {
   "id": 3,
-  "nombre": "nacho",
-  "apellido": "Fiori",
-  "ubicacion": "Coghland",
-  "email": "nacho.fiori@hotmail.com",
-  "password": "$2a$10$m4y3DgrhhH76d4jg9cdx8ees5nS0mmiMGBZbwrmgddN3ce3wZQVsW",
-  "imagen": "1670887856483imguser.jpeg"
+  "nombre": "asd",
+  "apellido": "asd",
+  "ubicacion": "asd",
+  "descripcion": "asd",
+  "email": "asd123@asd.com",
+  "password": "$2a$10$qPS7qbp0yUS3wTf0v.uILea261nz0kxOcKi0x6i6HOIzSIpj6UE/K",
+  "imagen": "imagen-1671814666124.png"
  }
 ]
