@@ -10,22 +10,22 @@
         <% } %>
         <form action="/users/register" method="POST" enctype="multipart/form-data">
             <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" id="nombre" value="<%= locals.old && old.nombre ? old.nombre : '' %>">
+            <input type="text" name="nombre" id="nombre" value="<%= locals.old && old.nombre ? old.nombre : oldData.nombre %>">
 
             <label for="apellido">Apellido:</label>
-            <input type="text" name="apellido" id="apellido" value="<%= locals.old && old.apellido ? old.apellido : '' %>">
+            <input type="text" name="apellido" id="apellido" value="<%= locals.old && old.apellido ? oldData.apellido : '' %>">
 
             <label for="ubicacion">Ubicacion:</label>
-            <input type="text" name="ubicacion" id="ubicacion" value="<%= locals.old && old.ubicacion ? old.ubicacion : '' %>">
+            <input type="text" name="ubicacion" id="ubicacion" value="<%= locals.old && old.ubicacion ? oldData.ubicacion : '' %>">
 
             <label for="descripcion">Descripcion:</label>
-            <textarea name="descripcion" id="descripcion" cols="30" rows="5" value="<%= locals.old && old.descripcion ? old.descripcion : '' %>"></textarea>
+            <textarea name="descripcion" id="descripcion" cols="30" rows="5" value="<%= locals.old && old.descripcion ? oldData.descripcion : '' %>"></textarea>
 
             <label for="imagen">Imagen del Usuario</label>
-            <input type="file"  name="imagen" alt="Submit" width="48" height="48" value="<%= locals.old && old.imagen ? old.imagen : '' %>">
+            <input type="file"  name="imagen" alt="Submit" width="48" height="48" value="<%= locals.old && old.imagen ? oldData.imagen : '' %>">
 
             <label for="email">Correo</label>
-            <input type="email" name="email" id="email" value="<%= locals.old && old.email ? old.email : '' %>">
+            <input type="email" name="email" id="email" value="<%= locals.old && old.email ? oldData.email : '' %>">
 
             <label for="password">Contraseña</label>
             <input type="password" name="password" id="password" >
