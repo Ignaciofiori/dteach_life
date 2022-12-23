@@ -2,16 +2,23 @@
 const createError = require('http-errors');
 const cookieParser = require('cookie-parser');
 const express = require('express');
+const session = require('express-session');
 const logger = require('morgan');
 const path = require('path');
 const methodOverride = require('method-override'); // Pasar poder usar los métodos PUT y DELETE
-
+const userLoggedMiddleware =require("./middlewares/userLoggedMiddeware")
 // ************ express() - (don't touch) ************
 const app = express();
 
 // ************ Middlewares - (don't touch) ************
 app.use(express.static(path.join(__dirname, '../public'))); // Necesario para los archivos estáticos en el folder /public
 app.use(express.urlencoded({ extended: false }));
+app.use(session({
+  secret:"Shhh, Its a secret",
+  resave:false,
+  saveUninitialized:false,  
+}))
+app.use(userLoggedMiddleware)
 app.use(logger('dev'));
 app.use(express.json());
 app.use(cookieParser());

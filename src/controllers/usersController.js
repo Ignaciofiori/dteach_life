@@ -11,6 +11,12 @@ const usersController = {
   login: (req, res) => {
     res.render('users/login');
   },
+  loginProcess: (req, res) => {
+    console.log('loginProcess');
+  },
+  logout: (req, res) => {
+    console.log('logout');
+  },
   register: (req, res) => {
     res.render('users/register');
   },
