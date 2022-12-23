@@ -1,1 +1,22 @@
-[{"id":1,"nombre":"Ricardo Villalobos","ubicacion":"Beccar, San Isidro","imagen":"personal-man.jpg","email":"","contraseña":""},{"id":2,"nombre":"Ignacio Fiori","ubicacion":"Coghland","imagen":"","email":"nacho.fiori@hotmail.com.ar","contraseña":"awitadekoko123"}]
+[
+  {
+    "id": 1,
+    "nombre": "Alvaro",
+    "apellido": "Malvestiti",
+    "ubicacion": "Rosario, Santa Fe, Argentina",
+    "descripcion": "algo sobre mi",
+    "imagen": "imagen-1669669154027.jpg",
+    "email": "alvaromalvestiti@gmail.com",
+    "password": "1234"
+  },
+  {
+    "id": 2,
+    "nombre": "asd",
+    "apellido": "asd",
+    "ubicacion": "asd",
+    "descripcion": "",
+    "imagen": null,
+    "email": "asd@asd.com",
+    "password": "asdasd"
+  }
+]

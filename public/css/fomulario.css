@@ -1,101 +1,43 @@
-  /* 
-Paleta de colores:
-Negro: #120d0e
-Azul: #12384b
-Verde oscuro: #63c65f
-Verde claro: #c9da6f
-Amarillo: #f4eb95
-Gris claro: #ebebeb
-*/
-
-:root{
-  
-  --bordes-color:#c9da6f;
-  --texto-color: #63c65f;
-  --boton-text-color:#f4eb95;
-
+.containerForm {
+  flex-direction: column;
 }
 
+.containerForm form {
+  display: flex;
+  flex-direction: column;
+} 
 
-
-section{
-    display: flex;
-    justify-content: center;
-  
-  }
-.contenedorRegistro{
-  width: 90vw;
-justify-content: center;
-text-align: center;
-  flex-wrap: wrap;
-
-  border: .5em solid var(--bordes-color) ;
-  box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
-  
+.containerForm h3 {
+  margin-top: 10px;
 }
 
-
-.nombreYApellido{
-  border: var(--bordes-color) .2em dotted ;
-}
-/*-----------------------------*/
-
-input{
-  box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
-  border-radius: 10px;
+.containerForm input{
+  margin: 5px;
+  border: none;
+  border-radius: 20px;
   font-size: 0.2 em;
   text-align: center;
-}
-.nombre input{
-    width: 70%;
-}
-.apellido input {
-    width: 70%;
-}
-.mail input{
-    width: 70%
-}
-.formDecoracion{
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-.contraseña input{
-    width: 70%
-}
-.boton button{
-    background-color: var(--bordes-color);
-    color:var(--boton-text-color) ;
-    border-radius: 20%;
-    border-color: var(--bordes-color);
+  padding: 5px;
 }
 
-h3 {
-  font-size: 1em;
-}
-.contenedorRegistro a {
-  font-size: 0.8em;
-}
-/*Articulo*/
-article form div{
-  display: flex;
-  flex-direction: column;
-  padding: 1em;
-  box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
+.containerForm button{
+  margin: 5px;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.2 em;
+  text-align: center;
+  padding: 5px;
 }
 
-article form div h2{
-  font-size: 1em;
+.fontBold {
+  font-weight: bold;
 }
 
-.contenedorRegistro .etiquetaTitulo{
-  display: none;
-}
-.editProducto{
-  display: flex;
-  flex-direction: column;
+.delete { 
+  color: var(--light);
+  background-color: brown;
 }
 
-.intensidad{
-  display: flex;
-  flex-direction: row;
+.errors {
+  color: brown;
 }

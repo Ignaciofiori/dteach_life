@@ -14,14 +14,12 @@ const controller = {
   create: (req, res) => {
     let producto = {
       id: products.length + 1,
-      nombre: req.body.nombre,
-      ubicacion: req.body.ubicacion,
-      descripcionProfe: req.body.descripcionProfe,
+      id_profesor: 1, // TODO : reemplazar por id del usuario que crea la tarea.
+      actividad: req.body.actividad,
       precio: req.body.precio,
-      imagen: req.file.filename,
-      deporte: req.body.actividad,
-      dificultad: req.body.intensidad,
-      descripcionClase: req.body.descripcionClase,
+      horas: req.body.horas,
+      intensidad: req.body.intensidad,
+      descripcion: req.body.descripcion,
     };
     products.push(producto);
     let productsJSON = JSON.stringify(products);
@@ -40,18 +38,11 @@ const controller = {
     const id = req.params.id;
     let update = products.filter((item) => {
       if (item.id == id) {
-        req.body.nombre ? (item.nombre = req.body.nombre) : null;
-        req.body.ubicacion ? (item.ubicacion = req.body.ubicacion) : null;
-        req.body.descripcionProfe
-          ? (item.descripcionProfe = req.body.descripcionProfe)
-          : null,
-          req.body.precio ? (item.precio = req.body.precio) : null,
-          req.file ? (item.imagen = req.file.filename) : null,
-          req.body.actividad ? (item.deporte = req.body.actividad) : null;
+        req.body.actividad ? (item.deporte = req.body.actividad) : null;
+        req.body.precio ? (item.precio = req.body.precio) : null;
+        req.body.horas ? (item.horas = req.body.horas) : null;
         req.body.intensidad ? (item.dificultad = req.body.intensidad) : null;
-        req.body.descripcionClase
-          ? (item.descripcionClase = req.body.descripcionClase)
-          : null;
+        req.body.descripcion ? (item.descripcion = req.body.descripcion) : null;
       }
       return item;
     });

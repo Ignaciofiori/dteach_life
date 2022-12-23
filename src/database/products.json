@@ -1,1 +1,1 @@
-[{"id":1,"nombre":"Jorgen","ubicacion":"Bon Strangulo","descripcionProfe":"Entrenamiento","precio":"700","imagen":"personal-man2.jpg","deporte":"Tenis","dificultad":"Medio","descripcionClase":"Tenis"},{"id":2,"nombre":"Alejandra","ubicacion":"Olivos,","descripcionProfe":"Entrenamiento","precio":"500","imagen":"personal-women.jpg","deporte":"Voley","dificultad":"principiante","descripcionClase":"Voley"}]
+[{"id":2,"id_profesor":2,"actividad":"Voley","precio":"500","horas":2,"intensidad":1,"descripcion":"algo sobre la clase"}]

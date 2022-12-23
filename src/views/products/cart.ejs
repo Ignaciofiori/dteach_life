@@ -1,52 +1,36 @@
 <%- include("../partials/head.ejs") %>
 <%- include("../partials/header.ejs") %>
-    <main>
-            <section>
-                <article >  
-                    
-
-                
-                   
+<main>
+    <section class="containerForm">
+        <h1>Tomar clase</h1>
+        <form action="/" method="GET">
+            <h3>Tu compra:</h3>
+            <label for="qtyCard">Cantidad de clases</label>
+            <input type="number" name="cantidad" id="qtyCard" placeholder="cantidad" >
+            <p>Total: $$$$ </p>
             
-                <form class="register-form" action="/" method="GET">
-                <div class="datosDeCompra">
-                <h2>DATOS DE COMPRAS</h2>
-                <label for="qtyCard">Cantidad de clases</label>
-                <input type="number" class="inputCard" name="cantidad" id="qtyCard" placeholder="cantidad" >
-                <p class="total">Total: $$$$ </p>
-                </div>
-                <div class="datosPersonales">
-                    <h2>DATOS PERSONALES</h2>
-                <label for="dniCart">DNI</label>
-                <input type="number" class="inputCard" name="dni" id="dniCart" placeholder="cantidad" >
-                <label for="addresCart">Dirección</label>
-                <input type="text" class="inputCard" name="dirección" id="addresCart" placeholder="direccion1234" >
-                </div>
-                <div class="datosDeTarjeta">
-                    <h2>DATOS DE LA TARJETA</h2>
-                    <label for="numeroDeTarjetaCart">Numero</label>
-                    <input type="number" class="inputCard" id="numeroDeTarjetaCart" placeholder="85558 2585 85585" >
-                    <label for="titularCart">Titular</label>
-                    <input type="text" class="inputCard"  id="titularCart" placeholder="Nombre Apellido" >
-                    <label for="venCart">Vencimiento</label>
-                    <input type="date" class="venCard"  id="venCart" >
-                    <label for="segCart">COD SEG</label>
-                    <input type="text" class="cod Seg" name="seguridad" id="segCart" placeholder="Nombre Apellido" >
-                    <div class="finalizarLaCompra boton formDecoracion">
-                        <button class="submit" type="submit">FINALIZAR LA COMPRAS</button>
-                    </div>
-                
-                
-                </div>
+            <h3>Datos personales:</h3>
+            <label for="dniCart">DNI</label>
+            <input type="number" name="dni" id="dniCart" placeholder="cantidad" >
 
-                </form>
+            <label for="addresCart">Dirección</label>
+            <input type="text" name="dirección" id="addresCart" placeholder="direccion1234" >
 
-                
-            
-                </article>
+            <h3>Datos de pago:</h3>
+            <label for="numeroDeTarjetaCart">Numero de tarjeta</label>
+            <input type="number"id="numeroDeTarjetaCart" placeholder="85558 2585 85585" >
 
-        </section>
+            <label for="titularCart">Nombre completo</label>
+            <input type="text" id="titularCart" placeholder="Nombre Apellido" >
 
+            <label for="venCart">Vencimiento</label>
+            <input type="text" id="venCart" >
 
-    </main>
+            <label for="segCart">Codigo de seguridad</label>
+            <input type="text" name="seguridad" id="segCart" placeholder="Nombre Apellido" >
+
+            <button class="submit" type="submit">FINALIZAR LA COMPRAS</button>
+        </form>
+    </section>
+</main>
 <%- include("../partials/footer.ejs") %>

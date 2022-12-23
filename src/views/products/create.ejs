@@ -1,54 +1,35 @@
 <%- include("../partials/head.ejs") %>
 <%- include("../partials/header.ejs") %>
 <main>
-    <section class="inicio-product">
-        <div class="search-bar-product">
-            <h2>Formulario de nueva clase</h4>
-        </div>  
-    </section>
-    <section class="product">
-        <form action="/products/create" method="POST" enctype="multipart/form-data">
-            <div class="editProducto">
-                <h3>Datos del profe</h3>
-                <label for="nombre">Nombre y Apellido</label>
-                <input type="text" name="nombre">
+    <section class="containerForm">
+        <h1>Nueva clase</h1>
+        <form action="/products/create" method="POST">
+            <label for="actividad">Actividad</label>
+            <input type="text" name="actividad">
 
-                <label for="ubicacion">Ubicacion</label>
-                <input type="text" name="ubicacion">
+            <label for="precio">Precio</label>
+            <input type="number" name="precio" placeholder="$$$" >
 
-                <label for="descripcionProfe">Descripcion</label>
-                <input type="text" name="descripcionProfe">
+            <label for="horas">Cantida de hs</label>
+            <input type="number" name="horas" placeholder="¿Cuantas Horas requiere tu clase?" >
 
-                <label for="img">Foto</label>
-                <input type="file" name="imagenProducto" id="imagenProducto" accept=".jpg, .jpeg, .png">
-                
-                <h3>Datos de la clase</h3>
-                <label for="actividad">Actividad</label>
-                <input type="text" name="actividad">
+            <label for="descripcion">Descripcion de clase</label>
+            <input type="text" name="descripcion" placeholder="Describe tu clase" >
 
-                <label for="precio">Precio</label>
-                <input type="number" name="precio" placeholder="$$$" >
-
-                <label for="horas">Cantida de hs</label>
-                <input type="number" name="horas" placeholder="¿Cuantas Horas requiere tu clase?" >
-
-                <label for="descripcionClase">Descripcion de clase</label>
-                <input type="text" name="descripcionClase" placeholder="Describe tu clase" >
-
-                <label for="clase">Intensidad</label>
-                <div class="intensidad">
-                    <input type="radio" id="1" name="intensidad" value="principiante" required>
-                    <label for="1">Principiante</label>
-                <div class="intensidad">
-                    <input type="radio" id="2" name="intensidad" value="amateur">
-                    <label for="2">Medio</label>
-                </div>
-                <div class="intensidad">
-                    <input type="radio" id="3" name="intensidad" value="profesional">
-                    <label for="3">Profesional</label>
-                </div>
+            <label for="intensidad">Intensidad</label>
+            <div class="intensidad">
+                <input type="radio" id="1" name="intensidad" value="principiante" required>
+                <label for="1">Principiante</label>
+            </div>  
+            <div class="intensidad">
+                <input type="radio" id="2" name="intensidad" value="amateur">
+                <label for="2">Medio</label>
             </div>
-            <button class="boton" type="submit">Cargar</button>
+            <div class="intensidad">
+                <input type="radio" id="3" name="intensidad" value="profesional">
+                <label for="3">Profesional</label>
+            </div>
+            <button type="submit">Cargar</button>
         </form>   
     </section>
 </main>
