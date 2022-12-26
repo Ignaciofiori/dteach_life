@@ -8,7 +8,9 @@
             <% if (locals.isLogged) { %>
             
             <li><a href="/products/create">Ofrecer Clase</a></li> 
-            <li><a href="/users/profile">Mi Perfil</a></li> 
+            <li><a href="/users/profile">Hola <%=locals.userLogged.nombre %> !</a></li> 
+        
+            </a>
           </ul>
           <ul>
             <% } else {%>
