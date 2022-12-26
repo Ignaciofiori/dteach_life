@@ -16,8 +16,7 @@ const usersController = {
     res.render('users/login');
   },
   loginProcess: (req, res) => {
-    const errors = validationResult(req);
-    console.log(errors);
+ 
     let userALoguear = User.findByField('email', req.body.email);
     if (userALoguear) {
       let contraseñaCorrecta = bcryptjs.compareSync(
@@ -30,19 +29,20 @@ const usersController = {
         res.redirect('/users/profile');
       }
       return res.render('users/login', {
-        errors: [
-          {
+        errors: 
+          {email:{
             msg: 'Las Credenciales son Invalidas',
-          },
-        ],
+          }
+        }
+        ,
       });
     }
     return res.render('users/login', {
-      errors: [
-        {
+      errors:
+        {email:{
           msg: 'No se encuentra este email en nuestra base de datos',
         },
-      ],
+        },
     });
   },
   logout: (req, res) => {
@@ -59,8 +59,10 @@ const usersController = {
 
       if (userInDb) {
         return res.render('users/register', {
-          errors: [{ msg: 'este email ya esta registrado' }],
-          oldData: req.body,
+          errors: { 
+            email:{
+              msg: 'Este Email ya esta registrado'} },
+          old: req.body,
         });
       } else {
         let userToCreate = {
@@ -74,7 +76,7 @@ const usersController = {
     } else {
       res.render('users/register', {
         errors: errors.mapped(),
-        oldData: req.body,
+        old: req.body,
       });
     }
     res.redirect('/users/login');

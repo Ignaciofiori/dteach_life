@@ -30,7 +30,7 @@
             <% } %>
 
             <label for="descripcion">Descripcion:</label>
-            <textarea name="descripcion" id="descripcion" cols="30" rows="5" value="<%= locals.old && old.descripcion ? old.descripcion : null %>"></textarea>
+            <input type ="text" name="descripcion" id="descripcion" cols="30" rows="5" value="<%= locals.old && old.descripcion ? old.descripcion : null %>"></textarea>
             <% if (locals.errors && errors.descripcion ) { %>
                 <div class="errors">
                     <%= errors.descripcion.msg %> 
