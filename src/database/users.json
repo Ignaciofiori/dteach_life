@@ -28,5 +28,15 @@
   "email": "asd123@asd.com",
   "password": "$2a$10$qPS7qbp0yUS3wTf0v.uILea261nz0kxOcKi0x6i6HOIzSIpj6UE/K",
   "imagen": "imagen-1671814666124.png"
+ },
+ {
+  "id": 4,
+  "nombre": "Ignacio",
+  "apellido": "Fiori",
+  "ubicacion": "Coghland",
+  "descripcion": "hola como va",
+  "email": "nacho.fiori@hotmail.com.ar",
+  "password": "$2a$10$cG5wuMho/7h0KblHCAiM4u/qNRcmtZ/xiF6ooOZtcMSL.QduC7svq",
+  "imagen": "1672088535855imguser.jpeg"
  }
 ]

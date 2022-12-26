@@ -73,7 +73,7 @@ const usersController = {
       }
     } else {
       res.render('users/register', {
-        errors: errors.array(),
+        errors: errors.mapped(),
         oldData: req.body,
       });
     }
