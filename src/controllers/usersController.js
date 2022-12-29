@@ -8,6 +8,7 @@ const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 
 const usersController = {
   profile: (req, res) => {
+    console.log(req.cookies.emailUsuario)
     res.render('users/profile', {
       user: req.session.userLogged,
     });
@@ -26,6 +27,9 @@ const usersController = {
       if (contraseñaCorrecta) {
         delete userALoguear.password;
         req.session.userLogged = userALoguear;
+        if(req.body.recordarUsuario){
+          res.cookie("emailUsuario",req.body.email,{maxAge:(1000*60)*60})
+        }
         res.redirect('/users/profile');
       }
       return res.render('users/login', {
@@ -46,6 +50,7 @@ const usersController = {
     });
   },
   logout: (req, res) => {
+    res.clearCookie("emailUsuario")
     req.session.destroy();
     res.redirect('/');
   },
