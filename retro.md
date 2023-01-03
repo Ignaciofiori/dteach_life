@@ -43,14 +43,15 @@ ___
 ### 3.3. Fortalecer el trabajo en equipo.:facepunch::fist_oncoming::punch::punch:
 ### 3.4. Las reuniones de equipo.
 ___
-# SPRINT No.5::mechanical_arm:	PENDIENTE
+# SPRINT No.5::mechanical_arm:
 ## 1. Que no funcionó en el anterior SPRINT (Dejar de hacer - Menos de)::dizzy:	
-### 1.1. Coincidir para trabajar al mismo tiempo.
+### 1.1. Coincidir para trabajar todos al mismo tiempo.
 ## 2. Cosas por implementar en este SPRINT (Comenzar a Hacer)::snowman:	
-### 2.1. Actualizar el proyecto con las observaciones respectivas.
+### 2.1. Hacer los cambios solicitado en la retroalimentación.
 ## 3. Que estaría bien implementar en el sexto SPRINT (Seguir haciendo - más de)::eye_speech_bubble:	
 ### 3.1. Seguir comprometidos con el avance del proyecto como hasta el momento se ha venido realizando, esforzados por el bien común, aprovechando las fortalezas de cada uno.
 ### 3.2. Seguir manteniendo el código actualizado e informar los avances realizados a través de discord y el tablero en JIRA.
-### 3.3. Fortalecer el trabajo en equipo.
-### 3.4. Las reuniones de equipo.
+### 3.3. Mejorar los aspectos visuales del proyecto.
+### 3.4. Fortalecer el trabajo en equipo.
+### 3.5. Las reuniones de equipo.
 ___
