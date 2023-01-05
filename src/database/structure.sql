@@ -41,3 +41,7 @@ CREATE TABLE `dteach`.`usuarios_clases` (
   PRIMARY KEY (`id`));
 
 
+ALTER TABLE `usuarios` ADD FOREIGN KEY (`id_categoria`) REFERENCES `categorias`(`id`);
+ALTER TABLE `clases` ADD FOREIGN KEY (`id_especialidad`) REFERENCES `especialidades`(`id`);
+ALTER TABLE `usuarios_clases` ADD FOREIGN KEY (`id_usuario`) REFERENCES `usuarios`(`id`);
+ALTER TABLE `usuarios_clases` ADD FOREIGN KEY (`id_clase`) REFERENCES `clases`(`id`);
