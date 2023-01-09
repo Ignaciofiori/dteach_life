@@ -2,9 +2,6 @@
  const fs = require('fs');
  const db = require("../database/models")
 
- const productsFilePath = path.join(__dirname, '../database/products.json');
- const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-
  const controller = {
   async index (req, res){
     let products = await db.Clase.findAll()
@@ -14,7 +11,7 @@
     let especialidades = await db.Especialidad.findAll()
      res.render('products/create',{especialidades:especialidades});
    },
-async create (req, res){
+create (req, res){
  db.Clase.create({
   nombre_profesor:req.body.nombre_profesor,
   ubicacion:req.body.ubicacion,
@@ -23,16 +20,14 @@ async create (req, res){
   id_especialidad:req.body.especialidad
 })
 res.redirect("/products")
- }
-//     products.push(producto);
-//     let productsJSON = JSON.stringify(products);
-//     fs.writeFileSync(productsFilePath, productsJSON);
-//     res.redirect('/products');
-//   },
-//   detail: (req, res) => {
-//     const producto = products.find((item) => item.id == req.params.id);
-//     res.render('products/detail', { producto: producto });
-//   },
+ },
+async detail (req, res){
+ const producto = await db.Clase.findByPk(req.params.id,{
+  include:[{association:"especialidades"},{association:"usuarios"
+  }]
+ });
+res.render('products/detail', { producto: producto });
+   }
 //   editForm: (req, res) => {
 //     const producto = products.find((item) => item.id == req.params.id);
 //     res.render('products/edit', { producto: producto });

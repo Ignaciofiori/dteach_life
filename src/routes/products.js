@@ -6,7 +6,7 @@ const productsController = require('../controllers/productsController');
  //const upload = require('../middlewares/productMulterMiddleware');
 
 router.get('/', productsController.index);
-//router.get('/detail/:id', productsController.detail);
+router.get('/detail/:id', productsController.detail);
 // router.get('/cart', productsController.cart);
 router.get('/create', productsController.createForm);
 router.post('/create', productsController.create);
