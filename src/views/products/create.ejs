@@ -4,31 +4,31 @@
     <section class="containerForm">
         <h1>Nueva clase</h1>
         <form action="/products/create" method="POST">
-            <label for="actividad">Actividad</label>
-            <input type="text" name="actividad">
+            <label for="nombre_profesor">Nombre Profesor</label>
+            <input type="text" name="nombre_profesor">
+
+            <label for="ubicacion">Ubicacion</label>
+            <input type="text" name="ubicacion" placeholder="Ubicacion" >
 
             <label for="precio">Precio</label>
             <input type="number" name="precio" placeholder="$$$" >
 
-            <label for="horas">Cantida de hs</label>
-            <input type="number" name="horas" placeholder="¿Cuantas Horas requiere tu clase?" >
-
             <label for="descripcion">Descripcion de clase</label>
             <input type="text" name="descripcion" placeholder="Describe tu clase" >
 
-            <label for="intensidad">Intensidad</label>
+            <label for="especialidad">Actividad</label>
             <div class="intensidad">
-                <input type="radio" id="1" name="intensidad" value="principiante" required>
-                <label for="1">Principiante</label>
+               <select name="especialidad">
+                <% for( let i =0;i <especialidades.length;i++ ) { %>
+                     
+                <option value="<%= especialidades[i].id%>">
+                    <%=especialidades[i].nombre %>
+                </option>
+                <% } %>
+               </select>
+            
             </div>  
-            <div class="intensidad">
-                <input type="radio" id="2" name="intensidad" value="amateur">
-                <label for="2">Medio</label>
-            </div>
-            <div class="intensidad">
-                <input type="radio" id="3" name="intensidad" value="profesional">
-                <label for="3">Profesional</label>
-            </div>
+            
             <button type="submit">Cargar</button>
         </form>   
     </section>

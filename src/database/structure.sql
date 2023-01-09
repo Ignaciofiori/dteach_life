@@ -3,12 +3,12 @@ CREATE DATABASE dteach;
 USE dteach;
 
 CREATE TABLE `dteach`.`categorias` (
-  `id` INT NOT NULL AUTO_INCREMENT,
+  `id` INT  AUTO_INCREMENT,
   `nombre` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id`));
 
 CREATE TABLE `dteach`.`usuarios` (
-  `id` INT NOT NULL AUTO_INCREMENT,
+  `id` INT  AUTO_INCREMENT,
   `nombre` CHAR(100) NOT NULL,
   `apellido` CHAR(100) NOT NULL,
   `email` VARCHAR(45) NOT NULL,
@@ -19,13 +19,12 @@ CREATE TABLE `dteach`.`usuarios` (
   PRIMARY KEY (`id`));
 
 CREATE TABLE `dteach`.`especialidades` (
-  `id` INT NOT NULL AUTO_INCREMENT,
+  `id` INT  AUTO_INCREMENT,
   `nombre` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id`));
 
 CREATE TABLE `dteach`.`clases` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `nombre` VARCHAR(55) NOT NULL,
+  `id` INT  AUTO_INCREMENT,
   `nombre_profesor` VARCHAR(55) NOT NULL,
   `ubicacion` VARCHAR(55) NOT NULL,
   `precio` INT NOT NULL,
@@ -35,7 +34,7 @@ CREATE TABLE `dteach`.`clases` (
 
 
 CREATE TABLE `dteach`.`usuarios_clases` (
-  `id` INT NOT NULL AUTO_INCREMENT,
+  `id` INT  AUTO_INCREMENT,
   `id_usuario` INT NOT NULL,
   `id_clase` INT NOT NULL,
   PRIMARY KEY (`id`));
