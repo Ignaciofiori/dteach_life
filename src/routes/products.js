@@ -9,7 +9,6 @@ const storage = multer.diskStorage({
       cb(null, path.join(__dirname, '../../public/uploads'));
     },
     filename: function (req, file, cb) {
-        console.log(file)
       let nombreArchivo =  Date.now() +'imagenProducto' +path.extname(file.originalname);
         cb(
         null,nombreArchivo
@@ -26,7 +25,7 @@ router.get('/detail/:id', productsController.detail);
 router.get('/create', productsController.createForm);
 router.post('/create',upload.single("imagen"),productsController.create);
 router.get('/edit/:id', productsController.editForm);
-// router.put('/edit/:id', productsController.edit);
+router.put('/edit/:id', upload.single("imagen"),productsController.edit);
 // router.delete('/delete/:id', productsController.delete);
 
  module.exports = router;

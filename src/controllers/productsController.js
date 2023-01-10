@@ -36,23 +36,18 @@ async editForm (req, res) {
       include:[{association:"especialidades"},{association:"usuarios"}]
  });
     res.render('products/edit', { producto: producto,especialidades:especialidades});
+  },
+edit: (req, res) => {
+  db.Clase.update({
+    nombre_profesor:req.body.nombre_profesor,
+    ubicacion:req.body.ubicacion,
+    precio:req.body.precio,
+    descripcion: req.body.descripcion,
+    id_especialidad:req.body.especialidad,
+    imagen : req.file.filename
+},{where:{id:req.params.id}});
+    res.redirect("/products/detail/" + req.params.id)
   }
-//   edit: (req, res) => {
-//     const id = req.params.id;
-//     let update = products.filter((item) => {
-//       if (item.id == id) {
-//         req.body.actividad ? (item.deporte = req.body.actividad) : null;
-//         req.body.precio ? (item.precio = req.body.precio) : null;
-//         req.body.horas ? (item.horas = req.body.horas) : null;
-//         req.body.intensidad ? (item.dificultad = req.body.intensidad) : null;
-//         req.body.descripcion ? (item.descripcion = req.body.descripcion) : null;
-//       }
-//       return item;
-//     });
-//     let productsJSON = JSON.stringify(update);
-//     fs.writeFileSync(productsFilePath, productsJSON);
-//     res.redirect('/products');
-//   },
 //   delete: (req, res) => {
 //     const id = req.params.id;
 //     let update = products.filter((item) => item.id != id);

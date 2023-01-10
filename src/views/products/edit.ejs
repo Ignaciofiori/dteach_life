@@ -4,19 +4,19 @@
     <section class="containerForm">
         <h1>Editar clase</h1>
         <form action="/products/edit/<%= producto.id %>/?_method=PUT" method="POST" enctype="multipart/form-data">
-            <label for="actividad">Nombre</label>
+            <label for="actividad">Nombre:</label>
             <input type="text" name="nombre_profesor" value="<%= producto.nombre_profesor %>">
 
-            <label for="ubicacion">Ubicaccion</label>
+            <label for="ubicacion">Ubicaccion:</label>
             <input type="text" name="ubicacion"  value="<%= producto.ubicacion %> ">
 
-            <label for="precio">Precio</label>
+            <label for="precio">Precio:</label>
             <input type="number" name="precio" value="<%= producto.precio %>" required>
 
-            <label for="descripcion">Descripcion de clase</label>
+            <label for="descripcion">Descripcion de clase:</label>
             <input type="text" name="descripcion" placeholder="Describe tu clase" value="<%= producto.descripcion %>" >
 
-            <label for="especialidad">Deporte</label>
+            <label for="especialidad">Deporte:</label>
             <select name="especialidad" >
                 <% for( let i =0;i <especialidades.length;i++ ) { %>
                      
@@ -25,6 +25,8 @@
                 </option>
                 <% } %> 
             </select>
+            <label for="imagen">Imagen de la clase:</label>
+               <input type="file"  name="imagen" required>
             <button class="boton" type="submit">Cargar</button>
         </form>
         <form action="/products/delete/<%= producto.id %>/?_method=DELETE" method="POST">
