@@ -3,32 +3,28 @@
 <main>
     <section class="containerForm">
         <h1>Editar clase</h1>
-        <form action="/products/edit/<%= producto.id %>/?_method=PUT" method="POST">
-            <label for="actividad">Actividad</label>
-            <input type="text" name="actividad" value=<%= producto.deporte %>>
+        <form action="/products/edit/<%= producto.id %>/?_method=PUT" method="POST" enctype="multipart/form-data">
+            <label for="actividad">Nombre</label>
+            <input type="text" name="nombre_profesor" value="<%= producto.nombre_profesor %>">
+
+            <label for="ubicacion">Ubicaccion</label>
+            <input type="text" name="ubicacion"  value="<%= producto.ubicacion %> ">
 
             <label for="precio">Precio</label>
-            <input type="number" name="precio" placeholder="$$$" value= <%= producto.precio %> >
+            <input type="number" name="precio" value="<%= producto.precio %>" required>
 
-            <label for="horas">Cantida de hs</label>
-            <input type="number" name="horas" placeholder="¿Cuantas Horas requiere tu clase?" >
+            <label for="descripcion">Descripcion de clase</label>
+            <input type="text" name="descripcion" placeholder="Describe tu clase" value="<%= producto.descripcion %>" >
 
-            <label for="descripcionClase">Descripcion de clase</label>
-            <input type="text" name="descripcionClase" placeholder="Describe tu clase" value=<%= producto.descripcionClase %> >
-
-            <label for="clase">Intensidad</label>
-            <div class="intensidad">
-                <input type="radio" id="1" name="intensidad" value="principiante" required>
-                <label for="1">Principiante</label>
-            </div>
-            <div class="intensidad">
-                <input type="radio" id="2" name="intensidad" value="amateur">
-                <label for="2">Medio</label>
-            </div>
-            <div class="intensidad">
-                <input type="radio" id="3" name="intensidad" value="profesional">
-                <label for="3">Profesional</label>
-            </div>
+            <label for="especialidad">Deporte</label>
+            <select name="especialidad" >
+                <% for( let i =0;i <especialidades.length;i++ ) { %>
+                     
+                <option value="<%= especialidades[i].id%>" <%= (especialidades[i].id == producto.id_especialidad) ? "selected" : null  %> >
+                    <%=especialidades[i].nombre %>
+                </option>
+                <% } %> 
+            </select>
             <button class="boton" type="submit">Cargar</button>
         </form>
         <form action="/products/delete/<%= producto.id %>/?_method=DELETE" method="POST">
