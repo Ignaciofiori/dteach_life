@@ -7,6 +7,7 @@ CREATE TABLE `dteach`.`categorias` (
   `nombre` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id`));
 
+
 CREATE TABLE `dteach`.`usuarios` (
   `id` INT  AUTO_INCREMENT,
   `nombre` CHAR(100) NOT NULL,
@@ -18,6 +19,7 @@ CREATE TABLE `dteach`.`usuarios` (
   `id_categoria` INT NOT NULL,
   `imagen` VARCHAR(100),
   PRIMARY KEY (`id`));
+
 
 CREATE TABLE `dteach`.`especialidades` (
   `id` INT  AUTO_INCREMENT,
@@ -46,3 +48,11 @@ ALTER TABLE `usuarios` ADD FOREIGN KEY (`id_categoria`) REFERENCES `categorias`(
 ALTER TABLE `clases` ADD FOREIGN KEY (`id_especialidad`) REFERENCES `especialidades`(`id`);
 ALTER TABLE `usuarios_clases` ADD FOREIGN KEY (`id_usuario`) REFERENCES `usuarios`(`id`);
 ALTER TABLE `usuarios_clases` ADD FOREIGN KEY (`id_clase`) REFERENCES `clases`(`id`);
+
+
+
+INSERT INTO `categorias`(`id`, `nombre`)
+VALUES (DEFAULT, "Estudiante"), (DEFAULT,"Profesor");
+
+INSERT INTO `especialidades`(`id`, `nombre`)
+VALUES (DEFAULT, "Atletismo"),(DEFAULT,"Badminton"),(DEFAULT,"Baloncesto"),(DEFAULT,"Beisbol"),(DEFAULT,"Boxeo"),(DEFAULT,"Ciclismo"),(DEFAULT,"Crossfit"),(DEFAULT,"Escalda Deportiva"),(DEFAULT,"Futbol"),(DEFAULT,"Gimnasia Artistica"),(DEFAULT,"Hockey"),(DEFAULT,"Yudo"),(DEFAULT,"Karate"),(DEFAULT,"Lucha"),(DEFAULT,"Musculacion"),(DEFAULT,"Natacion"),(DEFAULT,"Remo"),(DEFAULT,"Rugby"),(DEFAULT,"Running"),(DEFAULT,"Spinning"),(DEFAULT,"Tennis"),(DEFAULT,"Triatlon"),(DEFAULT,"Voley"),(DEFAULT,"Entrenamiento Alternativo");
