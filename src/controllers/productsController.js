@@ -4,8 +4,9 @@
 
  const controller = {
   async index (req, res){
-    let products = await db.Clase.findAll()
- res.render('products/index', { products });
+    let products = await db.Clase.findAll({include:[{association:"especialidades"}]})
+  
+ res.render('products/index', { products:products });
  },
   async createForm(req, res){
     let especialidades = await db.Especialidad.findAll()

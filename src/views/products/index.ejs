@@ -7,7 +7,7 @@
                     <input type="search" name="search" id="search" placeholder="Busqueda realizada">
                     <button type="submit"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
                 </form>
-                <h4>Profes de futbol:</h4>
+                <h4>Profesores:</h4>
             </div>
         </section>
         <section class="product">
@@ -15,10 +15,10 @@
             <a href="/products/detail/<%= producto.id %>" >
                 <article>
                     <div class="image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/uploads/<%= producto.imagen %>');">
-                        <h2><%= producto.nombre %></h2>
-                        <p><%= producto.ubicacion %></p>
+                        <h2><%= producto.nombre_profesor %></h2>
+                        <p><%= producto.especialidades.nombre %></p>
                     </div>
-                    <p><%= producto.deporte %></p>
+                    <p><%= producto.nombre %></p>
                     <p><%= producto.precio %>/clase</p>
                 </article>
             <% }) %> 
