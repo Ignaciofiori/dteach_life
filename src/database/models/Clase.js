@@ -26,6 +26,9 @@ module.exports = function(sequelize,dataTypes){
         id_especialidad:{
             type:dataTypes.INTEGER,
             allowNull: false
+        },
+        imagen:{
+            type:dataTypes.STRING
         }
     }
     

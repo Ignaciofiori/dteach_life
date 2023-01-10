@@ -16,6 +16,7 @@ CREATE TABLE `dteach`.`usuarios` (
   `descripcion` VARCHAR(100) NOT NULL,
   `ubicacion` VARCHAR(45) NOT NULL,
   `id_categoria` INT NOT NULL,
+  `imagen` VARCHAR(100),
   PRIMARY KEY (`id`));
 
 CREATE TABLE `dteach`.`especialidades` (
@@ -30,6 +31,7 @@ CREATE TABLE `dteach`.`clases` (
   `precio` INT NOT NULL,
   `descripcion` VARCHAR(100) ,
   `id_especialidad` INT NOT NULL,
+  `imagen` VARCHAR(100),
   PRIMARY KEY (`id`));
 
 

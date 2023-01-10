@@ -34,6 +34,9 @@ module.exports = function(sequelize,dataTypes){
         id_categoria:{
             type:dataTypes.INTEGER,
             allowNull: false
+        },
+        imagen:{
+            type:dataTypes.STRING
         }
     }
     let config = {

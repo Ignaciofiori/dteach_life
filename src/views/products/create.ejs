@@ -3,7 +3,7 @@
 <main>
     <section class="containerForm">
         <h1>Nueva clase</h1>
-        <form action="/products/create" method="POST">
+        <form action="/products/create" method="POST" enctype="multipart/form-data">
             <label for="nombre_profesor">Nombre Profesor</label>
             <input type="text" name="nombre_profesor">
 
@@ -26,8 +26,10 @@
                 </option>
                 <% } %>
                </select>
-            
+               <label for="imagen">Imagen de la clase</label>
+               <input type="file"  name="imagen" >
             </div>  
+           
             
             <button type="submit">Cargar</button>
         </form>   

@@ -13,13 +13,15 @@
      res.render('products/create',{especialidades:especialidades});
    },
 create (req, res){
- db.Clase.create({
+ 
+  db.Clase.create({
   nombre_profesor:req.body.nombre_profesor,
   ubicacion:req.body.ubicacion,
   precio:req.body.precio,
   descripcion: req.body.descripcion,
-  id_especialidad:req.body.especialidad
-})
+  id_especialidad:req.body.especialidad,
+  imagen : req.file.filename
+});
 res.redirect("/products")
  },
 async detail (req, res){
