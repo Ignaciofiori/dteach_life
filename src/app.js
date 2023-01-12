@@ -35,7 +35,7 @@ const usersRoutes = require("./routes/users")
 
 app.use('/', mainRoutes);
 app.use('/products', productsRoutes);
-//app.use("/users",usersRoutes)
+app.use("/users",usersRoutes)
 
 // ************ catch 404 and forward to error handler ************
 app.use((req, res, next) => next(createError(404)));

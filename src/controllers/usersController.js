@@ -1,12 +1,12 @@
-// const User = require('../database/models/Usuario');
-// const fs = require('fs');
-// const path = require('path');
-// const { validationResult } = require('express-validator');
-// const bcryptjs = require('bcryptjs');
-// const usersFilePath = path.join(__dirname, '../database/users.json');
-// const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
+const db = require("../database/models")
+const fs = require('fs');
+const path = require('path');
+const { validationResult } = require('express-validator');
+const bcryptjs = require('bcryptjs');
+const usersFilePath = path.join(__dirname, '../database/users.json');
+const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 
-// const usersController = {
+const usersController = {
 //   profile: (req, res) => {
 //     console.log(req.cookies.emailUsuario)
 //     res.render('users/profile', {
@@ -54,37 +54,43 @@
 //     req.session.destroy();
 //     res.redirect('/');
 //   },
-//   register: (req, res) => {
-//     res.render('users/register');
-//   },
-//   createUser: (req, res) => {
-//     const errors = validationResult(req);
-//     if (errors.isEmpty()) {
-//       let userInDb = User.findByField('email', req.body.email);
+ async register(req, res){
+    let categorias = await db.Categoria.findAll()
+    res.render('users/register',{categorias:categorias});
+  },
+async createUser(req, res){
+    const errors = validationResult(req);
+   if (errors.isEmpty()) {
+        let userInDb =  await db.Usuario.findOne({where:{
+          email: req.body.email
+        }})
 
-//       if (userInDb) {
-//         return res.render('users/register', {
-//           errors: { 
-//             email:{
-//               msg: 'Este Email ya esta registrado'} },
-//           old: req.body,
-//         });
-//       } else {
-//         let userToCreate = {
-//           ...req.body,
-//           password: bcryptjs.hashSync(req.body.password, 10),
-//           imagen: req.file.filename,
-//         };
-
-//         User.create(userToCreate);
-//       }
-//     } else {
-//       res.render('users/register', {
-//         errors: errors.mapped(),
-//         old: req.body,
-//       });
-//     }
-//     res.redirect('/users/login');
-//   },
-// };
-// module.exports = usersController;
+      if (userInDb) {
+        return res.render('users/register', {
+          errors: { 
+            email:{
+              msg: 'Este Email ya esta registrado'} },
+          old: req.body,
+        });
+      } else {
+        db.Usuario.create({
+            nombre:req.body.nombre,
+            apellido:req.body.apellido,
+            email:req.body.email,
+            password:req.body.password,
+            descripcion: req.body.descripcion,
+            ubicacion:req.body.ubicacion,
+            id_categoria:req.body.categoria,
+            imagen : req.file.filename
+        })
+      }
+    } else {
+      res.render('users/register', {
+        errors: errors.mapped(),
+        old: req.body,
+      });
+    }
+    res.redirect('/users/login');
+  },
+};
+module.exports = usersController;
