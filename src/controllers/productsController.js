@@ -47,17 +47,16 @@ edit: (req, res) => {
     imagen : req.file.filename
 },{where:{id:req.params.id}});
     res.redirect("/products/detail/" + req.params.id)
+  },
+delete: (req, res) => {
+    db.Clase.destroy({where:{
+      id:req.params.id
+    }});
+    res.redirect("/products")
+  },
+cart: (req, res) => {
+    res.render('products/cart');
   }
-//   delete: (req, res) => {
-//     const id = req.params.id;
-//     let update = products.filter((item) => item.id != id);
-//     let productsJSON = JSON.stringify(update);
-//     fs.writeFileSync(productsFilePath, productsJSON);
-//     res.redirect('/products');
-//   },
-//   cart: (req, res) => {
-//     res.render('products/cart');
-//   },
  };
 
  module.exports = controller;

@@ -29,7 +29,7 @@
                <input type="file"  name="imagen" required>
             <button class="boton" type="submit">Cargar</button>
         </form>
-        <form action="/products/delete/<%= producto.id %>/?_method=DELETE" method="POST">
+        <form action="/products/delete/<%= producto.id %>?_method=DELETE" method="POST">
             <p>¿Queres borrar esta clase ?</p>
             <button class="delete" type="submit">Borrar</button>
         </form>
