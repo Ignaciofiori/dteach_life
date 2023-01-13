@@ -14,6 +14,7 @@ console.log(req.cookies.emailUsuario)
   },
   login: (req, res) => {
     res.render('users/login')
+    
   },
 async loginProcess(req, res){
   
@@ -92,8 +93,36 @@ async createUser(req, res){
          })
     }
 
-  }
+  },
+async editForm(req,res){
+  let categorias = await db.Categoria.findAll()
+  const usuario = await db.Usuario.findByPk(req.params.id,{
+    include:[{association:"categorias"},{association:"clases"}]
+});
+  res.render("users/edit",{categorias:categorias, usuario:usuario})
+},
+editUser(req,res){
+  db.Usuario.update({
+    nombre:req.body.nombre,
+    apellido:req.body.apellido,
+    email:req.body.email,
+    password: bcryptjs.hashSync(req.body.password,10),
+    descripcion: req.body.descripcion,
+    ubicacion:req.body.ubicacion,
+    id_categoria:req.body.categoria,
+    imagen : req.file.filename
+},{where:{id:req.params.id}});
+res.redirect("/users/profile/")
+},
+delete(req,res){
+    db.Usuario.destroy({where:{
+      id:req.params.id
+    }});
+    res.redirect("/")
+  },
 }
+
+
 
 
 module.exports = usersController

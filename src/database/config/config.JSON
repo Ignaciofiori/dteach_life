@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "5e6ebkbxnn7",
+    "password": "poner contraseña correspondiente",
     "database": "dteach",
     "host": "127.0.0.1",
     "dialect": "mysql"

@@ -48,11 +48,11 @@ module.exports = function(sequelize,dataTypes){
 
     Usuario.associate= function(models){
         Usuario.belongsTo(models.Categoria,{
-            as:"Categoria",
+            as:"categorias",
             foreignKey:"id_categoria"
         }),
         Usuario.belongsToMany(models.Clase,{
-            as:"Clases",
+            as:"clases",
             through:"usuarios_clases",
             foreignKey:"id_usuario",
             otherKey:"id_clase",
