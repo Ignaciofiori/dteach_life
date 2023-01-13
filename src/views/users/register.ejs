@@ -6,7 +6,7 @@
        
         <form action="/users/register" method="POST" enctype="multipart/form-data">
             <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" id="nombre" value="<%= locals.old && old.nombre ? old.nombre : null %>">
+            <input type="text" name="nombre"  value="<%= locals.old && old.nombre ? old.nombre : null %>">
             <% if (locals.errors && errors.nombre ) { %>
                 <div class="errors">
                     <%= errors.nombre.msg %> 
@@ -56,12 +56,12 @@
             <label for="categoria">Categoria:</label>
 
                <select name="categoria">
-                <% for( let i =0;i <categorias.length;i++ ) { %>
+                <% categorias.forEach(element => { %>
                      
-                <option value="<%= categorias[i].id%>">
-                    <%=categorias[i].nombre %>
+                <option value="<%= element.id%>">
+                    <%=element.nombre %>
                 </option>
-                <% } %>
+                <% }) %>
                </select>
 
             <label for="password">Contraseña:</label>

@@ -12,10 +12,10 @@ CREATE TABLE `dteach`.`usuarios` (
   `id` INT  AUTO_INCREMENT,
   `nombre` CHAR(100) NOT NULL,
   `apellido` CHAR(100) NOT NULL,
-  `email` VARCHAR(45) NOT NULL,
-  `password` VARCHAR(15) NOT NULL,
+  `email` VARCHAR(100) NOT NULL,
+  `password` VARCHAR(100) NOT NULL,
   `descripcion` VARCHAR(100) NOT NULL,
-  `ubicacion` VARCHAR(45) NOT NULL,
+  `ubicacion` VARCHAR(100) NOT NULL,
   `id_categoria` INT NOT NULL,
   `imagen` VARCHAR(100),
   PRIMARY KEY (`id`));
