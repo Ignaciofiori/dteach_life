@@ -37,12 +37,20 @@ async loginProcess(req, res){
               })
           }
         } else{
+          if(!req.body.email){
+            return res.render('users/login', {
+              errors:
+                {email:{
+                  msg: "El Email es Obligatorio."}}
+            })
+          }else{
           return res.render('users/login', {
                   errors:
                     {email:{
                       msg: 'No se encuentra este email en nuestra base de datos'}}
                 })
         }
+      }
       },
      
 
@@ -80,7 +88,7 @@ async createUser(req, res){
                       id_categoria:req.body.categoria,
                       imagen : req.file.filename
                   });
-                 res.redirect("/")
+                 res.redirect("/login")
          }
 
     }
