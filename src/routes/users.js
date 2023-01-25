@@ -14,7 +14,7 @@ router.get('/logout',authMiddleware ,usersController.logout);
 router.get('/register',guestMiddleware ,usersController.register);
 router.post('/register',upload.single("imagen"),validacionesRegister,usersController.createUser);
 router.get('/edit/:id',usersController.editForm)
-router.put("/edit/:id",upload.single("imagen"),usersController.editUser)
+router.put("/edit/:id",upload.single("imagen"),validacionesRegister,usersController.editUser)
 router.delete("/delete/:id",usersController.delete)
 
  module.exports = router;

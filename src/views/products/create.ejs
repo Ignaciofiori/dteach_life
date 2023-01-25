@@ -5,29 +5,54 @@
         <h1>Nueva clase</h1>
         <form action="/products/create" method="POST" enctype="multipart/form-data">
             <label for="nombre_profesor">Nombre Profesor</label>
-            <input type="text" name="nombre_profesor">
+            <input type="text" name="nombre_profesor" value="<%=locals.old ? old.nombre_profesor : null %>">
+            <% if (locals.errors && errors.nombre_profesor ) { %>
+                <div class="errors">
+                    <%= errors.nombre_profesor.msg %> 
+                </div>
+                <% } %>
 
             <label for="ubicacion">Ubicacion</label>
-            <input type="text" name="ubicacion" placeholder="Ubicacion" >
+            <input type="text" name="ubicacion" placeholder="Ubicacion"  value="<%=locals.old ? old.ubicacion : null %>">
+            <% if (locals.errors && errors.ubicacion ) { %>
+                <div class="errors">
+                    <%= errors.ubicacion.msg %> 
+                </div>
+                <% } %>
 
             <label for="precio">Precio</label>
-            <input type="number" name="precio" placeholder="$$$" >
+            <input type="number" name="precio" placeholder="$$$" value="<%=locals.old ? old.precio : null %>">
+            <% if (locals.errors && errors.precio ) { %>
+                <div class="errors">
+                    <%= errors.precio.msg %> 
+                </div>
+                <% } %>
 
             <label for="descripcion">Descripcion de clase</label>
-            <input type="text" name="descripcion" placeholder="Describe tu clase" >
+            <input type="text" name="descripcion" placeholder="Describe tu clase"  value="<%=locals.old ? old.descripcion : null %>">
+            <% if (locals.errors && errors.descripcion ) { %>
+                <div class="errors">
+                    <%= errors.descripcion.msg %> 
+                </div>
+                <% } %>
 
             <label for="especialidad">Actividad</label>
             <div class="intensidad">
-               <select name="especialidad">
+               <select name="especialidad" required>
                 <% for( let i =0;i <especialidades.length;i++ ) { %>
                      
-                <option value="<%= especialidades[i].id%>">
+                <option value="<%= especialidades[i].id%>" <%=locals.old && (especialidades[i].id== old.especialidad)? "selected": null %> >
                     <%=especialidades[i].nombre %>
                 </option>
                 <% } %>
                </select>
                <label for="imagen">Imagen de la clase</label>
                <input type="file"  name="imagen" >
+               <% if (locals.errors && errors.imagen ) { %>
+                <div class="errors">
+                    <%= errors.imagen.msg %> 
+                </div>
+                <% } %>
             </div>  
            
             

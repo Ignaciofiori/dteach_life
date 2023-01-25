@@ -38,7 +38,7 @@
         <% } %>
 
         <label for="imagen">Imagen del Usuario:</label>
-        <input type="file"  name="imagen" alt="Submit" width="48" height="48" value="<%= locals.old && old.imagen ? old.imagen : null %> " required>
+        <input type="file"  name="imagen" alt="Submit" width="48" height="48" >
         <% if (locals.errors && errors.imagen) { %>
             <div class="errors">
                 <%= errors.imagen.msg %> 
@@ -56,12 +56,12 @@
         <label for="categoria">Categoria:</label>
 
            <select name="categoria">
-            <% categorias.forEach(element => { %>
-                 
-            <option value="<%= element.id%>" <%=(element.id == usuario.id_categoria) ? "selected" : null%> >
-                <%=element.nombre %>
-            </option>
-            <% }) %>
+            <% for( let i =0;i <categorias.length;i++ ) { %>
+                     
+                <option value="<%= categorias[i].id%>" <%= categorias[i].id == usuario.id_categoria ? "selected" : null  %> >
+                    <%=categorias[i].nombre %>
+                </option>
+                <% } %> 
            </select>
 
         <label for="password">Contraseña:</label>

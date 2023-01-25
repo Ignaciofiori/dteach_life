@@ -1,6 +1,8 @@
  const path = require('path');
  const fs = require('fs');
  const db = require("../database/models")
+ const { validationResult } = require('express-validator')
+
 
  const controller = {
 async index (req, res){
@@ -12,17 +14,27 @@ async index (req, res){
     let especialidades = await db.Especialidad.findAll()
      res.render('products/create',{especialidades:especialidades});
    },
-create (req, res){
+async create (req, res){
+  const errors = validationResult(req)
+  if(errors.isEmpty()){
     db.Clase.create({
-    nombre_profesor:req.body.nombre_profesor,
-    ubicacion:req.body.ubicacion,
-    precio:req.body.precio,
-    descripcion: req.body.descripcion,
-    id_especialidad:req.body.especialidad,
-    imagen : req.file.filename
-});
-    res.redirect("/products")
- },
+      nombre_profesor:req.body.nombre_profesor,
+      ubicacion:req.body.ubicacion,
+      precio:req.body.precio,
+      descripcion: req.body.descripcion,
+      id_especialidad:req.body.especialidad,
+      imagen : req.file.filename
+  })
+  res.redirect("/products")
+     
+} else {
+  let especialidades = await db.Especialidad.findAll()
+  res.render("products/create",{especialidades:especialidades,
+    errors: errors.mapped(),
+    old: req.body
+})
+ }
+},
 async detail (req, res){
     const producto = await db.Clase.findByPk(req.params.id,{
       include:[{association:"especialidades"},{association:"usuarios"
@@ -37,7 +49,9 @@ async editForm (req, res) {
  });
     res.render('products/edit', { producto: producto,especialidades:especialidades});
   },
-edit: (req, res) => {
+async edit (req, res) {
+  const errors = validationResult(req)
+  if(errors.isEmpty()){
   db.Clase.update({
     nombre_profesor:req.body.nombre_profesor,
     ubicacion:req.body.ubicacion,
@@ -47,6 +61,12 @@ edit: (req, res) => {
     imagen : req.file.filename
 },{where:{id:req.params.id}});
     res.redirect("/products/detail/" + req.params.id)
+} else{
+  let especialidades = await db.Especialidad.findAll()
+  let producto = await db.Clase.findByPk(req.params.id)
+ res.render("products/edit",{
+    especialidades:especialidades, producto:producto, errors:errors.mapped()})
+}
   },
 delete: (req, res) => {
     db.Clase.destroy({where:{

@@ -109,7 +109,9 @@ async editForm(req,res){
 });
   res.render("users/edit",{categorias:categorias, usuario:usuario})
 },
-editUser(req,res){
+async editUser(req,res){
+  const errors = validationResult(req)
+  if(errors.isEmpty()){
   db.Usuario.update({
     nombre:req.body.nombre,
     apellido:req.body.apellido,
@@ -121,14 +123,22 @@ editUser(req,res){
     imagen : req.file.filename
 },{where:{id:req.params.id}});
 res.redirect("/users/profile/")
-},
+  }else{
+  
+    let categorias = await db.Categoria.findAll()
+    let usuario = await db.Usuario.findByPk(req.params.id)
+      res.render("users/edit",{
+        categorias:categorias, usuario:usuario,errors:errors.mapped()})
+    }
+    },
 delete(req,res){
     db.Usuario.destroy({where:{
       id:req.params.id
     }});
     res.redirect("/")
-  },
+  }
 }
+
 
 
 

@@ -6,15 +6,36 @@
         <form action="/products/edit/<%= producto.id %>/?_method=PUT" method="POST" enctype="multipart/form-data">
             <label for="actividad">Nombre:</label>
             <input type="text" name="nombre_profesor" value="<%= producto.nombre_profesor %>">
+            <% if (locals.errors && errors.nombre_profesor ) { %>
+                <div class="errors">
+                    <%= errors.nombre_profesor.msg %> 
+                </div>
+                <% } %>
 
             <label for="ubicacion">Ubicaccion:</label>
             <input type="text" name="ubicacion"  value="<%= producto.ubicacion %> ">
+            <% if (locals.errors && errors.ubicacion ) { %>
+                <div class="errors">
+                    <%= errors.ubicacion.msg %> 
+                </div>
+                <% } %>
+
 
             <label for="precio">Precio:</label>
-            <input type="number" name="precio" value="<%= producto.precio %>" required>
-
-            <label for="descripcion">Descripcion de clase:</label>
+            <input type="number" name="precio" value="<%= producto.precio %>" >
+            <% if (locals.errors && errors.precio ) { %>
+                <div class="errors">
+                    <%= errors.precio.msg %> 
+                </div>
+                <% } %>
+            
+                <label for="descripcion">Descripcion de clase:</label>
             <input type="text" name="descripcion" placeholder="Describe tu clase" value="<%= producto.descripcion %>" >
+            <% if (locals.errors && errors.descripcion ) { %>
+                <div class="errors">
+                    <%= errors.descripcion.msg %> 
+                </div>
+                <% } %>
 
             <label for="especialidad">Deporte:</label>
             <select name="especialidad" >
@@ -26,7 +47,13 @@
                 <% } %> 
             </select>
             <label for="imagen">Imagen de la clase:</label>
-               <input type="file"  name="imagen" required>
+               <input type="file"  name="imagen" >
+               <% if (locals.errors && errors.imagen ) { %>
+                <div class="errors">
+                    <%= errors.imagen.msg %> 
+                </div>
+                <% } %>
+                
             <button class="boton" type="submit">Cargar</button>
         </form>
         <form action="/products/delete/<%= producto.id %>?_method=DELETE" method="POST">
