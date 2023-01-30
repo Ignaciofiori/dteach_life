@@ -88,10 +88,11 @@ header nav ul li a {
 /* Main */
 main {
   padding-top: 11vh;
+ 
 }
 
 main section {
-  height: 90vh;
+ 
   display: flex;
   align-items: center;
   justify-content: center;

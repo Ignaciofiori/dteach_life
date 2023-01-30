@@ -88,7 +88,7 @@ async createUser(req, res){
                       id_categoria:req.body.categoria,
                       imagen : req.file.filename
                   });
-                 res.redirect("/login")
+                 res.redirect("/users/login")
          }
 
     }
