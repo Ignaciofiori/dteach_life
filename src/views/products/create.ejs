@@ -3,38 +3,50 @@
 <main>
     <section class="containerForm">
         <h1>Nueva clase</h1>
-        <form action="/products/create" method="POST" enctype="multipart/form-data">
+        <form action="/products/create" method="POST" enctype="multipart/form-data" id="formularioCreate">
             <label for="nombre_profesor">Nombre Profesor</label>
-            <input type="text" name="nombre_profesor" value="<%=locals.old ? old.nombre_profesor : null %>">
+            <input type="text" name="nombre_profesor" value="<%=locals.old ? old.nombre_profesor : null %>" id="campoNombreProfesor">
             <% if (locals.errors && errors.nombre_profesor ) { %>
                 <div class="errors">
                     <%= errors.nombre_profesor.msg %> 
                 </div>
                 <% } %>
+                <div class="errors nombreProfesor">
+                    <ul></ul>
+                </div>
 
             <label for="ubicacion">Ubicacion</label>
-            <input type="text" name="ubicacion" placeholder="Ubicacion"  value="<%=locals.old ? old.ubicacion : null %>">
+            <input type="text" name="ubicacion" placeholder="Ubicacion" id="campoUbicacion" value="<%=locals.old ? old.ubicacion : null %>">
             <% if (locals.errors && errors.ubicacion ) { %>
                 <div class="errors">
                     <%= errors.ubicacion.msg %> 
                 </div>
                 <% } %>
+                <div class="errors ubicacion">
+                    <ul></ul>
+                </div>
 
             <label for="precio">Precio</label>
-            <input type="number" name="precio" placeholder="$$$" value="<%=locals.old ? old.precio : null %>">
+            <input type="number" name="precio" id="campoPrecio"placeholder="$$$" value="<%=locals.old ? old.precio : null %>">
             <% if (locals.errors && errors.precio ) { %>
                 <div class="errors">
                     <%= errors.precio.msg %> 
                 </div>
                 <% } %>
+                <div class="errors precio">
+                    <ul></ul>
+                </div>
 
             <label for="descripcion">Descripcion de clase</label>
-            <input type="text" name="descripcion" placeholder="Describe tu clase"  value="<%=locals.old ? old.descripcion : null %>">
+            <input type="text" name="descripcion" id="campoDescripcion" placeholder="Describe tu clase"  value="<%=locals.old ? old.descripcion : null %>">
             <% if (locals.errors && errors.descripcion ) { %>
                 <div class="errors">
                     <%= errors.descripcion.msg %> 
                 </div>
                 <% } %>
+                <div class="errors errorDescripcion">
+                    <ul></ul>
+                </div>
 
             <label for="especialidad">Actividad</label>
             <div class="intensidad">
@@ -46,18 +58,22 @@
                 </option>
                 <% } %>
                </select>
+
                <label for="imagen">Imagen de la clase</label>
-               <input type="file"  name="imagen" >
+               <input type="file"  name="imagen" id="campoImagen" >
                <% if (locals.errors && errors.imagen ) { %>
                 <div class="errors">
                     <%= errors.imagen.msg %> 
                 </div>
                 <% } %>
             </div>  
-           
+           <div class="errors imagen">
+                    <ul></ul>
+                </div>
             
             <button type="submit">Cargar</button>
         </form>   
     </section>
+    <script src="/js/productsCreate.js"></script>
 </main>
 <%- include("../partials/footer.ejs") %>
