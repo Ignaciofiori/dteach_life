@@ -3,39 +3,53 @@
 <main>
     <section class="containerForm">
         <h1>Editar clase</h1>
-        <form action="/products/edit/<%= producto.id %>/?_method=PUT" method="POST" enctype="multipart/form-data">
+        <form action="/products/edit/<%= producto.id %>/?_method=PUT" method="POST" enctype="multipart/form-data" id="formularioEdit">
             <label for="actividad">Nombre:</label>
-            <input type="text" name="nombre_profesor" value="<%= producto.nombre_profesor %>">
+            <input type="text" name="nombre_profesor" id="campoNombreProfesor"value="<%= producto.nombre_profesor %>">
             <% if (locals.errors && errors.nombre_profesor ) { %>
                 <div class="errors">
                     <%= errors.nombre_profesor.msg %> 
                 </div>
                 <% } %>
-
+                <div class="errors nombreProfesor">
+                    <ul></ul>
+                </div>
+            
             <label for="ubicacion">Ubicaccion:</label>
-            <input type="text" name="ubicacion"  value="<%= producto.ubicacion %> ">
+            <input type="text" name="ubicacion" id="campoUbicacion"  value="<%= producto.ubicacion %> ">
             <% if (locals.errors && errors.ubicacion ) { %>
                 <div class="errors">
                     <%= errors.ubicacion.msg %> 
                 </div>
                 <% } %>
-
+                <div class="errors ubicacion">
+                    <ul></ul>
+                </div>
+            
 
             <label for="precio">Precio:</label>
-            <input type="number" name="precio" value="<%= producto.precio %>" >
+            <input type="number" name="precio" id="campoPrecio" value="<%= producto.precio %>" >
             <% if (locals.errors && errors.precio ) { %>
                 <div class="errors">
                     <%= errors.precio.msg %> 
                 </div>
                 <% } %>
+                <div class="errors precio">
+                    <ul></ul>
+                </div>
+            
             
                 <label for="descripcion">Descripcion de clase:</label>
-            <input type="text" name="descripcion" placeholder="Describe tu clase" value="<%= producto.descripcion %>" >
+            <input type="text" name="descripcion" id="campoDescripcion"placeholder="Describe tu clase" value="<%= producto.descripcion %>" >
             <% if (locals.errors && errors.descripcion ) { %>
                 <div class="errors">
                     <%= errors.descripcion.msg %> 
                 </div>
                 <% } %>
+                <div class="errors errorDescripcion">
+                    <ul></ul>
+                </div>
+            
 
             <label for="especialidad">Deporte:</label>
             <select name="especialidad" >
@@ -47,12 +61,16 @@
                 <% } %> 
             </select>
             <label for="imagen">Imagen de la clase:</label>
-               <input type="file"  name="imagen" >
+               <input type="file"  name="imagen" id="campoImagen">
                <% if (locals.errors && errors.imagen ) { %>
                 <div class="errors">
                     <%= errors.imagen.msg %> 
                 </div>
                 <% } %>
+                <div class="errors imagen">
+                    <ul></ul>
+                </div>
+            
                 
             <button class="boton" type="submit">Cargar</button>
         </form>
@@ -61,5 +79,6 @@
             <button class="delete" type="submit">Borrar</button>
         </form>
     </section>
+    <script src="/js/productsEdit.js"></script>
 </main>
 <%- include("../partials/footer.ejs") %>
