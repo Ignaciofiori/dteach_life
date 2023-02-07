@@ -11,6 +11,7 @@ async index (req, res){
     res.render('products/index', { products:products });
  },
   async createForm(req, res){
+
     let especialidades = await db.Especialidad.findAll()
      res.render('products/create',{especialidades:especialidades});
    },
@@ -23,7 +24,8 @@ async create (req, res){
       precio:req.body.precio,
       descripcion: req.body.descripcion,
       id_especialidad:req.body.especialidad,
-      imagen : req.file.filename
+      imagen : req.file.filename,
+      idProfesor: req.session.userLogged.id
   })
   res.redirect("/products")
      
@@ -40,7 +42,7 @@ async detail (req, res){
       include:[{association:"especialidades"},{association:"usuarios"
   }]
  });
-    res.render('products/detail', { producto: producto });
+    res.render('products/detail', { producto: producto,usuario:req.session.userLogged });
    },
 async editForm (req, res) {
   let especialidades = await db.Especialidad.findAll()

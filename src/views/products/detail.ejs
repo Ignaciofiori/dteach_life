@@ -24,8 +24,12 @@
             </div>
             <div class="footer-detail">
                 <a href="/products/cart">Tomar clase</a>
+                <% if ( usuario) { %>
+                <% if ( usuario.id == producto.idProfesor) { %>
                 <a href="/products/edit/<%= producto.id %>">Editar</a>
-                
+                <% } else {%>
+                    <%}%>
+                    <%}%>
             </div>
           
         </section>
