@@ -1,0 +1,23 @@
+<body>
+  <header>
+    <div class="logo">
+      <a href="/"><img src="/images/logo.png" alt="logo"></a>
+    </div>
+    <nav>
+      <ul>
+        <% if (locals.isLogged && locals.userLogged.id_categoria == 2)  { %>
+          <li><a href="/products/create">Ofrecer Clase</a></li> 
+          <li><a href="/users/profile">Hola <%=locals.userLogged.nombre %> !</a></li> 
+          <li><a href="http://localhost:3000/">Dashboard</a></li> 
+        <% } else if((locals.isLogged) && (locals.userLogged.id_categoria != 2)) {%>
+          <li><a href="/users/profile">Hola <%=locals.userLogged.nombre %> !</a></li> 
+        <% } else {%>
+            <li><a href="/users/login">Login</a></li>
+            <li><a href="/users/register">Register</a></li>
+        <% }%>
+      </ul>
+    </nav>
+    <div class="burger-menu">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
