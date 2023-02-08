@@ -2,6 +2,8 @@ const db = require("../database/models")
 async function userLoggedMiddleware(req,res,next){
 res.locals.isLogged = false
 let emailCookie= req.cookies.emailUsuario
+
+
 if(req.cookies.emailUsuario){
     let usuarioCookie = await db.Usuario.findOne({where:{ email: emailCookie}})
     if(usuarioCookie){
