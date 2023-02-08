@@ -26,6 +26,9 @@ if(campoPassword.value == ""){
 erroresPassword.push("La Contraseña es obligatoria")
 
 }
+if(campoPassword.value.length < 8){
+    erroresPassword.push("La Contraseña debe tener almenos 8 caracteres")
+}
 
 if(erroresPassword.length > 0){
     e.preventDefault()
