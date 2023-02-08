@@ -1,4 +1,4 @@
-![Logotipo](https://github.com/alvaarom/grupo_4_dteachlife/blob/main/public/images/logo.png)
+![Logotipo](https://github.com/alvaarom/grupo_4_dteachlife/blob/main/app/public/images/logo.png)
 ___
 ### Visita nuestro eCommerce ahora! :globe_with_meridians:
 [Click aca](https://dteachlife.onrender.com)
