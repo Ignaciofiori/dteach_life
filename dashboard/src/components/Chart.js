@@ -1,22 +1,9 @@
 import React from "react";
 import ChartRow from "./ChartRow";
 
-let tableRowsData = [
-  {
-    Title: "Billy Elliot ",
-    Category: "Deporte",
-    Location: "Rosario",
-    Price: "$1234",
-  },
-  {
-    Title: "Billy Elliot ",
-    Category: "Deporte",
-    Location: "Rosario",
-    Price: "$1234",
-  },
-];
+function Chart(props) {
+  const { tableRowsData, titles } = props;
 
-function Chart() {
   return (
     <div className="card shadow mb-4">
       <div className="card-body">
@@ -29,10 +16,10 @@ function Chart() {
           >
             <thead>
               <tr>
-                <th>Título</th>
-                <th>Categoria</th>
-                <th>Ubicación</th>
-                <th>Precio</th>
+                <th>{titles[0]}</th>
+                <th>{titles[1]}</th>
+                <th>{titles[2]}</th>
+                <th>{titles[3]}</th>
               </tr>
             </thead>
             <tbody>

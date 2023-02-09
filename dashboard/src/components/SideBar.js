@@ -1,6 +1,9 @@
 import React from "react";
 import image from "../assets/images/logo.png";
 import ContentWrapper from "./ContentWrapper";
+import ProductDetail from "./ProductDetail";
+import ProductsList from "./ProductsList";
+import UsersList from "./UsersList";
 import NotFound from "./NotFound";
 import { Link, Route, Switch } from "react-router-dom";
 
@@ -26,11 +29,36 @@ function SideBar() {
             <span>Dashboard</span>
           </Link>
         </li>
+
+        <hr className="sidebar-divider" />
+
+        <li className="nav-item">
+          <Link className="nav-link" to="/products">
+            <i className="fas fa-fw fa-folder"></i>
+            <span>Products</span>
+          </Link>
+        </li>
+
+        <li className="nav-item">
+          <Link className="nav-link" to="/users">
+            <i className="fas fa-fw fa-folder"></i>
+            <span>Usuarios</span>
+          </Link>
+        </li>
       </ul>
 
       <Switch>
         <Route exact path="/">
           <ContentWrapper />
+        </Route>
+        <Route exact path="/products">
+          <ProductsList />
+        </Route>
+        <Route exact path="/products/detail/:id">
+          <ProductDetail />
+        </Route>
+        <Route exact path="/users">
+          <UsersList />
         </Route>
         <Route component={NotFound} />
       </Switch>

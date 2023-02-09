@@ -4,27 +4,31 @@ import SmallCard from "./SmallCard";
 let totalProducts = {
   title: "Productos totales",
   color: "primary",
-  cuantity: 21,
+  cuantity: 0,
   icon: "fa-store",
 };
 
 let totalUsers = {
   title: "Usuarios totales",
   color: "success",
-  cuantity: "79",
+  cuantity: 0,
   icon: "fa-user-check",
 };
 
 let totalCategory = {
   title: "Categorias totales",
   color: "warning",
-  cuantity: "49",
+  cuantity: 0,
   icon: "fa-clipboard-list",
 };
 
-let cartProps = [totalProducts, totalUsers, totalCategory];
+export default function ContentRowDB(props) {
+  const { quantities } = props;
+  totalProducts.cuantity = quantities.products;
+  totalUsers.cuantity = quantities.users;
+  totalCategory.cuantity = quantities.category;
 
-export default function ContentRowDB() {
+  let cartProps = [totalProducts, totalUsers, totalCategory];
   return (
     <div className="row">
       {cartProps.map((item, i) => {
