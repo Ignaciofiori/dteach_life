@@ -3,6 +3,7 @@ import ContentRowCenter from "./ContentRowCenter";
 import ContentRowDB from "./ContentRowDB";
 import Chart from "./Chart";
 import { getProductsApi } from "../api/products";
+import { getUsersApi } from "../api/users";
 
 function ContentRowTop() {
   const [categoryList, setCategoryList] = useState([]);
@@ -12,6 +13,7 @@ function ContentRowTop() {
 
   const getProducts = async () => {
     const products = await getProductsApi();
+    const users = await getUsersApi();
     setCategoryList(products.countByCategory);
     setLastProduct(products.products[0]);
     const productsChart = [];
@@ -28,7 +30,7 @@ function ContentRowTop() {
     setQuantites({
       products: products.count,
       category: products.countByCategory.length,
-      users: 0,
+      users: users.count,
     });
   };
 

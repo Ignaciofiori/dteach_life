@@ -40,7 +40,7 @@ const controller = {
   },
   getProduct: async (req, res) => {
     const producto = await db.Clase.findByPk(req.params.id, {
-      include: [{ association: 'especialidades' }, { association: 'usuarios' }],
+      include: [{ association: 'especialidades' }],
     });
     const response = {
       producto: producto,
@@ -49,10 +49,42 @@ const controller = {
     res.send(response);
   },
   getUsers: async (req, res) => {
-    res.send({ hola: 'hola' });
+    const users = await db.Usuario.findAll({
+      include: [{ association: 'categorias' }],
+    });
+
+    const arrayUsers = [];
+    users.forEach((user) => {
+      const data = {
+        id: user.id,
+        name: `${user.nombre} ${user.apellido}`,
+        email: user.email,
+        detail: `http://localhost:3000/users/detail/${user.id}`,
+      };
+      arrayUsers.push(data);
+    });
+
+    const response = {
+      count: users.length,
+      users: arrayUsers,
+    };
+    res.send(response);
   },
   getUser: async (req, res) => {
-    res.send({ hola: 'hola' });
+    const user = await db.Usuario.findByPk(req.params.id, {
+      include: [{ association: 'categorias' }],
+    });
+
+    const response = {
+      id: user.id,
+      nombre: `${user.nombre} ${user.apellido}`,
+      email: user.email,
+      descripcion: user.descripcion,
+      ubicacion: user.ubicacion,
+      imagen: `http://localhost:3030/images/users/${user.imagen}`,
+    };
+
+    res.send(response);
   },
 };
 

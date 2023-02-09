@@ -4,6 +4,7 @@ import ContentWrapper from "./ContentWrapper";
 import ProductDetail from "./ProductDetail";
 import ProductsList from "./ProductsList";
 import UsersList from "./UsersList";
+import UsersDetail from "./UsersDetail";
 import NotFound from "./NotFound";
 import { Link, Route, Switch } from "react-router-dom";
 
@@ -59,6 +60,9 @@ function SideBar() {
         </Route>
         <Route exact path="/users">
           <UsersList />
+        </Route>
+        <Route exact path="/users/detail/:id">
+          <UsersDetail />
         </Route>
         <Route component={NotFound} />
       </Switch>
