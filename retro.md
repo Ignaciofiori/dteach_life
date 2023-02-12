@@ -60,11 +60,22 @@ ___
 ### 1.1. Coincidir para trabajar todos al mismo tiempo.
 ## 2. Cosas por implementar en este SPRINT (Comenzar a Hacer)::raised_hand:	
 ### 2.1. Realizar los cambios solicitados en los aspectos a mejorar y sugerencias.
-## 3. Que estaría bien implementar en el sexto SPRINT (Seguir haciendo - más de)::point_down:	
+## 3. Que estaría bien implementar en el séptimo SPRINT (Seguir haciendo - más de)::point_down:	
 ### 3.1. Seguir comprometidos con el avance del proyecto como hasta el momento se ha venido realizando, esforzados por el bien común, aprovechando las fortalezas de cada uno.
 ### 3.2. Seguir manteniendo el código actualizado e informar los avances realizados a través de discord y el tablero en JIRA.
 ### 3.3. Establecer otros canales de comunicación.
 ### 3.4. Fortalecer el trabajo en equipo.
-### 3.5. Las reuniones de equipo esporádicas para mantener la comunicación con los cambios.
+### 3.5. Las reuniones de equipo periódicas para mantener la comunicación con los cambios.
 ___
-:checkered_flag:
+# SPRINT No.7::running:
+## 1. Que no funcionó en el anterior SPRINT (Dejar de hacer - Menos de)::no_entry_sign:
+### 1.1. Coincidir para trabajar todos al mismo tiempo fuera de los horarios de clases.
+## 2. Cosas por implementar en este SPRINT (Comenzar a Hacer)::pushpin:	
+### 2.1. Hacer las mejoras respectivas y los cambios solicitados a nivel funcional del ecommerce.
+## 3. Que estaría bien implementar en el octavo SPRINT (Seguir haciendo - más de)::point_down:	
+### 3.1. Mantener el código actualizado e informar los avances realizados a través de discord y el tablero en JIRA.
+### 3.2. Se estableció un grupo de Whatsapp para manejar de manera más eficiente la comunicación e informar los cambios, además de los otros canales.
+### 3.3. Fortalecer el trabajo en equipo.
+### 3.4. Reuniones periódicas para finiquitar los cambios.
+___
+# SPRINT No.8::running::checkered_flag:
