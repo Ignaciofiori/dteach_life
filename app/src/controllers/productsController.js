@@ -2,9 +2,23 @@
  const fs = require('fs');
  const db = require("../database/models")
  const { validationResult } = require('express-validator')
-
+const {Sequelize} = require("../database/models")
+const Op = Sequelize.Op
 
  const controller = {
+async searchProducts(req,res){
+  let products = await db.Clase.findAll({
+    where: {
+      [Op.or]: [
+        {nombre_profesor:       {[Op.like]: '%' + req.body.search + '%'}},
+        {ubicacion: {[Op.like]: '%' + req.body.search + '%'}},
+      ]
+    }, include:[{association:"especialidades"}]
+  });
+
+  res.render('products/index', { products:products})
+},
+
 async index (req, res){
     let products = await db.Clase.findAll({include:[{association:"especialidades"}]})
   
