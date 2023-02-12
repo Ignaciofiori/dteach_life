@@ -22,8 +22,13 @@
                     <p>$ <%= producto.precio %>/clase</p>
                 </div>
             </div>
+            <% if ( usuario) { %>
             <div class="footer-detail">
                 <a class="botonEnviar" href="/products/cart">Tomar clase</a>
+                <%}else {%>
+                    <p>Para tomar la clase porfarvor ingrese en su cuenta</p>
+                   <a class="login" href="/users/login">Login </a>
+                    <% } %>
                 <% if ( usuario) { %>
                 <% if ( usuario.id == producto.idProfesor) { %>
                 <a href="/products/edit/<%= producto.id %>">Editar</a>

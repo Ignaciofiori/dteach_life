@@ -321,3 +321,12 @@ footer div {
 .botonEnviar{
   background-color: #63c65f;;
 }
+.login{
+  color: #63c65f;
+}
+.logout{
+  color: red;
+}
+.editProfile{
+  color: #63c65f;
+}

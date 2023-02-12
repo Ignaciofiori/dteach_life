@@ -15,10 +15,10 @@
                     <p><%= user.email%></p>
                 </div>
                 <div>
-                    <a href="/users/logout"> Cerrar Sesion</a>
+                    <a class="editProfile" href="/users/edit/<%=user.id%>">Editar Usuario</a>
                     </div>
                     <div>
-                    <a href="/users/edit/<%=user.id%>">Editar Usuario</a>
+                        <a class="logout" href="/users/logout"> Cerrar Sesion</a>
                 </div>
         </section>
     </main>

@@ -6,7 +6,8 @@ const path = require('path');
 const validacionesProductos = require("../middlewares/validacionesProductosMiddlewares")
 const authMiddleware = require('../middlewares/authMiddleware');
 const authProductEditMiddleware =require("../middlewares/authProductEditMiddleware")
-const profesorAuthMiddleware = require("../middlewares/profesorAuthMiddleware")
+const profesorAuthMiddleware = require("../middlewares/profesorAuthMiddleware");
+const authEditProfileMiddleware = require('../middlewares/authEditProfileMiddleware');
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
@@ -26,7 +27,7 @@ router.get('/search/:id', productsController.searchByEspecialidad);
 router.post("/",productsController.searchProducts)
 router.get('/', productsController.index);
 router.get('/detail/:id', productsController.detail);
-router.get('/cart', productsController.cart);
+router.get('/cart',authMiddleware,productsController.cart);
 router.get('/create',authMiddleware, profesorAuthMiddleware,productsController.createForm);
 router.post('/create',upload.single("imagen"),validacionesProductos,productsController.create);
 router.get('/edit/:id',authProductEditMiddleware ,productsController.editForm);
