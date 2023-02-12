@@ -1,6 +1,7 @@
 @import url(/css/fomulario.css);
 @import url(/css/product.css);
 @import url(/css/productDetail.css);
+@import url(/css/hamburguesa.css);
 
 :root{
   --dark: #120d0e;
