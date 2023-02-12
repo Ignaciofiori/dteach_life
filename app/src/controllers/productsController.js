@@ -28,6 +28,23 @@ else{
 }
   
 },
+async searchByEspecialidad(req,res){
+
+const idEspecialidad = req.params.id
+let products = await db.Clase.findAll({where:{
+  id_especialidad: idEspecialidad },include:[{association:"especialidades"}]})
+ if(products.length == 0){
+  res.render('products/index', { products:products, 
+    errors:
+      {
+        msg: "No se ha encontrado ningun producto."}
+  })
+ }else{
+  res.render("products/index",{products:products})
+ }
+}
+
+,
 
 async index (req, res){
     let products = await db.Clase.findAll({include:[{association:"especialidades"}]})

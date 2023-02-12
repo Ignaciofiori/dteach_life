@@ -1,9 +1,11 @@
 const fs = require('fs');
 const path = require('path');
+const db = require("../database/models")
 
 const controller = {
-  index: (req, res) => {
-    res.render('./home/index');
+  async index(req, res){
+    const especialidades = await db.Especialidad.findAll()
+    res.render('./home/index',{especialidades:especialidades});
   },
 };
 
