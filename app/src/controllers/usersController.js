@@ -135,6 +135,8 @@ delete(req,res){
     db.Usuario.destroy({where:{
       id:req.params.id
     }});
+    res.clearCookie("emailUsuario")
+    req.session.destroy()
     res.redirect("/")
   }
 }

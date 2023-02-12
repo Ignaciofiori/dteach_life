@@ -8,6 +8,7 @@ const Op = Sequelize.Op
  const controller = {
 async searchProducts(req,res){
   let products = await db.Clase.findAll({
+
     where: {
       [Op.or]: [
         {nombre_profesor:       {[Op.like]: '%' + req.body.search + '%'}},
