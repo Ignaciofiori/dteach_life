@@ -27,7 +27,7 @@ body {
 }
 
 a {
-  color: var(--light)
+  color: var(--light);
 }
 
 a:hover{

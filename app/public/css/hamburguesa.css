@@ -1,5 +1,7 @@
 .navbar .nav-container li {
     list-style: none;
+    border: 2px solid  #ffffff;
+    background-color: #666;
   }
 
   .navbar .nav-container a {
