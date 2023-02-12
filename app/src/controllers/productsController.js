@@ -1,7 +1,7 @@
- const path = require('path');
- const fs = require('fs');
- const db = require("../database/models")
- const { validationResult } = require('express-validator')
+const path = require('path');
+const fs = require('fs');
+const db = require("../database/models")
+const { validationResult } = require('express-validator')
 const {Sequelize} = require("../database/models")
 const Op = Sequelize.Op
 
@@ -15,8 +15,17 @@ async searchProducts(req,res){
       ]
     }, include:[{association:"especialidades"}]
   });
-
-  res.render('products/index', { products:products})
+  if(products.length == 0){
+    res.render('products/index', { products:products, 
+      errors:
+        {
+          msg: "No se ha encontrado ningun producto."}
+    })
+  }
+else{
+  res.render("products/index",{products:products})
+}
+  
 },
 
 async index (req, res){

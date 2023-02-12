@@ -3,12 +3,16 @@
     <main>
         <section class="inicio-product">
             <div class="search-bar-product">
-                <form action="/products" method="get">
-                    <input type="search" name="search" id="search" placeholder="Busqueda realizada">
+                <form action="/products" method="post">
+                    <input type="search" name="search" id="search" placeholder="Buscar:">
                     <button type="submit"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
                 </form>
                 <h4>Profesores:</h4>
             </div>
+            <% if (locals.errors) { %>
+                <div class="errors"> <p><%=errors.msg %></p>
+                </div>
+            <% } %>
         </section>
         <section class="product">
            <% products.forEach ((producto) => { %> 
