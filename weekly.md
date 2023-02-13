@@ -88,7 +88,7 @@ ___
 ### 3.2. Trabajar en las modificaciones del tablero de actividades.
 ### 3.3. Programar que un usuario normal tenga acceso solo a la información correspondiente.
 
-# Reunión No.10: - Lunes 13 de Febrero (virtual - Presencial)
+# Reunión No.10: - Lunes 13 de Febrero (virtual - Presencial):checkered_flag:
 ## 1. Qué se hizo ayer:
 ### 1.1. Se han venido haciendo adaptaciones a la interfaz, teniendo en cuenta las observaciones con relación al Sprint 6 y 7.
 ### 1.2. Agregar el menú hamburguesa y hacerlo funcional con la aplicación.
