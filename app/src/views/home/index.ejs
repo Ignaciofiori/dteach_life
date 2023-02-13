@@ -36,13 +36,13 @@
         </section>
         <section class="deportes">
             <h2>Miles de deportes por conocer</h2>
-          <div class ="especialidadesIndex">
-            <ul>
-                <% especialidades.forEach(especialidad => { %>
-                 <li><a href="products/search/<%=especialidad.id %>"><%=especialidad.nombre %></a></li>
-                <% }) %>
+            <div>
+                <ul class="especialidadesIndex">
+                    <% especialidades.forEach(especialidad => { %>
+                    <li><a href="products/search/<%=especialidad.id %>"><%=especialidad.nombre %></a></li>
+                    <% }) %>
+                </ul>
             </div>
-            </ul>
         </section>
     </main>
 <%- include("../partials/footer.ejs") %>

@@ -48,7 +48,9 @@ header{
 }
 
 .logo {
-  text-align: start;
+  text-align: end;
+  padding-right: 20px;
+  padding-top: 5px;
   width: 50%;
 }
 
@@ -241,19 +243,46 @@ main section {
 .deportes {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/deportes.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/deportes.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;
+  align-content: center;
+  justify-content: space-evenly;
+  flex-direction: column;
 }
 
 .deportes h2 {
   color: var(--font-light);
   padding: 40px;
+  width: 100%;
   text-align: center;
+}
+
+.deportes div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.especialidadesIndex{
+  width: 75%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.especialidadesIndex li {
+  padding: 15px;
+}
+
+.especialidadesIndex a{
+  text-decoration: none;
 }
 
 /* Footer */
