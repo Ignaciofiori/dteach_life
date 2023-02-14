@@ -2,6 +2,8 @@
 @import url(/css/product.css);
 @import url(/css/productDetail.css);
 @import url(/css/hamburguesa.css);
+@import url(/css/loginForm.css);
+
 
 :root{
   --dark: #120d0e;
@@ -320,7 +322,7 @@ footer div {
 }
 
 .botonEnviar{
-  background-color: #63c65f;;
+  background-color: #63c65f;
 }
 .login{
   color: #63c65f;
