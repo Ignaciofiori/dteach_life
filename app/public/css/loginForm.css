@@ -40,3 +40,13 @@
 	transition: all 0.15s ease;
   }
   .formLogin button:focus .botonEnviarLogin { outline: 0; }
+  .recuperarContraseña {
+		
+	color: black;
+	text-align:center;
+
+}
+  .recuperarContraseña a {
+	color: black;
+	text-align:center;
+  }
