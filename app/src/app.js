@@ -35,11 +35,13 @@ const mainRoutes = require('./routes/main');
 const productsRoutes = require('./routes/products');
 const usersRoutes = require('./routes/users');
 const apiRoutes = require('./routes/api');
+const paymentRoutes= require("./routes/payment")
 
 app.use('/', mainRoutes);
 app.use('/products', productsRoutes);
 app.use('/users', usersRoutes);
 app.use('/api', apiRoutes);
+app.use("/payment", paymentRoutes)
 
 // ************ catch 404 and forward to error handler ************
 app.use((req, res, next) => next(createError(404)));
@@ -55,6 +57,7 @@ app.use((err, req, res, next) => {
   res.status(err.status || 500);
   res.render('error');
 });
+
 
 // ************ exports app - dont'touch ************
 module.exports = app;
